@@ -1,0 +1,164 @@
+/* @group html tags */
+body {
+	padding-top: 60px;
+}
+/* @end html tags */
+
+.displayBlock {
+	display: block;
+}
+
+/* @group story design */
+.story {
+	padding-bottom: 20px;
+	margin-bottom: 30px;
+	margin-top: 10px;
+	border-bottom: 1px solid #000;
+
+/*        position: absolute;*/
+}
+
+.story .header {
+	min-height: 100px;
+}
+
+.story .content {
+	clear: both;
+}
+
+.story .footer {
+	border-top: 1px solid #CCC;
+	margin-top: 10px;
+}
+
+.story .footer,
+.story .footer h4 {
+	font-size: 12px;
+}
+.story .footer h4 {
+	display: inline;
+}
+
+.story .footer div {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.story .story_id {}
+.story .story_feature {}
+.story .story_title {
+	font-size: 25px;
+	line-height: 28px;
+	float: left;
+	width: 700px;
+}
+.story .boxes {
+	width: 250px;
+	float: right;
+}
+.story .boxes div {
+	display: block;
+	width: 100px;
+	height: 100px;
+	border: 2px solid #000;
+	float: left;
+	margin-left: 5px;
+	margin-right: 5px;
+	overflow: hidden;
+	position: relative;
+}
+.story .boxes div span {
+	font-size: 40px;
+	text-align: center;
+	display: block;
+	position: relative;
+	top: 40%;
+}
+.story .story_business_value {}
+.story .story_effort {}
+.story .story_details {}
+.story .story_requirements {}
+.story .story_acceptance {}
+
+	/* @group story form */
+	.story .story_id .field {
+
+	}
+	.story .story_feature .field {}
+	.story .story_title .field {
+		font-size: 25px;
+		line-height: 28px;
+		float: left;
+		width: 700px;
+		height: 95px;
+	}
+	.story .boxes .field {
+		font-size: 40px;
+		text-align: center;
+		width: 90px;
+		height: 90px;
+	}
+
+	.story .story_requirements .field,
+	.story .story_details .field,
+	.story .story_acceptance .field {
+		width: 100%;
+		height: 50px;
+	}
+	/* @end story form */
+
+/* @end story design */
+
+
+/* @group Print */
+@page {
+	size: landscape;
+	margin: 5%;
+}
+
+@media print
+{
+	.topbar,
+	.alert-message,
+	.hero-unit,
+	.mainFooter {
+		display: none;
+	}
+
+	.body,
+	.container,
+	.row.stories,
+	.row16 {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+
+	.story {
+		width: 100%;
+		height: 100%;
+		margin: 0;
+		overflow:hidden;
+		padding-left: 20px;
+		position: relative;
+		page-break-after: always;
+		border: 0px;
+	}
+
+	.boxes {
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		width: 30%;
+	}
+
+	.story_title span {
+		width :70%;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		display:block;
+		overflow: hidden;
+	}
+}
+/* @end print */

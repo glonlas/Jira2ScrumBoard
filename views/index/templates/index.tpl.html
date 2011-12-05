@@ -1,0 +1,54 @@
+<div class="topbar">
+    <div class="fill">
+        <div class="container">
+            <h3><a href="#">User story generator</a></h3>
+            <ul class="nav">
+                <li class="active"><a href="/">Home</a></li>
+                <li class="action import"><a href="#">Import</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Actions</a>
+                    <ul class="dropdown-menu">
+                        <li class="action add"><a href="#">Add a story</a></li>
+                        <li class="action print"><a href="#">Print stories</a></li>
+                        <li class="action save"><a href="#">Save the list</a></li>
+                        <li class="divider"></li>
+                        <li class="action flush"><a href="#">Flush the list</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+
+    <div class="alert-message success" style="display:none;">
+        <a class="close" href="#">×</a>
+        <p><strong>Well done!</strong> Your csv file was imported and your stories sheets were created.</p>
+    </div>
+
+    <div class="alert-message error" style="display:none;">
+        <a class="close" href="#">×</a>
+        <p><strong>Crap!</strong> We can't process your file! Please try again with a CSV file</p>
+    </div>
+
+    <!-- Main hero unit for a primary marketing message or call to action -->
+    <div class="hero-unit">
+        <h1>Import your stories</h1>
+        <p>Please use the form below to import your stories</p>
+        <div class="input">
+            <input class="input-file" name="file" type="file">
+        </div>
+    </div>
+
+
+    <div class="row stories"></div>
+
+    <footer class="mainFooter">
+        <p>© JFG-Networks 2011</p>
+    </footer>
+</div>
+
+
+
+
