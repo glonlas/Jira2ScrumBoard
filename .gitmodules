@@ -1,3 +1,6 @@
 [submodule "yoshioka.js"]
 	path = yoshioka.js
 	url = git://github.com/hadrienl/yoshioka.js.git
+[submodule "assets/css/bootstrap"]
+	path = assets/css/bootstrap
+	url = git://github.com/twitter/bootstrap.git
