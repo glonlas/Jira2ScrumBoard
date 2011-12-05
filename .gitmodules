@@ -1,0 +1,3 @@
+[submodule "yoshioka.js"]
+	path = yoshioka.js
+	url = git://github.com/hadrienl/yoshioka.js.git
