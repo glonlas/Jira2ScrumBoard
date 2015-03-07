@@ -1,0 +1,35 @@
+{% extends 'AgileStroyPrintJiraBundle::base.html.twig' %}
+
+{% block content %}
+ 	{% include 'AgileStroyPrintJiraBundle::navigation.html.twig'  with {'links': 'relative'}%}
+
+	<!-- Header -->
+	<header id="quick-upload">
+	    <div class="container">
+	        <div class="intro-text">
+	        	<div class="row">
+	        		<div class="col-md-10 col-md-offset-1 ">
+	            		<div class="intro-lead-in">{{ 'index.lead'|trans|raw }}</div>
+	            		<div class="intro-heading">{{ 'index.tagline'|trans|raw }}</div>
+	            	</div>
+	            </div>
+	            <div class="row">
+					<div class="col-md-6 col-md-offset-3">
+						<div class="sf-container">
+							{{ form_start(form, {'attr': {'class': 'form-inline'}, 'multipart': true}) }}
+								<h6 class="subscription-error">{{ form_errors(form.file) }}</h6>
+                                
+                                {{ form_widget(form.file, {'attr': {'class': 'form-control input-box filestyle', 'data-buttonText':'form.file.button'|trans, 'data-buttonBefore':'true' }}) }}
+		                        <button type="submit" class="btn standard-button" name="upload">{{ 'form.submit.button'|trans }}</button>
+							{{ form_end(form) }}
+						</div>
+					</div>
+				</div>
+	        </div>
+	    </div>
+	</header>
+
+	{% include 'AgileStroyPrintJiraBundle:Items:services.html.twig' %}
+	{% include 'AgileStroyPrintJiraBundle:Items:author.html.twig' %}
+	{% include 'AgileStroyPrintJiraBundle:Items:contact.html.twig' %}
+{% endblock %}

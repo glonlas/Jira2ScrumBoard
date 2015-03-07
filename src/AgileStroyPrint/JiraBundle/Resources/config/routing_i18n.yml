@@ -1,0 +1,11 @@
+_index:
+    locales:  { en: "/", fr: "/fr/" }
+    defaults: { _controller: AgileStroyPrintJiraBundle:Default:index }
+
+_emptyStory:
+    locales:     { en: "/no-stories-found.html", fr: "/fr/pas-de-story-trouve.html" }
+    defaults: { _controller: AgileStroyPrintJiraBundle:Default:emptyStory }
+
+_wrongFile:
+    locales:     { en: "/wrong-file.html", fr: "/fr/mauvais-fichier.html" }
+    defaults: { _controller: AgileStroyPrintJiraBundle:Default:wrongFile }

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}">
+        <link rel="shortcut icon" href="{{ asset('favicon.ico') }}">
+
+        <link rel="apple-touch-icon" sizes="57x57" href="{{ asset('/fav/a57.png') }}">
+        <link rel="apple-touch-icon" sizes="60x60" href="{{ asset('/fav/a60.png') }}">
+        <link rel="apple-touch-icon" sizes="72x72" href="{{ asset('/fav/a72.png') }}">
+        <link rel="apple-touch-icon" sizes="76x76" href="{{ asset('/fav/a76.png') }}">
+        <link rel="apple-touch-icon" sizes="114x114" href="{{ asset('/fav/a114.png') }}">
+        <link rel="apple-touch-icon" sizes="120x120" href="{{ asset('/fav/a120.png') }}">
+        <link rel="apple-touch-icon" sizes="144x144" href="{{ asset('/fav/a144.png') }}">
+        <link rel="apple-touch-icon" sizes="152x152" href="{{ asset('/fav/a152.png') }}">
+        <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('/fav/f16.png') }}">
+        <link rel="icon" type="image/png" sizes="96x96" href="{{ asset('/fav/f96.png') }}">
+        <link rel="icon" type="image/png" sizes="160x160" href="{{ asset('/fav/f160.png') }}">
+
+        {% block meta %}{% endblock %}
+        {% block stylesheets %}{% endblock %}
+        {% block javascripts_top %}{% endblock %}
+    </head>
+    <body id="page-top" class="index">
+        {% block body %}{% endblock %}
+
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>

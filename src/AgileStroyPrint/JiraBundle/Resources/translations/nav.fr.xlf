@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="file.ext">
+        <body>
+            <trans-unit id="nav.toggle">
+                <source>nav.toggle</source>
+                <target>Menu</target>
+            </trans-unit>
+
+            <!-- Navigation -->
+            <trans-unit id="nav.index.link">
+                <source>nav.index.link</source>
+                <target>Accueil</target>
+            </trans-unit>
+            <trans-unit id="nav.index.alt">
+                <source>nav.index.alt</source>
+                <target>Retournez à l'accueil du site</target>
+            </trans-unit>
+
+            <trans-unit id="nav.services.link">
+                <source>nav.services.link</source>
+                <target>Comment cela fonctionne</target>
+            </trans-unit>
+            <trans-unit id="nav.services.alt">
+                <source>nav.services.alt</source>
+                <target>Comment cet outil fonctionne ?</target>
+            </trans-unit>
+
+            <trans-unit id="nav.author.link">
+                <source>nav.author.link</source>
+                <target>Qui est l'auteur</target>
+            </trans-unit>
+            <trans-unit id="nav.author.alt">
+                <source>nav.author.alt</source>
+                <target>Qui a développé cet outil ?</target>
+            </trans-unit>
+
+            <trans-unit id="nav.contact.link">
+                <source>nav.contact.link</source>
+                <target>Contact</target>
+            </trans-unit>
+            <trans-unit id="nav.contact.alt">
+                <source>nav.contact.alt</source>
+                <target>Contactez-moi</target>
+            </trans-unit>
+
+            <!-- Footer -->
+            <trans-unit id="nav.privacy.link">
+                <source>nav.privacy.link</source>
+                <target>Privacy Policy</target>
+            </trans-unit>
+            <trans-unit id="nav.privacy.alt">
+                <source>nav.privacy.alt</source>
+                <target></target>
+            </trans-unit>
+
+            <trans-unit id="nav.terms.link">
+                <source>nav.terms.link</source>
+                <target>Terms of Use</target>
+            </trans-unit>
+            <trans-unit id="nav.terms.alt">
+                <source>nav.terms.alt</source>
+                <target></target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

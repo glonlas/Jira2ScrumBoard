@@ -1,0 +1,8 @@
+#agile_stroy_print_jira:
+#    resource: "@AgileStroyPrintJiraBundle/Resources/config/routing.yml"
+#    prefix:   /
+
+agile_stroy_print_jira_i18n_routes:
+    resource: "@AgileStroyPrintJiraBundle/Resources/config/routing_i18n.yml"
+    type: be_simple_i18n
+

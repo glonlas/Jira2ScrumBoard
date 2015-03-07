@@ -1,0 +1,18 @@
+{% extends 'AgileStroyPrintJiraBundle::base.html.twig' %}
+
+{% block content %}
+	{% include 'AgileStroyPrintJiraBundle::navigation.html.twig' with {'links': 'absolute'} %}
+
+	<!-- Header -->
+	<header>
+	    <div class="container">
+	        <div class="intro-text message">
+	            <div class="intro-lead-in">{{ 'complete.title'|trans }}</div>
+	            <div class="intro-heading">{{ 'complete.text'|trans|raw }}</div>
+	        </div>
+	    </div>
+	</header>
+	<!-- /Header -->
+
+	{% include 'AgileStroyPrintJiraBundle:StoryCard:card.html.twig' %}
+{% endblock %}
