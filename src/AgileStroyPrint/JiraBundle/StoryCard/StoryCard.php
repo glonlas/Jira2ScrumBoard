@@ -8,6 +8,8 @@ use Symfony\Component\DomCrawler\Crawler as Crawler;
 use AgileStroyPrint\JiraBundle\Entity\Stories as Stories;
 use AgileStroyPrint\JiraBundle\Entity\Story as Story;
 
+use PhpOffice\PhpExcel\Classses\PHPExcel;
+
 class StoryCard
 {
     protected $stories = null;
@@ -151,13 +153,13 @@ class StoryCard
 
     }
 
-    private function importFromXLS(UploadedFile $file)
+    private function importFromXLS(UploadedFile $uploadedFile)
     {
         // @todo: try to make excel file work
-        throw new \Exception('Not implemented');
+        //throw new \Exception('Not implemented');
 
-        /*
-        $this->get('phpexcel')->createPHPExcelObject($file->getRealPath());
-        */
+        $file = $uploadedFile->openFile();
+
+        //var_dump($sheetData);
     }
 }

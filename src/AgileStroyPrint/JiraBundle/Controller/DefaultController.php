@@ -5,8 +5,7 @@ namespace AgileStroyPrint\JiraBundle\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request as Request;
 
-use AgileStroyPrint\JiraBundle\Entity\JiraExportFile as JiraExportFile;
-use AgileStroyPrint\JiraBundle\Form\Type\JiraExportFileType as JiraExportFileType;
+use AgileStroyPrint\JiraBundle\Form\Type\UploadStoriesType as UploadStoriesType;
 use AgileStroyPrint\JiraBundle\StoryCard\StoryCard as StoryCard;
 
 
@@ -14,48 +13,60 @@ class DefaultController extends Controller
 {
     public function indexAction(Request $request)
     {
-        $upload = new JiraExportFile();
+        $form = $this->createForm(new UploadStoriesType());
 
-        $form = $this->createForm(new JiraExportFileType(), $upload);
-        $form->handleRequest($request);
+        return $this->render(
+        	'AgileStroyPrintJiraBundle:Pages:index.html.twig',
+        	array(
+            	'uploadForm' => $form->createView()
+            )
+        );
+    }
+
+    public function getStoriesAction()
+    {
+        $form = $this->createForm(new UploadStoriesType());
+        $form->handleRequest($this->getRequest());
 
         // Form validation
         if ($form->isValid())
         {
-			try
-			{
-				$file = $form['file']->getData();
+            try
+            {
+                $file = $form['file']->getData();
 
                 $storyCards = new StoryCard();
-				// try to get stories in the file
-				if($storyCards->importFromFile($file))
-				{
+                // try to get stories in the file
+                if($storyCards->importFromFile($file))
+                {
                     return $this->render(
                         'AgileStroyPrintJiraBundle:Pages:complete.html.twig',
                         array(
                             'stories' => $storyCards->getStories()
                         )
                     );
-				}
+                }
                 // No stories found
-				else
-				{
+                else
+                {
                     return $this->redirect($this->generateUrl('_emptyStory'));
-				}
-			}
+                }
+            }
             // The file is not a good one
-			catch(\Exception $e)
-			{
+            catch(\Exception $e)
+            {
                 return $this->redirect($this->generateUrl('_wrongFile'));
-			}
-    	}
-
-        return $this->render(
-        	'AgileStroyPrintJiraBundle:Pages:index.html.twig',
-        	array(
-            	'form' => $form->createView()
-            )
-        );
+            }
+        }
+        else
+        {
+            return $this->render(
+                'AgileStroyPrintJiraBundle:Pages:index.html.twig',
+                array(
+                    'uploadForm' => $form->createView()
+                )
+            );
+        }
     }
 
     public function emptyStoryAction(Request $request)
