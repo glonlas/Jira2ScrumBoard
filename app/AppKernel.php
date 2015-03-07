@@ -18,7 +18,6 @@ class AppKernel extends Kernel
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
 
             new BeSimple\I18nRoutingBundle\BeSimpleI18nRoutingBundle(), // I18N Routing
-            new Liuggio\ExcelBundle\LiuggioExcelBundle(), // Excel file support
             new AgileStroyPrint\JiraBundle\AgileStroyPrintJiraBundle(),         
         );
 

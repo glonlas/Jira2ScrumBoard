@@ -19,11 +19,8 @@
         "sensio/distribution-bundle": "~3.0,>=3.0.12",
         "sensio/framework-extra-bundle": "~3.0,>=3.0.2",
         "incenteev/composer-parameter-handler": "~2.0",
-
-        "liuggio/excelbundle": "~2.0",
         "symfony/dom-crawler": "3.0.*@dev",
-        "besimple/i18n-routing-bundle": "dev-master",
-        "phpoffice/phpword": "dev-master"
+        "besimple/i18n-routing-bundle": "dev-master"
 
     },
     "require-dev": {
