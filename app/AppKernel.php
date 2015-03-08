@@ -18,7 +18,7 @@ class AppKernel extends Kernel
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
 
             new BeSimple\I18nRoutingBundle\BeSimpleI18nRoutingBundle(), // I18N Routing
-            new AgileStroyPrint\JiraBundle\AgileStroyPrintJiraBundle(),         
+            new AgileStoryPrint\JiraBundle\AgileStoryPrintJiraBundle(),         
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

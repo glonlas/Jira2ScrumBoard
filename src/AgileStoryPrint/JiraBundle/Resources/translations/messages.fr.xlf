@@ -1,0 +1,216 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="file.ext">
+        <body>
+            <trans-unit id="head.title">
+                <source>head.title</source>
+                <target>Jira2ScrumBoard: L'outil facile pour imprimer vos Story Scrum provenant d'Atlassian Jira</target>
+            </trans-unit>
+
+            <trans-unit id="project.name">
+                <source>project.name</source>
+                <target>Jira2ScrumBoard</target>
+            </trans-unit>
+
+            <!-- Page index -->
+            <trans-unit id="index.lead">
+                <source>index.lead</source>
+                <target><![CDATA[
+                    L'outil le plus simple pour <strong>imprimer</strong> vos <strong>Story Jira</strong>
+                    ]]>
+                </target>
+            </trans-unit>
+            <trans-unit id="index.tagline">
+                <source>index.tagline</source>
+                <target><![CDATA[
+                    Cet outil transforme les fichiers contenants vos stories Jira <em>(XML or Excel)</em> en de belle Stories Cards. Sélectionnez votre fichier ci-dessous et cliquez sur "Transformer" pour avoir obtenir le fichier imprimable.
+                    ]]>
+                </target>
+            </trans-unit>
+
+
+            <!-- Form -->
+            <trans-unit id="form.file.label">
+                <source>form.file.label</source>
+                <target>Fichier d'export Jira (XML or XLS)</target>
+            </trans-unit>
+
+            <trans-unit id="form.file.button">
+                <source>form.file.button</source>
+                <target>Fichier Jira</target>
+            </trans-unit>
+
+            <trans-unit id="form.submit.button">
+                <source>form.submit.button</source>
+                <target>Transformer</target>
+            </trans-unit>
+
+
+            <!-- Author -->
+            <trans-unit id="author.title">
+                <source>author.title</source>
+                <target>Qui l'a développé ?</target>
+            </trans-unit>
+
+            <trans-unit id="author.subtitle">
+                <source>author.subtitle</source>
+                <target></target>
+            </trans-unit>
+
+            <trans-unit id="author.name">
+                <source>author.name</source>
+                <target>Gérald LONLAS</target>
+            </trans-unit>
+
+            <trans-unit id="author.position">
+                <source>author.position</source>
+                <target>Chef de projet Web</target>
+            </trans-unit>
+
+            <trans-unit id="author.text">
+                <source>author.text</source>
+                <target></target>
+            </trans-unit>
+
+            <!-- Services -->
+            <trans-unit id="services.title">
+                <source>services.title</source>
+                <target>Comment cela fonctionne ?</target>
+            </trans-unit>
+
+            <trans-unit id="services.subtitle">
+                <source>services.subtitle</source>
+                <target>Jira2ScrumBoard est très simple d'utilisation. Créé pour vous faire gagner du temps, il vous permet d'imprimer vos Story Jira en Story card lisible et utilisable sur votre tableau Scrum.</target>
+            </trans-unit>
+
+            <trans-unit id="services.option1.title">
+                <source>services.option1.title</source>
+                <target>1. Exportez vos stories Jira</target>
+            </trans-unit>
+            <trans-unit id="services.option1.text">
+                <source>services.option1.text</source>
+                <target>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</target>
+            </trans-unit>
+
+            <trans-unit id="services.option2.title">
+                <source>services.option2.title</source>
+                <target>2. Envoyez le fichier</target>
+            </trans-unit>
+            <trans-unit id="services.option2.text">
+                <source>services.option2.text</source>
+                <target>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</target>
+            </trans-unit>
+
+            <trans-unit id="services.option3.title">
+                <source>services.option3.title</source>
+                <target>3. Imprimez vos Stories Cards</target>
+            </trans-unit>
+            <trans-unit id="services.option3.text">
+                <source>services.option3.text</source>
+                <target>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</target>
+            </trans-unit>
+
+            <!-- Contact -->
+            <trans-unit id="contact.title">
+                <source>contact.title</source>
+                <target>Contactez moi</target>
+            </trans-unit>
+
+            <trans-unit id="contact.subtitle">
+                <source>contact.subtitle</source>
+                <target>Une idée, un bug ou tout simplement un message à faire passer ? N'hésitez pas, laissez-moi un message.</target>
+            </trans-unit>
+
+            <trans-unit id="contact.name.placeholder">
+                <source>contact.name.placeholder</source>
+                <target>Votre nom *</target>
+            </trans-unit>
+
+            <trans-unit id="contact.email.placeholder">
+                <source>contact.email.placeholder</source>
+                <target>Votre email *</target>
+            </trans-unit>
+
+            <trans-unit id="contact.phone.placeholder">
+                <source>contact.phone.placeholder</source>
+                <target>Votre téléphone</target>
+            </trans-unit>
+
+            <trans-unit id="contact.message.placeholder">
+                <source>contact.message.placeholder</source>
+                <target>Votre message *</target>
+            </trans-unit>
+
+            <trans-unit id="contact.btn.submit">
+                <source>contact.btn.submit</source>
+                <target>Envoyer le message</target>
+            </trans-unit>
+
+
+            <!-- Complete : Downloading Story print file -->
+            <trans-unit id="complete.title">
+                <source>complete.title</source>
+                <target>Traitement terminé</target>
+            </trans-unit>
+            <trans-unit id="complete.text">
+                <source>complete.text</source>
+                <target><![CDATA[
+                    Nous venons de convertir votre fichier en Story cards. <a href="javascript:window.print();">Imprimez cette page</a> pour obtenir vos Story cards.
+                    ]]>
+                </target>
+            </trans-unit>
+
+            <!-- Complete : Downloading Story print file -->
+            <trans-unit id="wrongFile.title">
+                <source>wrongFile.title</source>
+                <target>Wrong file uploaded</target>
+            </trans-unit>
+            <trans-unit id="wrongFile.text">
+                <source>wrongFile.text</source>
+                <target><![CDATA[
+                    Le fichier que vous avez envoyé n'est pas un fichier Jira compatible. Veuillez recommencer avec un autre fichier. <br />
+                    Cet outil supporte les exports XML et Excel.
+                    ]]></target>
+            </trans-unit>
+
+            <!-- Footer -->
+            <trans-unit id="footer.copyright">
+                <source>footer.copyright</source>
+                <target><![CDATA[
+                    Copyright &copy; 2015 Jira2ScrumBoard
+                    ]]>
+                </target>
+            </trans-unit>
+
+            <!-- Story Card -->
+            <trans-unit id="card.effort">
+                <source>card.effort</source>
+                <target>Effort :</target>
+            </trans-unit>
+            <trans-unit id="card.key">
+                <source>card.key</source>
+                <target>ID Story:</target>
+            </trans-unit>
+            <trans-unit id="card.type">
+                <source>card.type</source>
+                <target>Type :</target>
+            </trans-unit>
+            <trans-unit id="card.project">
+                <source>card.project</source>
+                <target>Projet :</target>
+            </trans-unit>
+
+             <!-- Contact -->
+            <trans-unit id="contact.msg.title">
+                <source>contact.msg.title</source>
+                <target>Message envoyé</target>
+            </trans-unit>
+            <trans-unit id="contact.msg.text">
+                <source>contact.msg.text</source>
+                <target><![CDATA[
+                    Merci d'avoir pris le temps d'envoyer votre message. Je vous répondrai dans les plus brefs délais.
+                    ]]></target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

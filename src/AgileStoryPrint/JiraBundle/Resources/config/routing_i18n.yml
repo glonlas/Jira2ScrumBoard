@@ -1,0 +1,19 @@
+_index:
+    locales:  { en: "/", fr: "/fr/" }
+    defaults: { _controller: AgileStoryPrintJiraBundle:Default:index }
+
+_getStories:
+    locales:     { en: "/print-your-index-cards.html", fr: "/fr/imprimez-vos-index-cards.html" }
+    defaults: { _controller: AgileStoryPrintJiraBundle:Default:getStories }
+
+_emptyStory:
+    locales:     { en: "/no-stories-found.html", fr: "/fr/pas-de-story-trouve.html" }
+    defaults: { _controller: AgileStoryPrintJiraBundle:Default:emptyStory }
+
+_wrongFile:
+    locales:     { en: "/wrong-file.html", fr: "/fr/mauvais-fichier.html" }
+    defaults: { _controller: AgileStoryPrintJiraBundle:Default:wrongFile }
+
+_contact:
+    locales:     { en: "/contact.html", fr: "/fr/contact.html" }
+    defaults: { _controller: AgileStoryPrintJiraBundle:Contact:index }

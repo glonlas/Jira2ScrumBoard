@@ -1,0 +1,4 @@
+services:
+#    agile_Story_print_jira.example:
+#        class: AgileStoryPrint\JiraBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]

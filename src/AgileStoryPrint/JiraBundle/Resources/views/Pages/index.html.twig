@@ -1,0 +1,35 @@
+{% extends 'AgileStoryPrintJiraBundle::base.html.twig' %}
+
+{% block content %}
+ 	{% include 'AgileStoryPrintJiraBundle::navigation.html.twig'  with {'links': 'relative'}%}
+
+	<!-- Header -->
+	<header id="quick-upload">
+	    <div class="container">
+	        <div class="intro-text">
+	        	<div class="row">
+	        		<div class="col-md-10 col-md-offset-1 ">
+	            		<div class="intro-lead-in">{{ 'index.lead'|trans|raw }}</div>
+	            		<div class="intro-heading">{{ 'index.tagline'|trans|raw }}</div>
+	            	</div>
+	            </div>
+	            <div class="row">
+					<div class="col-md-6 col-md-offset-3">
+						<div class="sf-container">
+							{{ form_start(uploadForm, {'attr': {'class': 'form-inline'}, 'action': path('_getStories'), 'multipart': true}) }}
+								<h6 class="subscription-error">{{ form_errors(uploadForm.file) }}</h6>
+                                
+                                {{ form_widget(uploadForm.file, {'attr': {'class': 'form-control input-box filestyle', 'data-buttonText':'form.file.button'|trans, 'data-buttonBefore':'true' }}) }}
+		                        <button type="submit" class="btn standard-button" name="upload">{{ 'form.submit.button'|trans }}</button>
+							{{ form_end(uploadForm) }}
+						</div>
+					</div>
+				</div>
+	        </div>
+	    </div>
+	</header>
+
+	{% include 'AgileStoryPrintJiraBundle:Items:services.html.twig' %}
+	{% include 'AgileStoryPrintJiraBundle:Items:author.html.twig' %}
+	{% include 'AgileStoryPrintJiraBundle:Items:contact.html.twig' %}
+{% endblock %}

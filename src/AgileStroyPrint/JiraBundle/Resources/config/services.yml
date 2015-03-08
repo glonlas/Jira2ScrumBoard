@@ -1,4 +1,0 @@
-services:
-#    agile_stroy_print_jira.example:
-#        class: AgileStroyPrint\JiraBundle\Example
-#        arguments: [@service_id, "plain_value", %parameter%]
