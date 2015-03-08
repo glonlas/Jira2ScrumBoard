@@ -617,6 +617,7 @@ section h3.section-subheading {
     }
 }
 
+/* Team */
 .team-member {
     margin-bottom: 50px;
     text-align: center;
@@ -637,8 +638,14 @@ section h3.section-subheading {
     margin-top: 0;
 }
 
-aside.clients img {
-    margin: 50px auto;
+.team-no-picture i {
+    width: 239px;
+    height: 239px;
+    background-color: #3b73af;
+    border-radius: 100%;
+    display: block;
+    font-size: 140px;
+    border: 7px solid #fff;
 }
 
 /* Contact */

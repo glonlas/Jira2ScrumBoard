@@ -28,7 +28,7 @@
 
             <trans-unit id="nav.author.link">
                 <source>nav.author.link</source>
-                <target>Who's the maker</target>
+                <target>Who's behind</target>
             </trans-unit>
             <trans-unit id="nav.author.alt">
                 <source>nav.author.alt</source>

@@ -4,7 +4,10 @@
         <body>
             <trans-unit id="head.title">
                 <source>head.title</source>
-                <target>Jira2ScrumBoard: Printing Index Cards for Scrum Board from Atlassian Jira</target>
+                <target>
+                    Jira2ScrumBoard: Printing Index Cards for Scrum Board 
+                    from Atlassian Jira
+                </target>
             </trans-unit>
 
             <trans-unit id="project.name">
@@ -16,14 +19,18 @@
             <trans-unit id="index.lead">
                 <source>index.lead</source>
                 <target><![CDATA[
-                    The easier way to <strong>print</strong> your <strong>Jira stories</strong>
+                    The easier way to <strong>print</strong> your <strong>Jira 
+                    stories</strong>
                     ]]>
                 </target>
             </trans-unit>
             <trans-unit id="index.tagline">
                 <source>index.tagline</source>
                 <target><![CDATA[
-                    This tools will transform your Jira stories export <em>(XML or Excel)</em> to a beautiful Story layout. Upload your file below and click on "Print it" to get your stories in a printable file.
+                    This tools will transform your Jira stories export 
+                    <em>(XML or Excel)</em> to beautiful Story cards. Upload 
+                    your file below and click on "Convert" to get your stories 
+                    in a printable file.
                     ]]>
                 </target>
             </trans-unit>
@@ -42,19 +49,26 @@
 
             <trans-unit id="form.submit.button">
                 <source>form.submit.button</source>
-                <target>Print it</target>
+                <target>Convert</target>
             </trans-unit>
 
 
             <!-- Author -->
             <trans-unit id="author.title">
                 <source>author.title</source>
-                <target>Who's the maker?</target>
+                <target>Who's behind this project?</target>
             </trans-unit>
 
             <trans-unit id="author.subtitle">
                 <source>author.subtitle</source>
-                <target></target>
+                <target><![CDATA[
+                    This is a totally free project, not attached to Atlassian
+                    and Jira brands.<br />You can find the source code in the 
+                    <a href="https://github.com/glonlas/AgileStoryPrint">Github 
+                    repot</a>. Feel free to participate to this project: send me 
+                    your Pull request or fork it.
+                    ]]>
+                </target>
             </trans-unit>
 
             <trans-unit id="author.name">
@@ -67,9 +81,14 @@
                 <target>Product owner</target>
             </trans-unit>
 
-            <trans-unit id="author.text">
-                <source>author.text</source>
-                <target></target>
+            <trans-unit id="team_member.name">
+                <source>team_member.name</source>
+                <target>You?</target>
+            </trans-unit>
+
+            <trans-unit id="team_member.position">
+                <source>team_member.position</source>
+                <target>Github Contributor</target>
             </trans-unit>
 
             <!-- Services -->
@@ -80,7 +99,10 @@
 
             <trans-unit id="services.subtitle">
                 <source>services.subtitle</source>
-                <target>Jira2ScrumBoard is really simple to use. Made to help save your time when you want to print your Jira Scrum stories.</target>
+                <target>
+                    Jira2ScrumBoard is really simple to use. Made to help 
+                    save your time when you want to print your Jira Scrum 
+                    stories.</target>
             </trans-unit>
 
             <trans-unit id="services.option1.title">
@@ -89,7 +111,9 @@
             </trans-unit>
             <trans-unit id="services.option1.text">
                 <source>services.option1.text</source>
-                <target>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</target>
+                <target>Lorem ipsum dolor sit amet, consectetur adipisicing 
+                    elit. Minima maxime quam architecto quo inventore harum ex 
+                    magni, dicta impedit.</target>
             </trans-unit>
 
             <trans-unit id="services.option2.title">
@@ -98,7 +122,9 @@
             </trans-unit>
             <trans-unit id="services.option2.text">
                 <source>services.option2.text</source>
-                <target>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</target>
+                <target>Lorem ipsum dolor sit amet, consectetur adipisicing 
+                    elit. Minima maxime quam architecto quo inventore harum ex 
+                    magni, dicta impedit.</target>
             </trans-unit>
 
             <trans-unit id="services.option3.title">
@@ -107,7 +133,9 @@
             </trans-unit>
             <trans-unit id="services.option3.text">
                 <source>services.option3.text</source>
-                <target>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</target>
+                <target>Lorem ipsum dolor sit amet, consectetur adipisicing 
+                    elit. Minima maxime quam architecto quo inventore harum ex 
+                    magni, dicta impedit.</target>
             </trans-unit>
 
             <!-- Contact -->
@@ -118,7 +146,10 @@
 
             <trans-unit id="contact.subtitle">
                 <source>contact.subtitle</source>
-                <target>A new feature, a bug or something to tell me. Please send me a message.</target>
+                <target>
+                    A new feature, a bug or something to tell me. Please 
+                    send me a message.
+                </target>
             </trans-unit>
 
             <trans-unit id="contact.name.placeholder">
@@ -159,7 +190,12 @@
             <trans-unit id="complete.text">
                 <source>complete.text</source>
                 <target><![CDATA[
-                    Your file has been processed. <a href="javascript:window.print();">Print this page</a> to get your Index cards. <br/><br/> <strong>Want more than one card per page ?</strong> <br/>Set it up directly in your printer settings before printing yours cards. <br/> I suggest you to print 4 cards per pages.
+                    Your file has been processed. 
+                    <a href="javascript:window.print();">Print this page</a> to 
+                    get your Index cards. <br/><br/> <strong>Want more than one 
+                    card per page ?</strong> <br/>Set it up directly in your 
+                    printer settings before printing yours cards. <br/> I 
+                    suggest you to print 4 cards per pages.
                     ]]>
                 </target>
             </trans-unit>
@@ -172,7 +208,8 @@
             <trans-unit id="emptyStory.text">
                 <source>emptyStory.text</source>
                 <target><![CDATA[
-                    Sorry we didn't found any stories in your file. Please try with another file.
+                    Sorry we didn't found any stories in your file. Please try 
+                    with another file.
                     ]]></target>
             </trans-unit>
 
@@ -184,7 +221,8 @@
             <trans-unit id="wrongFile.text">
                 <source>wrongFile.text</source>
                 <target><![CDATA[
-                    The file you send to us isn't a Jira XML or XLs export file. Please try with another file.
+                    The file you send to us isn't a Jira XML or XLs export file.
+                    Please try with another file.
                     ]]></target>
             </trans-unit>
 
@@ -223,7 +261,8 @@
             <trans-unit id="contact.msg.text">
                 <source>contact.msg.text</source>
                 <target><![CDATA[
-                    Thank you for having took the time to send a message. I will reply as soon as possible.
+                    Thank you for having took the time to send a message. I 
+                    will reply as soon as possible.
                     ]]></target>
             </trans-unit>
         </body>

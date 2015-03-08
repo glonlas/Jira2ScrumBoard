@@ -54,7 +54,15 @@
 
             <trans-unit id="author.subtitle">
                 <source>author.subtitle</source>
-                <target></target>
+                <target><![CDATA[
+                    Ce projet est totalement gratuit et n'est en aucune façon
+                    attaché aux marques Atlassian et Jira. Vous pouvez retrouver
+                    le code source de ce projet sur son 
+                    <a href="https://github.com/glonlas/AgileStoryPrint">repot 
+                    Github</a>. N'hésitez pas à l'améliorer en m'envoyant vos 
+                    pull-requests ou tout simplement en le forkant.
+                    ]]>
+                </target>
             </trans-unit>
 
             <trans-unit id="author.name">
@@ -65,11 +73,6 @@
             <trans-unit id="author.position">
                 <source>author.position</source>
                 <target>Chef de projet Web</target>
-            </trans-unit>
-
-            <trans-unit id="author.text">
-                <source>author.text</source>
-                <target></target>
             </trans-unit>
 
             <!-- Services -->
