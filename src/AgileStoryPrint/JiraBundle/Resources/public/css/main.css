@@ -641,6 +641,7 @@ aside.clients img {
     margin: 50px auto;
 }
 
+/* Contact */
 section#contact {
     background-color: #222;
     background-image: url(../images/map-image.png);
@@ -706,9 +707,28 @@ section#contact:-ms-input-placeholder {
     color: #bbb;
 }
 
-section#contact .text-danger {
+section#contact .text-danger,
+section#contact .text-danger li {
     color: #e74c3c;
 }
+
+section#contact .text-danger ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+section#contact .bg-success {
+    background-color: #008ed6;
+    padding: 20px;
+    font-size: 1.6em;
+    text-align: center;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    color: #FFF; 
+}
+
+
+/* Footer *.
 
 footer {
     padding: 25px 0;

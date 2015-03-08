@@ -33,6 +33,7 @@ class ContactType extends AbstractType
                     new NotBlank(array('message' => 'contact.email')),
                     new Email(array('message' => 'contact.email'))
                 ),
+                'phone' => array(),
                 'message' => array(
                     new NotBlank(array('message' => 'contact.message')),
                     new Length(array('min' => 5))

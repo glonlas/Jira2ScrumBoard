@@ -7,6 +7,17 @@
                 <h3 class="section-subheading text-muted">{{ 'contact.subtitle'|trans|raw }}</h3>
             </div>
         </div>
+
+        {% if emailSent is defined and emailSent > 0 %}
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="bg-success">
+                    <span class="fa fa-check"></span> {{ 'contact.sent'|trans|raw }}
+                </div>
+            </div>
+        </div>
+        {% endif %}
+
         <div class="row">
             <div class="col-lg-12">
                 {{ form_start(contactForm, {'attr': {'id':'contactForm', 'novalidate':true}, 'action':path('_contact')}) }}
@@ -14,27 +25,27 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 {{ form_widget(contactForm.name, {'attr': {'class': 'form-control', 'placeholder':'contact.name.placeholder'|trans, 'required':true}}) }}
-                                <p class="help-block text-danger">{{ form_errors(contactForm.name) }}</p>
+                                <div class="help-block text-danger">{{ form_errors(contactForm.name) }}</div>
                             </div>
                             <div class="form-group">
                                 {{ form_widget(contactForm.email, {'attr': {'class': 'form-control', 'placeholder':'contact.email.placeholder'|trans, 'required':true}}) }}
-                                <p class="help-block text-danger">{{ form_errors(contactForm.email) }}</p>
+                                <div class="help-block text-danger">{{ form_errors(contactForm.email) }}</div>
                             </div>
                             <div class="form-group">
                                 {{ form_widget(contactForm.phone, {'attr': {'class': 'form-control', 'placeholder':'contact.phone.placeholder'|trans}}) }}
-                                <p class="help-block text-danger">{{ form_errors(contactForm.phone) }}</p>
+                                <div class="help-block text-danger">{{ form_errors(contactForm.phone) }}</div>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
                                 {{ form_widget(contactForm.message, {'attr': {'class': 'form-control', 'placeholder':'contact.message.placeholder'|trans, 'required':true}}) }}
-                                <p class="help-block text-danger">{{ form_errors(contactForm.message) }}</p>
+                                <div class="help-block text-danger">{{ form_errors(contactForm.message) }}</div>
                             </div>
                         </div>
                         <div class="clearfix"></div>
                         <div class="col-lg-12 text-center">
                             <div id="success"></div>
-                            <button type="submit" class="btn btn-xl">{{ 'contact.btn.submit'|trans|raw }}</button>
+                            <button type="submit" class="btn btn-xl" {% if emailSent is defined and emailSent > 0 %}disabled{% endif %}>{{ 'contact.btn.submit'|trans|raw }}</button>
                         </div>
                     </div>
                 {{ form_end(contactForm) }}

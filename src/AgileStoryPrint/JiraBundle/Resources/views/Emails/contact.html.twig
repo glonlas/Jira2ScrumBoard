@@ -1,0 +1,24 @@
+{% block subject %} 
+	{{ 'email.contact' | trans({'%name%': name}, 'emails', locale) }}
+{% endblock %}
+
+{% block body_html %}
+	<div class="header">
+		<p>
+			<strong>{{ 'email.name' | trans({}, 'emails', locale) }}</strong> {{ name }} (<a href="mailto:{{ email }}">{{ email }}</a>)
+			<strong>{{ 'email.phone' | trans({}, 'emails', locale) }}</strong> {{ phone }}
+			<strong>{{ 'email.ip' | trans({}, 'emails', locale) }}</strong> {{ ip }}
+		</p>
+	</div>
+	<div class="message">
+		{{ message|nl2br }}
+	</div>
+{% endblock %}
+
+{% block body_text %}
+	{{ 'email.name' | trans({}, 'emails', locale) }} {{ name }} ({{ email }})
+	{{ 'email.phone' | trans({}, 'emails', locale) }} {{ phone }}
+	{{ 'email.ip' | trans({}, 'emails', locale) }} {{ ip }}
+
+	{{ message|raw }}
+{% endblock %}

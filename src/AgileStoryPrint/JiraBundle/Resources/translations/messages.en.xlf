@@ -146,6 +146,10 @@
                 <target>Send Message</target>
             </trans-unit>
 
+            <trans-unit id="contact.sent">
+                <source>contact.sent</source>
+                <target>Your message has been sent</target>
+            </trans-unit>
 
             <!-- Complete : Downloading Story print file -->
             <trans-unit id="complete.title">
