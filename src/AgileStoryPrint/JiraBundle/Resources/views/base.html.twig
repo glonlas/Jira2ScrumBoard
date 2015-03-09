@@ -44,6 +44,9 @@
     %}
         <script src="{{ asset_url }}"></script>
     {% endjavascripts %}
+
+    {% include 'AgileStoryPrintJiraBundle:JS:GoogleTagManager.html.twig' %}
+    {% include 'AgileStoryPrintJiraBundle:JS:GoogleAnalytics.html.twig' %}
 {% endblock %}
 
 {% block body %}
