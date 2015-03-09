@@ -71,9 +71,9 @@
                 <source>services.option1.text</source>
                 <target>
                     <![CDATA[
-                    Filtrez les Stories Jira que vous souhaitez imprimer. Par
-                    exemple pour obtenir uniquement les stories du sprint #1,
-                    utilisez l'expression de recherche : "sprint=1".
+                    Filtrez les Stories Jira que vous souhaitez imprimer. 
+                    <br/>Par exemple pour obtenir uniquement les stories du 
+                    sprint #1, utilisez l'expression de recherche : "sprint=1".
                     Ensuite exportez les stories au format XML ou Excel
                     (All fields).
                     ]]>
