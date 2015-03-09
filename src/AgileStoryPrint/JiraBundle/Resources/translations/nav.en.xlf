@@ -56,7 +56,7 @@
             <!-- Footer -->
             <trans-unit id="nav.privacy.link">
                 <source>nav.privacy.link</source>
-                <target>Privacy Policy</target>
+                <target>Cookie Policy</target>
             </trans-unit>
             <trans-unit id="nav.privacy.alt">
                 <source>nav.privacy.alt</source>

@@ -17,3 +17,11 @@ _wrongFile:
 _contact:
     locales:     { en: "/contact.html", fr: "/fr/contact.html" }
     defaults: { _controller: AgileStoryPrintJiraBundle:Contact:index }
+
+_cookie:
+    locales:     { en: "/cookie-policy.html", fr: "/fr/usage-des-cookies.html" }
+    defaults: { _controller: AgileStoryPrintJiraBundle:Legal:cookie }
+
+_terms:
+    locales:     { en: "/terms-of-use.html", fr: "/fr/conditions-generale.html" }
+    defaults: { _controller: AgileStoryPrintJiraBundle:Legal:terms }

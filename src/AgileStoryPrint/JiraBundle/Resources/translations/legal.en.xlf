@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="file.ext">
+        <body>
+            <!-- Contact -->
+            <trans-unit id="cookie.title">
+                <source>cookie.title</source>
+                <target>Cookies policy</target>
+            </trans-unit>
+            <trans-unit id="cookie.html">
+                <source>cookie.html</source>
+                <target>
+                    <![CDATA[
+                    <p>This page discusses how cookies are used by this site. If you continue to use this site, you are consenting to our use of cookies.</p>
+
+                    <h3>What Cookies Are</h3>
+                    <p>Cookies are small files stored on your computer by your web browser (such as Internet Explorer or Firefox) at the request of a site you're viewing. This allows the site you're viewing to remember things about you, such as your preferences and history or to keep you logged in.</p>
+
+                    <p>Cookies may be stored on your computer for a short time (such as only while your browser is open) or for an extended period of time, even years. Cookies not set by this site will not be accessible to us.</p>
+
+                    <h3 >Our Cookie Usage</h3>
+                    <p>This site uses cookies for numerous things, including:</p>
+                    <ul>
+                        <li>Analytics. This allows us to determine how people are using the site and improve it.</li>
+                        <li>Advertising cookies (possibly third-party). If this site displays advertising, cookies may be set by the advertisers to determine who has viewed an ad or similar things. These cookies may be set by third parties, in which case this site has no ability to read or write these cookies.</li>
+                        <li>Other third-party cookies for things like Facebook or Twitter sharing. These cookies will generally be set by the third-party independently, so this site will have no ability to access them.</li>
+                    </ul>
+
+                    <h3>Removing/Disabling Cookies</h3>
+                    <p>Managing your cookies and cookie preferences must be done from within your browser's options/preferences. Here is a list of guides on how to do this for popular browser software:</p>
+                    <ul>
+                        <li><a href="http://windows.microsoft.com/en-US/internet-explorer/delete-manage-cookies">Internet Explorer</a></li>
+                        <li><a href="http://support.mozilla.org/kb/cookies-information-websites-store-on-your-computer">Firefox</a></li>
+                        <li><a href="https://support.google.com/chrome/answer/95647?hl=en">Chrome</a></li>
+                        <li><a href="http://support.apple.com/kb/PH17191">Safari</a></li>
+                        <li><a href="http://www.opera.com/help/tutorials/security/privacy/">Opera</a></li>
+                    </ul>
+                     ]]>
+                </target>
+            </trans-unit>
+            <trans-unit id="terms.title">
+                <source>terms.title</source>
+                <target>Terms of use</target>
+            </trans-unit>
+            <trans-unit id="terms.html">
+                <source>terms.html</source>
+                <target>
+                    <![CDATA[
+                    The providers ("I", we", "us", "our") of the service provided by this web site ("Service") are not responsible for any user-generated content and accounts ("Content"). Content submitted express the views of their author only.
+
+                    You agree to not use the Service to submit or link to any Content which is defamatory, abusive, hateful, threatening, spam or spam-like, likely to offend, contains adult or objectionable content, contains personal information of others, risks copyright infringement, encourages unlawful activity, or otherwise violates any laws.
+
+                    We reserve the right to take action against any account with the Service at any time.
+
+                    You are granting us with a non-exclusive, permanent, irrevocable, unlimited license to use, publish, or re-publish your Content in connection with the Service. You retain copyright over the Content.
+
+                    These terms may be changed at any time without notice.
+
+                    If you do not agree with these terms, please do not use this Service.
+                    ]]>
+                </target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

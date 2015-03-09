@@ -268,6 +268,10 @@ img::-moz-selection {
         transition: padding .5s;
     }
 
+    .navbar-default.plain {
+        background-color: #205081;
+    }
+
     .navbar-default .navbar-brand {
         font-size: 1.8em;
         -webkit-transition: all .3s;
@@ -591,4 +595,10 @@ ul.social-buttons li a:active {
 /* Messages */
 .message .intro-heading{
     margin-bottom: 250px;
+}
+
+/* Legal */
+.legal p,
+.legal li {
+    text-align: justify;
 }

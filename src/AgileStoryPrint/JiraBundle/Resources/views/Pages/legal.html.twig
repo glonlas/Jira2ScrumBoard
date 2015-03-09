@@ -1,0 +1,21 @@
+{% extends 'AgileStoryPrintJiraBundle::base.html.twig' %}
+
+{% block content %}
+	{% include 'AgileStoryPrintJiraBundle::navigation.html.twig' with {'links': 'absolute', 'style': 'plain'} %}
+
+	<section class="legal odd">
+	    <div class="container">
+	        <div class="row">
+	            <div class="col-lg-12 text-center">
+	                <h2 class="section-heading">{{ title|trans({}, 'legal') }}</h2>
+	            </div>
+	        </div>
+
+	        <div class="row">
+	            <div class="col-md-6 col-md-offset-3">
+	                <div>{{ message|trans({}, 'legal')|raw }}</div>
+	            </div>
+	        </div>
+	    </div>
+	</section>
+{% endblock %}

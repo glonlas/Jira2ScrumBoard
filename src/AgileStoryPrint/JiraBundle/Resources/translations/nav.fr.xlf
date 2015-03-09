@@ -56,7 +56,7 @@
             <!-- Footer -->
             <trans-unit id="nav.privacy.link">
                 <source>nav.privacy.link</source>
-                <target>Privacy Policy</target>
+                <target>Usage des cookies</target>
             </trans-unit>
             <trans-unit id="nav.privacy.alt">
                 <source>nav.privacy.alt</source>
@@ -65,7 +65,7 @@
 
             <trans-unit id="nav.terms.link">
                 <source>nav.terms.link</source>
-                <target>Terms of Use</target>
+                <target>Conditions Générales</target>
             </trans-unit>
             <trans-unit id="nav.terms.alt">
                 <source>nav.terms.alt</source>
