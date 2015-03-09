@@ -16,14 +16,18 @@
             <trans-unit id="index.lead">
                 <source>index.lead</source>
                 <target><![CDATA[
-                    L'outil le plus simple pour <strong>imprimer</strong> vos <strong>Story Jira</strong>
+                    L'outil le plus simple pour <strong>imprimer</strong> vos 
+                    <strong>Stories Jira</strong>
                     ]]>
                 </target>
             </trans-unit>
             <trans-unit id="index.tagline">
                 <source>index.tagline</source>
                 <target><![CDATA[
-                    Cet outil transforme les fichiers contenants vos stories Jira <em>(XML or Excel)</em> en de belle Stories Cards. Sélectionnez votre fichier ci-dessous et cliquez sur "Transformer" pour avoir obtenir le fichier imprimable.
+                    Cet outil convertit les fichiers contenants vos stories Jira 
+                    <em>(XML or Excel)</em> en de belle Stories Cards. 
+                    Sélectionnez votre fichier ci-dessous et cliquez sur 
+                    "Convertir" pour obtenir le fichier imprimable.
                     ]]>
                 </target>
             </trans-unit>
@@ -42,10 +46,84 @@
 
             <trans-unit id="form.submit.button">
                 <source>form.submit.button</source>
-                <target>Transformer</target>
+                <target>Convertir</target>
             </trans-unit>
 
+            <!-- Services -->
+            <trans-unit id="services.title">
+                <source>services.title</source>
+                <target>Comment cela fonctionne ?</target>
+            </trans-unit>
 
+            <trans-unit id="services.subtitle">
+                <source>services.subtitle</source>
+                <target>Jira2ScrumBoard est très simple d'utilisation. Créé 
+                    pour vous faire gagner du temps, il vous permet d'imprimer 
+                    vos Story Jira en Story card lisible et utilisable sur 
+                    votre tableau Scrum.</target>
+            </trans-unit>
+
+            <trans-unit id="services.option1.title">
+                <source>services.option1.title</source>
+                <target>1. Exportez vos stories Jira</target>
+            </trans-unit>
+            <trans-unit id="services.option1.text">
+                <source>services.option1.text</source>
+                <target>
+                    <![CDATA[
+                    Filtrez les Stories Jira que vous souhaitez imprimer. Par
+                    exemple pour obtenir uniquement les stories du sprint #1,
+                    utilisez l'expression de recherche : "sprint=1".
+                    Ensuite exportez les stories au format XML ou Excel
+                    (All fields).
+                    ]]>
+                </target>
+            </trans-unit>
+
+            <trans-unit id="services.option2.title">
+                <source>services.option2.title</source>
+                <target>2. Envoyez le fichier</target>
+            </trans-unit>
+            <trans-unit id="services.option2.text">
+                <source>services.option2.text</source>
+                <target>
+                    <![CDATA[
+                    Envoyez votre fichier depuis le formulaire ci-dessus et
+                    cliquez sur le bouton "Transformer". Seuls les fichiers
+                    au format XML ou Excel ayant un poids inférieur à 1 Mo sont
+                    supportés.
+                    ]]>
+                </target>
+            </trans-unit>
+
+            <trans-unit id="services.option3.title">
+                <source>services.option3.title</source>
+                <target>3. Imprimez vos Stories Cards</target>
+            </trans-unit>
+            <trans-unit id="services.option3.text">
+                <source>services.option3.text</source>
+                <target>
+                    <![CDATA[
+                    Une fois le traitement terminé, vous serez redirigé vers
+                    une nouvelle page. Les Index cards sont cachées dans cette
+                    page. Pour les obtenir imprimez la page, elles apparaîtront.
+                    ]]>
+                </target>
+            </trans-unit>
+
+            <!-- FAQ -->
+            <trans-unit id="faq.title">
+                <source>faq.title</source>
+                <target>Foire aux questions</target>
+            </trans-unit>
+
+            <trans-unit id="faq.subtitle">
+                <source>faq.subtitle</source>
+                <target>
+                    N'hésitez pas à me contacter si vous ne trouvez pas la 
+                    réponse à votre question.
+                </target>
+            </trans-unit>
             <!-- Author -->
             <trans-unit id="author.title">
                 <source>author.title</source>
@@ -72,45 +150,17 @@
 
             <trans-unit id="author.position">
                 <source>author.position</source>
-                <target>Chef de projet Web</target>
+                <target>Chef de projet Web / Coach Agile</target>
             </trans-unit>
 
-            <!-- Services -->
-            <trans-unit id="services.title">
-                <source>services.title</source>
-                <target>Comment cela fonctionne ?</target>
+            <trans-unit id="team_member.name">
+                <source>team_member.name</source>
+                <target>Vous ?</target>
             </trans-unit>
 
-            <trans-unit id="services.subtitle">
-                <source>services.subtitle</source>
-                <target>Jira2ScrumBoard est très simple d'utilisation. Créé pour vous faire gagner du temps, il vous permet d'imprimer vos Story Jira en Story card lisible et utilisable sur votre tableau Scrum.</target>
-            </trans-unit>
-
-            <trans-unit id="services.option1.title">
-                <source>services.option1.title</source>
-                <target>1. Exportez vos stories Jira</target>
-            </trans-unit>
-            <trans-unit id="services.option1.text">
-                <source>services.option1.text</source>
-                <target>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</target>
-            </trans-unit>
-
-            <trans-unit id="services.option2.title">
-                <source>services.option2.title</source>
-                <target>2. Envoyez le fichier</target>
-            </trans-unit>
-            <trans-unit id="services.option2.text">
-                <source>services.option2.text</source>
-                <target>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</target>
-            </trans-unit>
-
-            <trans-unit id="services.option3.title">
-                <source>services.option3.title</source>
-                <target>3. Imprimez vos Stories Cards</target>
-            </trans-unit>
-            <trans-unit id="services.option3.text">
-                <source>services.option3.text</source>
-                <target>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</target>
+            <trans-unit id="team_member.position">
+                <source>team_member.position</source>
+                <target>Contributeur Github</target>
             </trans-unit>
 
             <!-- Contact -->
@@ -121,7 +171,8 @@
 
             <trans-unit id="contact.subtitle">
                 <source>contact.subtitle</source>
-                <target>Une idée, un bug ou tout simplement un message à faire passer ? N'hésitez pas, laissez-moi un message.</target>
+                <target>Une idée, un bug ou tout simplement un message à faire 
+                    passer ? N'hésitez pas, laissez-moi un message.</target>
             </trans-unit>
 
             <trans-unit id="contact.name.placeholder">
@@ -163,7 +214,9 @@
             <trans-unit id="complete.text">
                 <source>complete.text</source>
                 <target><![CDATA[
-                    Nous venons de convertir votre fichier en Story cards. <a href="javascript:window.print();">Imprimez cette page</a> pour obtenir vos Story cards.
+                    Nous venons de convertir votre fichier en Index cards. 
+                    <a href="javascript:window.print();">Imprimez cette page</a>
+                    pour les obtenir.
                     ]]>
                 </target>
             </trans-unit>
@@ -176,7 +229,8 @@
             <trans-unit id="wrongFile.text">
                 <source>wrongFile.text</source>
                 <target><![CDATA[
-                    Le fichier que vous avez envoyé n'est pas un fichier Jira compatible. Veuillez recommencer avec un autre fichier. <br />
+                    Le fichier que vous avez envoyé n'est pas un fichier Jira 
+                    compatible. Veuillez recommencer avec un autre fichier. <br />
                     Cet outil supporte les exports XML et Excel.
                     ]]></target>
             </trans-unit>
@@ -216,7 +270,8 @@
             <trans-unit id="contact.msg.text">
                 <source>contact.msg.text</source>
                 <target><![CDATA[
-                    Merci d'avoir pris le temps d'envoyer votre message. Je vous répondrai dans les plus brefs délais.
+                    Merci d'avoir pris le temps d'envoyer votre message. Je 
+                    vous répondrai dans les plus brefs délais.
                     ]]></target>
             </trans-unit>
         </body>

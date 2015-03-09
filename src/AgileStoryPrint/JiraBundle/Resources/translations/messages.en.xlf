@@ -27,10 +27,9 @@
             <trans-unit id="index.tagline">
                 <source>index.tagline</source>
                 <target><![CDATA[
-                    This tools will transform your Jira stories export 
-                    <em>(XML or Excel)</em> to beautiful Story cards. Upload 
-                    your file below and click on "Convert" to get your stories 
-                    in a printable file.
+                    Upload your Jira export file <em>(XML or XLS)</em> on the 
+                    form below and click on "Convert" to get your stories in 
+                    beautiful Story cards
                     ]]>
                 </target>
             </trans-unit>
@@ -52,6 +51,77 @@
                 <target>Convert</target>
             </trans-unit>
 
+            <!-- Services -->
+            <trans-unit id="services.title">
+                <source>services.title</source>
+                <target>How it works</target>
+            </trans-unit>
+
+            <trans-unit id="services.subtitle">
+                <source>services.subtitle</source>
+                <target>
+                    Jira2ScrumBoard is really simple to use. Its goal is to
+                    save your time when you want print your Jira Stories.
+                </target>
+            </trans-unit>
+
+            <trans-unit id="services.option1.title">
+                <source>services.option1.title</source>
+                <target>1. Export your Jira stories</target>
+            </trans-unit>
+            <trans-unit id="services.option1.text">
+                <source>services.option1.text</source>
+                <target>
+                    <![CDATA[
+                    Filter in Jira stories you want to print. For example:
+                    do a search as "sprint=1" to get all stories from your
+                    sprint #1. Then, export them to XML or Excel (All fields).
+                    ]]>
+                </target>
+            </trans-unit>
+
+            <trans-unit id="services.option2.title">
+                <source>services.option2.title</source>
+                <target>2. Upload your file here</target>
+            </trans-unit>
+            <trans-unit id="services.option2.text">
+                <source>services.option2.text</source>
+                <target>
+                    <![CDATA[
+                    Upload your exported file into the form upper and
+                    click on the button "Convert". Only XML or Excel file with 
+                    a size below 1MB are supported.
+                    ]]>
+                </target>
+            </trans-unit>
+
+            <trans-unit id="services.option3.title">
+                <source>services.option3.title</source>
+                <target>3. Print your Index cards</target>
+            </trans-unit>
+            <trans-unit id="services.option3.text">
+                <source>services.option3.text</source>
+                <target>
+                    <![CDATA[
+                    When the processing will be done, you will be redirected to 
+                    a congratulation page. Index cards are hidden on this page, 
+                    so print this page and you will see your Index cards.
+                    ]]>
+                </target>
+            </trans-unit>
+
+            <!-- FAQ -->
+            <trans-unit id="faq.title">
+                <source>faq.title</source>
+                <target>Frequently Asked Questions</target>
+            </trans-unit>
+
+            <trans-unit id="faq.subtitle">
+                <source>faq.subtitle</source>
+                <target>
+                    Feel free to contact me if you didn't find your solution.
+                </target>
+            </trans-unit>
 
             <!-- Author -->
             <trans-unit id="author.title">
@@ -62,11 +132,11 @@
             <trans-unit id="author.subtitle">
                 <source>author.subtitle</source>
                 <target><![CDATA[
-                    This is a totally free project, not attached to Atlassian
+                    This project is a totally free and not attached to Atlassian
                     and Jira brands.<br />You can find the source code in the 
                     <a href="https://github.com/glonlas/AgileStoryPrint">Github 
-                    repot</a>. Feel free to participate to this project: send me 
-                    your Pull request or fork it.
+                    repot</a>. Feel free to participate to this project by 
+                    sending me your Pull request or fork it.
                     ]]>
                 </target>
             </trans-unit>
@@ -78,7 +148,7 @@
 
             <trans-unit id="author.position">
                 <source>author.position</source>
-                <target>Product owner</target>
+                <target>Product owner / Agile coach</target>
             </trans-unit>
 
             <trans-unit id="team_member.name">
@@ -91,53 +161,6 @@
                 <target>Github Contributor</target>
             </trans-unit>
 
-            <!-- Services -->
-            <trans-unit id="services.title">
-                <source>services.title</source>
-                <target>How it works</target>
-            </trans-unit>
-
-            <trans-unit id="services.subtitle">
-                <source>services.subtitle</source>
-                <target>
-                    Jira2ScrumBoard is really simple to use. Made to help 
-                    save your time when you want to print your Jira Scrum 
-                    stories.</target>
-            </trans-unit>
-
-            <trans-unit id="services.option1.title">
-                <source>services.option1.title</source>
-                <target>Export your Jira stories</target>
-            </trans-unit>
-            <trans-unit id="services.option1.text">
-                <source>services.option1.text</source>
-                <target>Lorem ipsum dolor sit amet, consectetur adipisicing 
-                    elit. Minima maxime quam architecto quo inventore harum ex 
-                    magni, dicta impedit.</target>
-            </trans-unit>
-
-            <trans-unit id="services.option2.title">
-                <source>services.option2.title</source>
-                <target>Upload your file here</target>
-            </trans-unit>
-            <trans-unit id="services.option2.text">
-                <source>services.option2.text</source>
-                <target>Lorem ipsum dolor sit amet, consectetur adipisicing 
-                    elit. Minima maxime quam architecto quo inventore harum ex 
-                    magni, dicta impedit.</target>
-            </trans-unit>
-
-            <trans-unit id="services.option3.title">
-                <source>services.option3.title</source>
-                <target>Print your Index cards</target>
-            </trans-unit>
-            <trans-unit id="services.option3.text">
-                <source>services.option3.text</source>
-                <target>Lorem ipsum dolor sit amet, consectetur adipisicing 
-                    elit. Minima maxime quam architecto quo inventore harum ex 
-                    magni, dicta impedit.</target>
-            </trans-unit>
-
             <!-- Contact -->
             <trans-unit id="contact.title">
                 <source>contact.title</source>
@@ -147,8 +170,8 @@
             <trans-unit id="contact.subtitle">
                 <source>contact.subtitle</source>
                 <target>
-                    A new feature, a bug or something to tell me. Please 
-                    send me a message.
+                    You want a new feature, you found a bug or something to 
+                    tell me. Please send me a message.
                 </target>
             </trans-unit>
 
@@ -193,7 +216,7 @@
                     Your file has been processed. 
                     <a href="javascript:window.print();">Print this page</a> to 
                     get your Index cards. <br/><br/> <strong>Want more than one 
-                    card per page ?</strong> <br/>Set it up directly in your 
+                    card per page?</strong> <br/>Set it up directly in your 
                     printer settings before printing yours cards. <br/> I 
                     suggest you to print 4 cards per pages.
                     ]]>
@@ -208,7 +231,7 @@
             <trans-unit id="emptyStory.text">
                 <source>emptyStory.text</source>
                 <target><![CDATA[
-                    Sorry we didn't found any stories in your file. Please try 
+                    Sorry we didn't find any stories in your file. Please try 
                     with another file.
                     ]]></target>
             </trans-unit>

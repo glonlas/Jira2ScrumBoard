@@ -26,6 +26,15 @@
                 <target></target>
             </trans-unit>
 
+            <trans-unit id="nav.faq.link">
+                <source>nav.faq.link</source>
+                <target>FAQ</target>
+            </trans-unit>
+            <trans-unit id="nav.faq.alt">
+                <source>nav.faq.alt</source>
+                <target></target>
+            </trans-unit>
+
             <trans-unit id="nav.author.link">
                 <source>nav.author.link</source>
                 <target>Who's behind</target>
