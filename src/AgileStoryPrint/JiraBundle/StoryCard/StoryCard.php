@@ -74,8 +74,13 @@ class StoryCard
         }
         else
         {
+            // Delete the temporary file
+            unlink($file->getRealPath());
             throw new \Symfony\Component\HttpFoundation\File\Exception\FileException();
         }
+
+        // Delete the temporary file
+        unlink($file->getRealPath());
 
         if(count($this->stories->getStories()) > 0)
         {
