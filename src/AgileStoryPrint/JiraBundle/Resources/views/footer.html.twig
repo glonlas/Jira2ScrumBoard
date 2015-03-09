@@ -19,15 +19,34 @@
                 </ul>
             </div>
             <div class="col-md-4">
-                <ul class="list-inline quicklinks">
+                <ul class="list-inline quicklinks lead">
                     <li>
-                        <a href="{{ path('_index') }}" alt="{{ 'nav.privacy.alt'|trans({},'nav') }}">{{ 'nav.privacy.link'|trans({},'nav') }}</a>
+                        <a href="{{ path('_index', { 'locale': 'fr' }) }}" alt="Passez en Français">
+                            <span class="flag-icon flag-icon-fr"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ path('_index', { 'locale': 'en' }) }}" alt="Switch to English">
+                            <span class="flag-icon flag-icon-us"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!--
+            <div class="col-md-4">
+                <ul class="list-inline quicklinks lead">
+                    <li>
+                        <a href="{{ path('_index') }}" alt="{{ 'nav.privacy.alt'|trans({},'nav') }}">
+                            <span class="flag-icon flag-icon-fr"></span>
+                            {{ 'nav.privacy.link'|trans({},'nav') }}
+                        </a>
                     </li>
                     <li>
                         <a href="{{ path('_index') }}" alt="{{ 'nav.terms.alt'|trans({},'nav') }}">{{ 'nav.terms.link'|trans({},'nav') }}</a>
                     </li>
                 </ul>
             </div>
+            -->
         </div>
     </div>
 </footer>
