@@ -88,7 +88,7 @@
                 <source>services.option1.text</source>
                 <target>
                     <![CDATA[
-                    Filter in Jira stories you want to print. For example:
+                    Filter in Jira, stories you want to print. For example:
                     do a search as "sprint=1" to get all stories from your
                     sprint #1. Then, export them to XML or Excel (All fields).
                     ]]>
