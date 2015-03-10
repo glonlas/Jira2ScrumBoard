@@ -4,24 +4,25 @@ namespace AgileStoryPrint\JiraBundle\Mailer;
 
 class Email
 {
-    private $sender;
-    private $recipient;
-    private $subject;
-    private $template;
+    private $sender = null;
+    private $recipient = null;
+    private $replyTo = null;
+    private $subject = null;
+    private $template = null;
     private $locale = 'en';
-    private $params;
+    private $params = null;
 
     /**
      * Set email sender
      *
-     * @param string|array $sender Can be a string from the email address of the 
+     * @param string|array $email Can be a string from the email address of the 
      * sender (ex : you@domain.com) or an array for Email and Name to display
      * (ex array('you@domain.com' => 'Jean Paul LEGRAND') )
      * @return void
      */
-    public function setSender($sender)
+    public function setSender($email)
     {
-        $this->sender = $sender;
+        $this->sender = $email;
     }
 
     /**
@@ -37,14 +38,14 @@ class Email
     /**
      * Set email recipient
      *
-     * @param string|array $to Can be a string from the email address of the 
+     * @param string|array $email Can be a string from the email address of the 
      * recipient (ex : you@domain.com) or an array for Email and Name to display
      * (ex array('you@domain.com' => 'Jean LEGRAND') )
      * @return void
      */
-    public function setRecipient($recipient)
+    public function setRecipient($email)
     {
-        $this->recipient = $recipient;
+        $this->recipient = $email;
     }
 
     /**
@@ -55,6 +56,29 @@ class Email
     public function getRecipient()
     {
         return $this->recipient;
+    }
+
+    /**
+     * Set Reply-to email
+     *
+     * @param string|array $email Can be a string from the email address 
+     * (ex : you@domain.com) or an array for Email and Name to display
+     * (ex array('you@domain.com' => 'Jean LEGRAND') )
+     * @return void
+     */
+    public function setReplyTo($email)
+    {
+        $this->replyTo = $email;
+    }
+
+    /**
+     * Get the Reply-To email address (and name if specified) 
+     *
+     * @return string $replyTo
+     */
+    public function getReplyTo()
+    {
+        return $this->replyTo;
     }
 
     /**

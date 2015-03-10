@@ -14,6 +14,8 @@ parameters:
     mailer_user:            ~
     mailer_password:        ~
     mailer_admin_address:   ~
+    mailer_noreply_address: ~
+    mailer_noreply_name:    ~
 
     locale:                 en
 

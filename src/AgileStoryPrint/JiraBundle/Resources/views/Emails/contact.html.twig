@@ -1,13 +1,13 @@
 {% block subject %} 
-	{{ 'email.contact' | trans({'%name%': name}, 'emails', locale) }}
+	{{ 'contact.subject' | trans({'%name%': name}, 'emails', locale) }}
 {% endblock %}
 
 {% block body_html %}
 	<div class="header">
 		<p>
-			<strong>{{ 'email.name' | trans({}, 'emails', locale) }}</strong> {{ name }} (<a href="mailto:{{ email }}">{{ email }}</a>)
-			<strong>{{ 'email.phone' | trans({}, 'emails', locale) }}</strong> {{ phone }}
-			<strong>{{ 'email.ip' | trans({}, 'emails', locale) }}</strong> {{ ip }}
+			<strong>{{ 'contact.name' | trans({}, 'emails', locale) }}</strong> {{ name }} (<a href="mailto:{{ email }}">{{ email }}</a>) <br />
+			<strong>{{ 'contact.phone' | trans({}, 'emails', locale) }}</strong> {{ phone }}<br />
+			<strong>{{ 'contact.ip' | trans({}, 'emails', locale) }}</strong> {{ ip }}<br />
 		</p>
 	</div>
 	<div class="message">
@@ -16,9 +16,9 @@
 {% endblock %}
 
 {% block body_text %}
-	{{ 'email.name' | trans({}, 'emails', locale) }} {{ name }} ({{ email }})
-	{{ 'email.phone' | trans({}, 'emails', locale) }} {{ phone }}
-	{{ 'email.ip' | trans({}, 'emails', locale) }} {{ ip }}
+	{{ 'contact.name' | trans({}, 'emails', locale) }} {{ name }} ({{ email }})
+	{{ 'contact.phone' | trans({}, 'emails', locale) }} {{ phone }}
+	{{ 'contact.ip' | trans({}, 'emails', locale) }} {{ ip }}
 
 	{{ message|raw }}
 {% endblock %}

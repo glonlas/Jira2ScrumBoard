@@ -7,4 +7,4 @@ services:
 services:
     asp.mailer:
         class:        AgileStoryPrint\JiraBundle\Mailer\Mailer
-        arguments:    [@mailer, @twig, '%mailer_admin_address%']
+        arguments:    [@mailer, @twig, '%mailer_admin_address%', '%mailer_noreply_address%', '%mailer_noreply_name%']

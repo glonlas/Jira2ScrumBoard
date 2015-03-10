@@ -2,29 +2,30 @@
 
 namespace AgileStoryPrint\JiraBundle\Mailer;
 
-use \Symfony\Component\DependencyInjection\ContainerAware;
 use Twig_Environment as Environment;
 use AgileStoryPrint\JiraBundle\Mailer\Email as Email;
 
-class Mailer extends ContainerAware
+class Mailer
 {
     protected $mailer;
     protected $twig;
     protected $adminEmail;
+    protected $noReplyEmail;
 
-    public function __construct(\Swift_Mailer $mailer, Environment $twig, $adminEmail)
+    public function __construct(\Swift_Mailer $mailer, Environment $twig, $adminEmail, $noReplyEmail, $noReplyName)
     {
         $this->mailer       = $mailer;
         $this->twig         = $twig;
         $this->adminEmail   = $adminEmail;
+        $this->noReplyEmail = array($noReplyEmail => $noReplyName);
     }
 
     public function sendEmail(Email $email)
     {
-        // Get email content (Subject, HTML body, Text body)
+        // Get body content (Subject, HTML body, Text body)
         $content = $this->getContent($email);
 
-        // Préparation et envoi du message
+        // Email setup
         $message = \Swift_Message::newInstance()
             ->setFrom($email->getSender())
             ->setTo($email->getRecipient())
@@ -32,6 +33,12 @@ class Mailer extends ContainerAware
             ->setBody($content['bodyText'], 'text/plain')
             ->addPart($content['bodyHtml'], 'text/html')
         ;
+
+        if(!is_null($email->getReplyTo()))
+        {
+            $message->setReplyTo($email->getReplyTo());
+        }
+
         return $this->mailer->send($message);
     }
 
@@ -53,12 +60,13 @@ class Mailer extends ContainerAware
     public function sendContactMessage($formData)
     {
         $email = new Email();
-        $email->setSender(
+        $email->setSender($this->noReplyEmail);
+        $email->setRecipient($this->adminEmail);
+        $email->setReplyTo(
             array(
                 $formData['email'] => $formData['name']
             )
         );
-        $email->setRecipient($this->adminEmail);
         $email->setSubject('new.message');
         $email->setTemplate('AgileStoryPrintJiraBundle:Emails:contact.html.twig');
         $email->setParams(

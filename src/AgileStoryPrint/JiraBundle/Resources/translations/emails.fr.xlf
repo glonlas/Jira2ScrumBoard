@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="file.ext">
+        <body>
+            <!-- Contact -->
+            <trans-unit id="contact.subject">
+                <source>contact.subject</source>
+                <target>Jira2ScrumBoard: Message de %name%</target>
+            </trans-unit>
+            <trans-unit id="contact.name">
+                <source>contact.name</source>
+                <target>Nom :</target>
+            </trans-unit>
+            <trans-unit id="contact.phone">
+                <source>contact.phone</source>
+                <target>Téléphone :</target>
+            </trans-unit>
+            <trans-unit id="contact.ip">
+                <source>contact.ip</source>
+                <target>IP :</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
