@@ -161,10 +161,6 @@ class StoryCard
     private function importFromXLS(UploadedFile $uploadedFile)
     {
         // @todo: try to make excel file work
-        //throw new \Exception('Not implemented');
-
-        $file = $uploadedFile->openFile();
-
-        //var_dump($sheetData);
+        throw new \Exception('Not implemented');
     }
 }
