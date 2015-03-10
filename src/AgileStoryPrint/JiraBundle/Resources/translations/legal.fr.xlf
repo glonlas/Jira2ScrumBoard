@@ -11,29 +11,76 @@
                 <source>cookie.html</source>
                 <target>
                     <![CDATA[
-                    <p>This page discusses how cookies are used by this site. If you continue to use this site, you are consenting to our use of cookies.</p>
+                    <p>
+                        La page explique comment les cookies sont utilis&eacute;s par ce site. Si vous
+                        continuez &agrave; utiliser ce site, vous consentez &agrave; utiliser les
+                        cookies.
+                    </p>
 
-                    <h3>What Cookies Are</h3>
-                    <p>Cookies are small files stored on your computer by your web browser (such as Internet Explorer or Firefox) at the request of a site you're viewing. This allows the site you're viewing to remember things about you, such as your preferences and history or to keep you logged in.</p>
+                    <h3>Que sont les cookies ?</h3>
+                    <p>
+                        Les cookies sont de petits fichiers stock&eacute;s sur votre ordinateur par votre
+                        navigateur web (comme Internet Explorer ou Firefox) &agrave; la demande d'un site que
+                        vous consultez. Cela permet au site que vous consultez &agrave; se souvenir des
+                        choses sur vous, comme vos pr&eacute;f&eacute;rences, de l'histoire ou du maintien de
+                        votre identification.
+                    </p>
 
-                    <p>Cookies may be stored on your computer for a short time (such as only while your browser is open) or for an extended period of time, even years. Cookies not set by this site will not be accessible to us.</p>
+                    <p>
+                        Les cookies peuvent &ecirc;tre stock&eacute;s sur votre ordinateur pendant une
+                        courte p&eacute;riode (par exemple, que si votre navigateur est ouvert) ou pour une
+                        p&eacute;riode de temps prolong&eacute;e, voire des ann&eacute;es. Les cookies
+                        cr&eacute;&eacute;es par ce site ne seront pas accessibles pour nous.
+                    </p>
 
-                    <h3 >Our Cookie Usage</h3>
-                    <p>This site uses cookies for numerous things, including:</p>
+                    <h3>Notre utilisation des cookies</h3>
+                    <p>Ce site utilise des cookies pour de nombreuses choses, y compris:</p>
                     <ul>
-                        <li>Analytics. This allows us to determine how people are using the site and improve it.</li>
-                        <li>Advertising cookies (possibly third-party). If this site displays advertising, cookies may be set by the advertisers to determine who has viewed an ad or similar things. These cookies may be set by third parties, in which case this site has no ability to read or write these cookies.</li>
-                        <li>Other third-party cookies for things like Facebook or Twitter sharing. These cookies will generally be set by the third-party independently, so this site will have no ability to access them.</li>
+                        <li>
+                            Google Analytics. Cela nous permet de d&eacute;terminer comment les gens
+                        utilisent le site et l'am&eacute;liorer.
+                        </li>
+                        <li>
+                            Cookies publicitaires (&eacute;ventuellement la troisi&egrave;me partie). Si ce
+                        site affiche des publicit&eacute;s, les cookies peuvent &ecirc;tre fix&eacute;s par
+                        les annonceurs afin de d&eacute;terminer qui a vu une annonce ou des choses
+                        semblables. Ces cookies peuvent &ecirc;tre fix&eacute;s par des tiers, dans ce cas,
+                        ce site n'a pas la capacit&eacute; de lire ou de modifier ces cookies.
+                        </li>
+                        <li>
+                            Autres cookies pour des choses comme Facebook ou Twitter. Le partage de ces
+                        cookies sera g&eacute;n&eacute;ralement fix&eacute; par les tiers,
+                        ind&eacute;pendamment, de sorte que ce site n'aura pas la capacit&eacute; d'y
+                        acc&eacute;der.
+                        </li>
                     </ul>
 
-                    <h3>Removing/Disabling Cookies</h3>
-                    <p>Managing your cookies and cookie preferences must be done from within your browser's options/preferences. Here is a list of guides on how to do this for popular browser software:</p>
+                    <h3>Retrait / d&eacute;sactivation des cookies</h3>
+                    <p>
+                        Le contr&ocirc;le des cookies et leur pr&eacute;f&eacute;rences doivent &ecirc;tre
+                        manipul&eacute;s au sein de votre navigateur. Voici une liste de guides sur la
+                        fa&ccedil;on de faire cela pour un logiciel de navigation populaires:
+                    </p>
                     <ul>
-                        <li><a href="http://windows.microsoft.com/en-US/internet-explorer/delete-manage-cookies">Internet Explorer</a></li>
-                        <li><a href="http://support.mozilla.org/kb/cookies-information-websites-store-on-your-computer">Firefox</a></li>
-                        <li><a href="https://support.google.com/chrome/answer/95647?hl=en">Chrome</a></li>
-                        <li><a href="http://support.apple.com/kb/PH17191">Safari</a></li>
-                        <li><a href="http://www.opera.com/help/tutorials/security/privacy/">Opera</a></li>
+                        <li>
+                            <a href="http://windows.microsoft.com/en-US/internet-explorer/delete-manage-cookies">Internet Explorer</a>
+                        </li>
+
+                        <li>
+                            <a href="http://support.mozilla.org/kb/cookies-information-websites-store-on-your-computer">Firefox</a>
+                        </li>
+
+                        <li>
+                            <a href="https://support.google.com/chrome/answer/95647?hl=en">Chrome</a>
+                        </li>
+
+                        <li>
+                            <a href="http://support.apple.com/kb/PH17191">Safari</a>
+                        </li>
+
+                        <li>
+                            <a href="http://www.opera.com/help/tutorials/security/privacy/">Opera</a>
+                        </li>
                     </ul>
                      ]]>
                 </target>

@@ -217,7 +217,7 @@
                     <a href="javascript:window.print();">Print this page</a> to 
                     get your Index cards. <br/><br/> <strong>Want more than one 
                     card per page?</strong> <br/>Set it up directly in your 
-                    printer settings before printing yours cards. <br/> I 
+                    printer settings before printing yours cards. <br/> We 
                     suggest you to print 4 cards per pages.
                     ]]>
                 </target>
@@ -284,7 +284,7 @@
             <trans-unit id="contact.msg.text">
                 <source>contact.msg.text</source>
                 <target><![CDATA[
-                    Thank you for having took the time to send a message. I 
+                    Thank you for having took the time to send a message. We 
                     will reply as soon as possible.
                     ]]></target>
             </trans-unit>

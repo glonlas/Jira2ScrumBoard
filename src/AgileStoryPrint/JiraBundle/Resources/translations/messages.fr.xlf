@@ -270,8 +270,8 @@
             <trans-unit id="contact.msg.text">
                 <source>contact.msg.text</source>
                 <target><![CDATA[
-                    Merci d'avoir pris le temps d'envoyer votre message. Je 
-                    vous répondrai dans les plus brefs délais.
+                    Merci d'avoir pris le temps d'envoyer votre message. Nous 
+                    vous répondrons dans les plus brefs délais.
                     ]]></target>
             </trans-unit>
         </body>
