@@ -27,7 +27,7 @@
                     Cet outil convertit les fichiers contenants vos stories Jira 
                     <em>(XML or Excel)</em> en de belle Stories Cards. 
                     Sélectionnez votre fichier ci-dessous et cliquez sur 
-                    "Convertir" pour obtenir le fichier imprimable.
+                    "Convertir" pour les imprimer.
                     ]]>
                 </target>
             </trans-unit>
@@ -105,7 +105,7 @@
                 <target>
                     <![CDATA[
                     Une fois le traitement terminé, vous serez redirigé vers
-                    une nouvelle page. Les Index cards sont cachées dans cette
+                    une nouvelle page. Les Stories sont cachées dans cette
                     page. Pour les obtenir imprimez la page, elles apparaîtront.
                     ]]>
                 </target>
@@ -214,9 +214,11 @@
             <trans-unit id="complete.text">
                 <source>complete.text</source>
                 <target><![CDATA[
-                    Nous venons de convertir votre fichier en Index cards. 
-                    <a href="javascript:window.print();">Imprimez cette page</a>
-                    pour les obtenir.
+                    <a href="javascript:window.print();">Imprimez vos Stories</a>
+                    <br/><br/> <strong>Imprimer plus d'une story par page ?</strong>
+                    <br/>Pensez à configurer votre imprimante pour imprimer 2 ou
+                    4 stories par page. 
+                    <br/>Nous vous recommandons 4 stories par page.
                     ]]>
                 </target>
             </trans-unit>

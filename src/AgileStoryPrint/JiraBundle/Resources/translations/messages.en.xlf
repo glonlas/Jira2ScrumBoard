@@ -213,12 +213,10 @@
             <trans-unit id="complete.text">
                 <source>complete.text</source>
                 <target><![CDATA[
-                    Your file has been processed. 
-                    <a href="javascript:window.print();">Print this page</a> to 
-                    get your Index cards. <br/><br/> <strong>Want more than one 
-                    card per page?</strong> <br/>Set it up directly in your 
-                    printer settings before printing yours cards. <br/> We 
-                    suggest you to print 4 cards per pages.
+                    <a href="javascript:window.print();">Print your stories cards</a>
+                    <br/><br/> <strong>Want more than one card per page?</strong>
+                    <br/>Setup your printer before printing yours cards. 
+                    <br/> We suggest you to print 4 cards per pages.
                     ]]>
                 </target>
             </trans-unit>
