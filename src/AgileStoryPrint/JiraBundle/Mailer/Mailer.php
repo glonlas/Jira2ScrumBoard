@@ -12,6 +12,16 @@ class Mailer
     protected $adminEmail;
     protected $noReplyEmail;
 
+    /**
+     * Constructor
+     *
+     * @param Swift_Mailer $mailer 
+     * @param Environment $twig
+     * @param string $adminEmail
+     * @param string $noReplyEmail
+     * @param string $noReplyName
+     * @return void
+     */
     public function __construct(\Swift_Mailer $mailer, Environment $twig, $adminEmail, $noReplyEmail, $noReplyName)
     {
         $this->mailer       = $mailer;
@@ -20,6 +30,14 @@ class Mailer
         $this->noReplyEmail = array($noReplyEmail => $noReplyName);
     }
 
+    /**
+     * Send an email from a formatted Email object
+     * This method will allow you to use Twig template to design HTML and Plain
+     * text. Subject, HTML and Text will be translated
+     *
+     * @param Email $email
+     * @return int how many emails sent
+     */
     public function sendEmail(Email $email)
     {
         // Get body content (Subject, HTML body, Text body)
@@ -42,6 +60,14 @@ class Mailer
         return $this->mailer->send($message);
     }
 
+    /**
+     * Return an array with Email HTML, Plain text and subject from a Twig 
+     * template. If you set a lang, all text will be translate following this
+     * lang.
+     *
+     * @param Email $email
+     * @return array('subject', 'bodyHtml', bodyText)
+     */
     protected function getContent(Email $email)
     {
         $params = $email->getParams();
@@ -57,6 +83,13 @@ class Mailer
     }
 
     /* Specifics email */
+
+    /**
+     * Method to send the email from the Contact form
+     *
+     * @param array $formData Data from the contact form
+     * @return int how many emails sent
+     */
     public function sendContactMessage($formData)
     {
         $email = new Email();

@@ -14,22 +14,35 @@ class StoryCard
 {
     protected $stories = null;
 
+    /**
+     * Constructor
+     * Init a new Stories object
+     *
+     * @return void
+     */
     function __construct()
     {
         $this->stories = new Stories();
     }
 
     /**
-     * 
+     * Get stories stored in the Stories object
      *
-     * @param UploadedFile $file ....
-     * @return bool ....
+     * @return array Array of Story object
      */
     public function getStories()
     {
         return $this->stories->getStories();
     }
 
+    /**
+     * Import file and find Stories inside
+     * This method will select automatically the best way to find stories
+     * depending the kind of file uploaded
+     *
+     * @param UploadedFile $file XML or XLS file from Jira
+     * @return bool True if stories found, False in the other case
+     */
     public function importFromFile(UploadedFile $file)
     {
         if(
@@ -92,6 +105,13 @@ class StoryCard
         }
     }
 
+    /**
+     * Extract stories from an XML File
+     * Stoies will be store into $this->stories
+     *
+     * @param UploadedFile $file Jira File
+     * @return void
+     */
     private function importFromXML(UploadedFile $uploadedFile)
     {
         // Read the XML file and extract content
@@ -125,6 +145,14 @@ class StoryCard
         }
     }
 
+    /**
+     * Extract stories from an HTML File
+     * The XLS file from Jira is in à HTML format
+     * Stoies will be store into $this->stories
+     *
+     * @param UploadedFile $file Jira File
+     * @return void
+     */
     private function importFromHTML(UploadedFile $uploadedFile)
     {
         try
@@ -158,6 +186,13 @@ class StoryCard
 
     }
 
+    /**
+     * Extract stories from an XLS file
+     * /!\ Not implemented
+     *
+     * @param UploadedFile $file Jira File
+     * @return void
+     */
     private function importFromXLS(UploadedFile $uploadedFile)
     {
         // @todo: try to make excel file work
