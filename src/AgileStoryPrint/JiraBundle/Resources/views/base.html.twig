@@ -24,7 +24,7 @@
         'bundles/agilestoryprintjira/css/bootstrap.min.css' 
         'bundles/agilestoryprintjira/css/main.css'
         'bundles/agilestoryprintjira/css/flags.css'
-        filter='cssrewrite,?yui_js' 
+        filter='cssrewrite,yui_css' 
         output='css/theme.css'
     %}
     <link rel="stylesheet" href="{{ asset_url }}"/>
@@ -59,7 +59,7 @@
         'bundles/agilestoryprintjira/js/cbpAnimatedHeader.js' 
         'bundles/agilestoryprintjira/js/main.js' 
 
-        filter='?yui_js'
+        filter='yui_js'
         output='js/part2.js'
     %}
         <script src="{{ asset_url }}"></script>
