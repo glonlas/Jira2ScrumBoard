@@ -24,7 +24,8 @@
         'bundles/agilestoryprintjira/css/bootstrap.min.css' 
         'bundles/agilestoryprintjira/css/main.css'
         'bundles/agilestoryprintjira/css/flags.css'
-        filter='cssrewrite' 
+        filter='cssrewrite,?yui_js' 
+        output='css/theme.css'
     %}
     <link rel="stylesheet" href="{{ asset_url }}"/>
     {% endstylesheets %}
@@ -42,7 +43,10 @@
 {% block javascripts %}
     {% javascripts 
         'bundles/agilestoryprintjira/js/jquery.js' 
-        'bundles/agilestoryprintjira/js/bootstrap.min.js' 
+        'bundles/agilestoryprintjira/js/bootstrap.min.js'
+
+        filter='yui_js'
+        output='js/part1.js'
     %}
         <script src="{{ asset_url }}"></script>
     {% endjavascripts %}
@@ -54,6 +58,9 @@
         'bundles/agilestoryprintjira/js/classie.js' 
         'bundles/agilestoryprintjira/js/cbpAnimatedHeader.js' 
         'bundles/agilestoryprintjira/js/main.js' 
+
+        filter='?yui_js'
+        output='js/part2.js'
     %}
         <script src="{{ asset_url }}"></script>
     {% endjavascripts %}
