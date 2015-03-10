@@ -2,13 +2,14 @@
 <html>
     <head>
         <meta charset="UTF-8" />
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>{% block title %}Jira2ScrumBoard{% endblock %}</title>
 
+        <!-- Fav icons -->
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}">
         <link rel="shortcut icon" href="{{ asset('favicon.ico') }}">
 
+        <!-- Apple Icons -->
         <link rel="apple-touch-icon" sizes="57x57" href="{{ asset('/fav/a57.png') }}">
         <link rel="apple-touch-icon" sizes="60x60" href="{{ asset('/fav/a60.png') }}">
         <link rel="apple-touch-icon" sizes="72x72" href="{{ asset('/fav/a72.png') }}">
@@ -20,6 +21,14 @@
         <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('/fav/f16.png') }}">
         <link rel="icon" type="image/png" sizes="96x96" href="{{ asset('/fav/f96.png') }}">
         <link rel="icon" type="image/png" sizes="160x160" href="{{ asset('/fav/f160.png') }}">
+
+        <!-- Windows 8 icons -->
+        <meta name="application-name" content="Jira2ScrumBoard"/>
+        <meta name="msapplication-TileColor" content="#177bcf"/>
+        <meta name="msapplication-square70x70logo" content="{{ asset('/tiny.png') }}"/>
+        <meta name="msapplication-square150x150logo" content="{{ asset('/square.png') }}"/>
+        <meta name="msapplication-wide310x150logo" content="{{ asset('/wide.png') }}"/>
+        <meta name="msapplication-square310x310logo" content="{{ asset('/large.png') }}"/>
 
         {% block meta %}{% endblock %}
         {% block stylesheets %}{% endblock %}

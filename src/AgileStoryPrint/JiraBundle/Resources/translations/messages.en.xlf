@@ -15,6 +15,21 @@
                 <target>Jira2ScrumBoard</target>
             </trans-unit>
 
+            <!-- Meta -->
+            <trans-unit id="meta.keywords">
+                <source>meta.keywords</source>
+                <target>
+                    Story, Jira, Atlassian, Scrum, Agile, Print
+                </target>
+            </trans-unit>
+            <trans-unit id="meta.description">
+                <source>meta.description</source>
+                <target>
+                    Jira2ScrumBoard is a  free tool that enhance your Jira 
+                    Stories to a beautiful Index cards.
+                </target>
+            </trans-unit>
+
             <!-- Page index -->
             <trans-unit id="index.lead">
                 <source>index.lead</source>
