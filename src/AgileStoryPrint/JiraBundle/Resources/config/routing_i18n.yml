@@ -25,3 +25,11 @@ _cookie:
 _terms:
     locales:     { en: "/terms-of-use.html", fr: "/fr/conditions-generale.html" }
     defaults: { _controller: AgileStoryPrintJiraBundle:Legal:terms }
+
+_404:
+    locales:     { en: "/error/404.html", fr: "/fr/erreur/404.html" }
+    defaults: { _controller: AgileStoryPrintJiraBundle:Error:error404 }
+
+_500:
+    locales:     { en: "/error/500.html", fr: "/fr/erreur/500.html" }
+    defaults: { _controller: AgileStoryPrintJiraBundle:Error:error500 }

@@ -301,6 +301,24 @@
                     will reply as soon as possible.
                     ]]></target>
             </trans-unit>
+
+            <trans-unit id="error.404.title">
+                <source>error.404.title</source>
+                <target>404 page not found :(</target>
+            </trans-unit>
+            <trans-unit id="error.404.text">
+                <source>error.404.text</source>
+                <target>Sorry, the page you're looking for doesn't exist anymore.</target>
+            </trans-unit>
+
+            <trans-unit id="error.500.title">
+                <source>error.500.title</source>
+                <target>Error 500 :'(</target>
+            </trans-unit>
+            <trans-unit id="error.500.text">
+                <source>error.500.text</source>
+                <target>Oops, something wrong here, the page is broken. Please comme late.</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>
