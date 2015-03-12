@@ -249,7 +249,7 @@
                     </p>
                     <ul>
                         <li>Story ID *: "<strong>Key</strong>"</li>
-                        <li>Issue Type *: "<strong>Issuer Type</strong>"</li>
+                        <li>Issue Type *: "<strong>Issue Type</strong>"</li>
                         <li>Story Summary *: "<strong>Summary</strong>"</li>
                         <li>Story Effort: "<strong>Points</strong>"</li>
                         <li>Project name: "<strong>Project</strong>"</li>

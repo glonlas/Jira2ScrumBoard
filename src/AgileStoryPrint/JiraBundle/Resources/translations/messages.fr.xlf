@@ -251,7 +251,7 @@
                     </p>
                     <ul>
                         <li>ID de la story * : "<strong>Key</strong>"</li>
-                        <li>Type de la story * : "<strong>Issuer Type</strong>"</li>
+                        <li>Type de la story * : "<strong>Issue Type</strong>"</li>
                         <li>Titre de la story * : "<strong>Summary</strong>"</li>
                         <li>Effort : "<strong>Points</strong>"</li>
                         <li>Nom du project: "<strong>Project</strong>"</li>
