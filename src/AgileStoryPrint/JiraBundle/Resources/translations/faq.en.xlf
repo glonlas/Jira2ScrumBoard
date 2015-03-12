@@ -68,7 +68,7 @@
 
             <trans-unit id="faq.question5.title">
                 <source>faq.question5.title</source>
-                <target>Does my file is supported?</target>
+                <target>Is my file format supported?</target>
             </trans-unit>
              <trans-unit id="faq.question5.text">
                 <source>faq.question5.text</source>
