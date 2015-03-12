@@ -327,6 +327,10 @@ header {
     color: #008ed6;
 }
 
+.with-help .message .intro-heading{
+    margin-bottom: 100px;
+}
+
 @media(min-width:768px) {
     .intro-text {
         padding-top: 200px;
@@ -340,6 +344,10 @@ header {
     .intro-text .intro-heading {
         font-size: 20px;
         line-height: 30px;
+    }
+
+    .with-help .message .intro-text {
+        margin-bottom: 180px;
     }
 }
 
@@ -601,4 +609,9 @@ ul.social-buttons li a:active {
 .legal p,
 .legal li {
     text-align: justify;
+}
+
+
+#help {
+    padding-top: 40px;
 }

@@ -4,7 +4,7 @@
 	{% include 'AgileStoryPrintJiraBundle::navigation.html.twig' with {'links': 'absolute'} %}
 
 	<!-- Header -->
-	<header>
+	<header{% if help is defined %} class="with-help"{% endif%}>
 	    <div class="container">
 	        <div class="intro-text message">
 	            <div class="intro-lead-in">{{ title|trans }}</div>
@@ -13,4 +13,21 @@
 	    </div>
 	</header>
 	<!-- /Header -->
+
+	{% if help is defined %}
+		<section id="help">
+    		<div class="container">
+    			<div class="row">
+		            <div class=" col-sm-offset-3 col-sm-6 text-center">
+		                <h2 class="section-heading">{{ help.title|trans|raw }}</h2>
+		            </div>
+		        </div>
+    			<div class="row">
+		            <div class="col-sm-6 col-sm-offset-3">
+		                {{ help.text|trans|raw }}
+		            </div>
+		        </div>
+    		</div>
+    	</section>
+	{% endif %}
 {% endblock %}

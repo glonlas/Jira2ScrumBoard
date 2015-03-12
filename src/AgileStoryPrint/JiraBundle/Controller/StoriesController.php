@@ -63,7 +63,11 @@ class StoriesController extends Controller
             'AgileStoryPrintJiraBundle:Pages:message.html.twig',
             array(
                 'title'     => 'emptyStory.title',
-                'message'   => 'emptyStory.text'
+                'message'   => 'emptyStory.text',
+                'help'      => array(
+                    'title' => 'emptyStory.help.title',
+                    'text' => 'emptyStory.help.text'
+                )
             )
         );
     }
