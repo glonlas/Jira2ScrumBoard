@@ -606,8 +606,8 @@ ul.social-buttons li a:active {
 }
 
 /* Legal */
-.legal p,
-.legal li {
+.text-page p,
+.text-page li {
     text-align: justify;
 }
 
