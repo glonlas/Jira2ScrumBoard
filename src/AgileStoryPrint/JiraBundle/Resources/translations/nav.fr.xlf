@@ -71,6 +71,16 @@
                 <source>nav.terms.alt</source>
                 <target></target>
             </trans-unit>
+
+
+            <trans-unit id="nav.translations.link">
+                <source>nav.translations.link</source>
+                <target>Aidez-nous à traduire</target>
+            </trans-unit>
+            <trans-unit id="nav.translations.alt">
+                <source>nav.translations.alt</source>
+                <target>Traduire le projet</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>

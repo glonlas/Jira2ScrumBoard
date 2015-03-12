@@ -312,6 +312,7 @@
                     ]]></target>
             </trans-unit>
 
+            <!-- Error files -->
             <trans-unit id="error.404.title">
                 <source>error.404.title</source>
                 <target>404 page not found :(</target>
