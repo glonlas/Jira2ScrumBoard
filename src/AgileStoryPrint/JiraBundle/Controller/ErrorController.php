@@ -3,11 +3,10 @@
 namespace AgileStoryPrint\JiraBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use Symfony\Component\HttpFoundation\Request as Request;
 
 class ErrorController extends Controller
 {
-    public function error404Action(Request $request)
+    public function error404Action()
     {
         return $this->render(
             'AgileStoryPrintJiraBundle:Pages:message.html.twig',
@@ -18,7 +17,7 @@ class ErrorController extends Controller
         );
     }
 
-    public function error500Action(Request $request)
+    public function error500Action()
     {
         return $this->render(
             'AgileStoryPrintJiraBundle:Pages:message.html.twig',

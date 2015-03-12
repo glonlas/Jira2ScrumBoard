@@ -6,7 +6,6 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request as Request;
 
 use AgileStoryPrint\JiraBundle\Form\Type\ContactType as ContactType;
-use AgileStoryPrint\JiraBundle\Email\Email as Email;
 
 class ContactController extends Controller
 {

@@ -8,7 +8,7 @@ use Symfony\Component\DomCrawler\Crawler as Crawler;
 use AgileStoryPrint\JiraBundle\Entity\Stories as Stories;
 use AgileStoryPrint\JiraBundle\Entity\Story as Story;
 
-use PhpOffice\PhpExcel\Classses\PHPExcel;
+//use PhpOffice\PhpExcel\Classses\PHPExcel;
 
 class StoryCard
 {
@@ -109,7 +109,7 @@ class StoryCard
      * Extract stories from an XML File
      * Stoies will be store into $this->stories
      *
-     * @param UploadedFile $file Jira File
+     * @param UploadedFile $uploadedFile Jira File
      * @return void
      */
     private function importFromXML(UploadedFile $uploadedFile)
@@ -150,7 +150,7 @@ class StoryCard
      * The XLS file from Jira is in à HTML format
      * Stoies will be store into $this->stories
      *
-     * @param UploadedFile $file Jira File
+     * @param UploadedFile $uploadedFile Jira File
      * @return void
      */
     private function importFromHTML(UploadedFile $uploadedFile)
@@ -190,7 +190,7 @@ class StoryCard
      * Extract stories from an XLS file
      * /!\ Not implemented
      *
-     * @param UploadedFile $file Jira File
+     * @param UploadedFile $uploadedFile Jira File
      * @return void
      */
     private function importFromXLS(UploadedFile $uploadedFile)

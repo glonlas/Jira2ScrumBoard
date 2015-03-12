@@ -3,11 +3,10 @@
 namespace AgileStoryPrint\JiraBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use Symfony\Component\HttpFoundation\Request as Request;
 
 class LegalController extends Controller
 {
-    public function cookieAction(Request $request)
+    public function cookieAction()
     {
         return $this->render(
             'AgileStoryPrintJiraBundle:Pages:legal.html.twig',
@@ -18,7 +17,7 @@ class LegalController extends Controller
         );
     }
 
-    public function termsAction(Request $request)
+    public function termsAction()
     {
         return $this->render(
             'AgileStoryPrintJiraBundle:Pages:legal.html.twig',
