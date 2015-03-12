@@ -42,7 +42,7 @@
                     Cet outil convertit les fichiers contenants vos stories Jira 
                     <em>(XML or Excel)</em> en de belle Stories Cards. 
                     Sélectionnez votre fichier ci-dessous et cliquez sur 
-                    "Convertir" pour les imprimer.
+                    "Convertir" pour les télécharger.
                     ]]>
                 </target>
             </trans-unit>
@@ -113,15 +113,14 @@
 
             <trans-unit id="services.option3.title">
                 <source>services.option3.title</source>
-                <target>3. Imprimez vos Stories Cards</target>
+                <target>3. Téléchargez vos Stories Cards</target>
             </trans-unit>
             <trans-unit id="services.option3.text">
                 <source>services.option3.text</source>
                 <target>
                     <![CDATA[
-                    Une fois le traitement terminé, vous serez redirigé vers
-                    une nouvelle page. Les Stories sont cachées dans cette
-                    page. Pour les obtenir imprimez la page, elles apparaîtront.
+                    Une fois le traitement terminé, le téléchargement des 
+                    Stories cards au format PDF se fera automatiquement.
                     ]]>
                 </target>
             </trans-unit>
@@ -220,25 +219,7 @@
                 <target>Votre message a été envoyé</target>
             </trans-unit>
 
-
-            <!-- Complete : Downloading Story print file -->
-            <trans-unit id="complete.title">
-                <source>complete.title</source>
-                <target>Traitement terminé</target>
-            </trans-unit>
-            <trans-unit id="complete.text">
-                <source>complete.text</source>
-                <target><![CDATA[
-                    <a href="javascript:window.print();">Imprimez vos Stories</a>
-                    <br/><br/> <strong>Imprimer plus d'une story par page ?</strong>
-                    <br/>Pensez à configurer votre imprimante pour imprimer 2 ou
-                    4 stories par page. 
-                    <br/>Nous vous recommandons 4 stories par page.
-                    ]]>
-                </target>
-            </trans-unit>
-
-            <!-- Complete : Downloading Story print file -->
+            <!-- Error : Wrong file format -->
             <trans-unit id="wrongFile.title">
                 <source>wrongFile.title</source>
                 <target>Wrong file uploaded</target>

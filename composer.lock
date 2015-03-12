@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "6b0e3027847e22957dc94fb87e372fbc",
+    "hash": "5f74dc8d14d0d628ba1a203769249357",
     "packages": [
         {
             "name": "besimple/i18n-routing-bundle",
@@ -879,6 +879,125 @@
             "time": "2014-01-12 16:20:24"
         },
         {
+            "name": "knplabs/knp-snappy",
+            "version": "0.3.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/KnpLabs/snappy.git",
+                "reference": "eda1b39cb06b3f9ac7b4423df4c115feccea1194"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/KnpLabs/snappy/zipball/eda1b39cb06b3f9ac7b4423df4c115feccea1194",
+                "reference": "eda1b39cb06b3f9ac7b4423df4c115feccea1194",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "symfony/process": "~2.1"
+            },
+            "suggest": {
+                "h4cc/wkhtmltopdf-amd64": "Provide wkhtmltopdf-amd64 binary, use version `0.12.0` as dependency",
+                "h4cc/wkhtmltopdf-i386": "Provide wkhtmltopdf-i386 binary, use version `0.12.0` as dependency"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.3.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Knp\\Snappy": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "KnpLabs Team",
+                    "homepage": "http://knplabs.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "http://github.com/KnpLabs/snappy/contributors"
+                }
+            ],
+            "description": "PHP5 library allowing thumbnail, snapshot or PDF generation from a url or a html page. Wrapper for wkhtmltopdf/wkhtmltoimage.",
+            "homepage": "http://github.com/KnpLabs/snappy",
+            "keywords": [
+                "knp",
+                "knplabs",
+                "pdf",
+                "snapshot",
+                "thumbnail",
+                "wkhtmltopdf"
+            ],
+            "time": "2015-03-11 12:24:42"
+        },
+        {
+            "name": "knplabs/knp-snappy-bundle",
+            "version": "dev-master",
+            "target-dir": "Knp/Bundle/SnappyBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/KnpLabs/KnpSnappyBundle.git",
+                "reference": "6e6ac3ec3c41f25bd59c9e2e9b4cbf794cf36772"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/KnpLabs/KnpSnappyBundle/zipball/6e6ac3ec3c41f25bd59c9e2e9b4cbf794cf36772",
+                "reference": "6e6ac3ec3c41f25bd59c9e2e9b4cbf794cf36772",
+                "shasum": ""
+            },
+            "require": {
+                "knplabs/knp-snappy": "*",
+                "php": ">=5.3.2",
+                "symfony/finder": ">=2.0.0",
+                "symfony/framework-bundle": ">=2.0.0",
+                "symfony/validator": ">=2.0.0"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.2.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Knp\\Bundle\\SnappyBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "KnpLabs Team",
+                    "homepage": "http://knplabs.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "http://github.com/KnpLabs/KnpSnappyBundle/contributors"
+                }
+            ],
+            "description": "Easily create PDF and images in Symfony2 by converting Twig/HTML templates.",
+            "homepage": "http://github.com/KnpLabs/KnpSnappyBundle",
+            "keywords": [
+                "bundle",
+                "knp",
+                "knplabs",
+                "pdf",
+                "snappy"
+            ],
+            "time": "2015-02-19 09:36:46"
+        },
+        {
             "name": "kriswallsmith/assetic",
             "version": "v1.2.1",
             "source": {
@@ -1468,12 +1587,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/DomCrawler.git",
-                "reference": "64fda3bc78b5a4fd566dac734dc23609f6807413"
+                "reference": "0e444fc344a589002d0e2087f10d388d62c5c94c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/DomCrawler/zipball/64fda3bc78b5a4fd566dac734dc23609f6807413",
-                "reference": "64fda3bc78b5a4fd566dac734dc23609f6807413",
+                "url": "https://api.github.com/repos/symfony/DomCrawler/zipball/0e444fc344a589002d0e2087f10d388d62c5c94c",
+                "reference": "0e444fc344a589002d0e2087f10d388d62c5c94c",
                 "shasum": ""
             },
             "require": {
@@ -1513,7 +1632,7 @@
             ],
             "description": "Symfony DomCrawler Component",
             "homepage": "http://symfony.com",
-            "time": "2015-02-21 13:23:59"
+            "time": "2015-03-07 07:44:26"
         },
         {
             "name": "symfony/monolog-bundle",
@@ -1911,7 +2030,8 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "symfony/dom-crawler": 20,
-        "besimple/i18n-routing-bundle": 20
+        "besimple/i18n-routing-bundle": 20,
+        "knplabs/knp-snappy-bundle": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

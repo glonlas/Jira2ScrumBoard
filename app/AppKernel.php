@@ -18,6 +18,7 @@ class AppKernel extends Kernel
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
 
             new BeSimple\I18nRoutingBundle\BeSimpleI18nRoutingBundle(), // I18N Routing
+            new Knp\Bundle\SnappyBundle\KnpSnappyBundle(), // HTML2PDF
             new AgileStoryPrint\JiraBundle\AgileStoryPrintJiraBundle(),         
         );
 

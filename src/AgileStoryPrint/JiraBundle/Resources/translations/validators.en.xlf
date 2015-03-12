@@ -8,7 +8,7 @@
             </trans-unit>
             <trans-unit id="file.size">
                 <source>file.size</source>
-                <target>The file is too large ({{ size }}). Allowed maximum size is {{ limit }}</target>
+                <target>The file is too large ({{ size }} KB). Allowed maximum size is {{ limit }} KB</target>
             </trans-unit>
             <trans-unit id="file.extension">
                 <source>file.extension</source>

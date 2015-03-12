@@ -1,17 +1,7 @@
+<!DOCTYPE html>
+<html>
+    <head>
     <style>
-    @media screen {
-        .printable {
-            display: none;
-        }
-    }
-    @media print {
-        @page {
-            /* dimensions for the whole page */
-            /* size: 13.82cm 9.5cm landscape; */
-            size: A4 landscape;
-            margin: 0;
-        }
-
         /* YUI 3.5.0 reset.css (http://developer.yahoo.com/yui/3/cssreset/) - http://cssreset.com */
         html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:text-top}sub{vertical-align:text-bottom}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit}input,textarea,select{*font-size:100%}legend{color:#000}#yui3-css-stamp.cssreset{display:none}
 
@@ -24,108 +14,109 @@
 
         /* Common */
         * {
-            -webkit-box-sizing: content-box !important;
-            -moz-box-sizing: content-box !important;
-            box-sizing: content-box !important;
+            -webkit-box-sizing: content-box;
+            -moz-box-sizing: content-box;
+            box-sizing: content-box;
         }
 
         body {
-            font-family: arial, verdana !important;
-            color: #000 !important;
-            margin: 0 !important;
-            line-height: normal !important;
-            font-size: 16px !important;
+            font-family: arial, verdana;
+            color: #000;
+            margin: 0;
+            line-height: normal;
+            font-size: 16px;
         }
 
         section {
-            page-break-after: always !important;
+            page-break-after: always;
 
-            width: 276mm !important;
-            height: 189mm !important;
+            width: 276mm;
+            height: 185mm;
 
-            padding-left: 10mm !important;
-            padding-top: 10mm !important;
-            padding-right: 10mm !important;
-            padding-bottom: 10mm !important;
-            background: #FFF !important;
+            padding-left: 10mm;
+            padding-top: 10mm;
+            padding-right: 10mm;
+            padding-bottom: 10mm;
+            background: #FFF;
         }
 
         div {
-            margin: 0 !important;
+            margin: 0;
         }
 
         .legend {
-            color: #6c6c6c !important;
-            font-size: 22pt !important;
-            margin-bottom: 5pt !important;
+            color: #6c6c6c;
+            font-size: 22pt;
+            margin-bottom: 5pt;
         }
 
         .value {
-            font-size: 30pt !important;
+            font-size: 30pt;
         }
 
         hr {
-            border: 2px dashed #959595 !important;
-            margin-bottom: 5mm !important;
-            margin-top: 5mm !important;
+            border: 2px dashed #959595;
+            margin-bottom: 5mm;
+            margin-top: 5mm;
         }
 
         /* Summary */
         .summary {
-            font-size: 50pt !important;
-            width: 22.5cm !important;
-            height: 15cm !important;
-            margin: 0 !important;
+            font-size: 50pt;
+            width: 225mm;
+            height: 150mm;
+            margin: 0;
         }
 
         /* Points */
         .points {
-            width: 4.5cm !important;
-            height: 4.5cm !important;
-            border: 2px solid #959595 !important;
-            float: right !important;
+            width: 45mm;
+            height: 45mm;
+            border: 2px solid #959595;
+            float: right;
         }
         
         .points div {
-            padding: 0 !important;
-            margin: 0 !important;
-            text-align: center !important;
+            padding: 0;
+            margin: 0;
+            text-align: center;
         }
 
         .points .legend {
-            margin-top: 8pt !important;
+            margin-top: 8pt;
         }
 
         .points .value {
-            font-size: 80pt !important;
+            font-size: 80pt;
         }
 
         /* key, type, project */
         .key,
         .type {
-            margin-right: 5mm !important;
+            margin-right: 5mm;
         }
 
         .key,
         .type,
         .project {
-            float: left !important;
-            height: 2.6cm !important;
+            float: left;
+            height: 26mm;
         }
 
         .key {
-            width: 7cm !important;
+            width: 70mm;
         }
 
         .type {
-            width: 7.8cm !important;
+            width: 78mm;
         }
 
         .project {
-            width: 11.8cm !important;
+            width: 118mm;
         }
-    }
     </style>
+    </head>
+    <body>
     {% for story in stories %}
     <section id="{{ story.getKey() }}" class="printable">
         <div class="points">
@@ -153,3 +144,5 @@
         </div>
     </section>
     {% endfor %}
+    </body>
+</html>
