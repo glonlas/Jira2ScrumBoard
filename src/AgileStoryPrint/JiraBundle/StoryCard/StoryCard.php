@@ -124,24 +124,32 @@ class StoryCard
 
         // Populate stories
         foreach ($xml->xpath('channel/item') as $item)
-        {
-            try
+        {            
+            $key        = (count($item->key) > 0) ? $item->key->__toString() : null;
+            $project    = (count($item->project) > 0) ? $item->project->__toString() : null;
+            $summary    = (count($item->summary) > 0) ? $item->summary->__toString() : null;
+            $type       = (count($item->type) > 0) ? $item->type->__toString() : null;
+            $link       = (count($item->link) > 0) ? $item->link->__toString() : null;
+
+            $xpathEffort = 'customfields/customfield[customfieldname="Story Points"]/customfieldvalues';
+            $effort     = (count($item->xpath($xpathEffort)) > 0) ? $item->xpath($xpathEffort)[0]->customfieldvalue->__toString(): null;
+
+            // The minimal requirement is a story key, a summary and an effort
+            if( !is_null($key) && !is_null($summary) && !is_null($effort) )
             {
                 $this->stories->addStory(
                     new Story(
                         array(
-                            'key'       => $item->key->__toString(),
-                            'project'   => $item->project->__toString(),
-                            'summary'   => $item->summary->__toString(),
-                            'type'      => $item->type->__toString(),
-                            'effort'    => $item->xpath('customfields/customfield[customfieldname="Story Points"]/customfieldvalues')[0]->customfieldvalue->__toString(),
-                            'link'      => $item->link->__toString()
+                            'key'       => $key,
+                            'project'   => $project,
+                            'summary'   => $summary,
+                            'type'      => $type,
+                            'effort'    => $effort,
+                            'link'      => $link
                         )
                     )
-                );
+                );  
             }
-            catch(\Exception $e)
-            {}
         }
     }
 
