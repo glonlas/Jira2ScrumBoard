@@ -602,30 +602,3 @@ ul.social-buttons li a:active {
 .legal li {
     text-align: justify;
 }
-
-/* Complete */
-.print-it {
-    margin-bottom: -10px; /* ugly :( */
-}
-
-.print-it .fa-8x {
-    font-size: 8em;
-}
-
-.print-it .text-primary  {
-    opacity: 0.5;
-}
-
-.print-it a:hover .fa-8x {
-    font-size: 8.9em;
-}
-
-.print-it a:hover .text-primary {
-    opacity: 1;
-}
-
-.print-it a .fa-8x {
-    -webkit-transition: all 0.25s ease;
-    transition: all 0.25s ease;
-}
-

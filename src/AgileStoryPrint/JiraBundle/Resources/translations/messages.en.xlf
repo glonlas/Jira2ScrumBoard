@@ -118,9 +118,8 @@
                 <source>services.option3.text</source>
                 <target>
                     <![CDATA[
-                    When the processing will be done, you will be redirected to 
-                    a congratulation page. Index cards are hidden on this page, 
-                    so print this page and you will see your Index cards.
+                    When the processing will be done, your stories will be
+                    downloaded automaticaly as a PDF file
                     ]]>
                 </target>
             </trans-unit>
@@ -218,22 +217,6 @@
             <trans-unit id="contact.sent">
                 <source>contact.sent</source>
                 <target>Your message has been sent</target>
-            </trans-unit>
-
-            <!-- Complete : Downloading Story print file -->
-            <trans-unit id="complete.title">
-                <source>complete.title</source>
-                <target>Processing complete</target>
-            </trans-unit>
-            <trans-unit id="complete.text">
-                <source>complete.text</source>
-                <target><![CDATA[
-                    <a href="javascript:window.print();">Print your stories cards</a>
-                    <br/><br/> <strong>Want more than one card per page?</strong>
-                    <br/>Setup your printer before printing yours cards. 
-                    <br/> We suggest you to print 4 cards per pages.
-                    ]]>
-                </target>
             </trans-unit>
 
             <!-- No stories generated -->
