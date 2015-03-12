@@ -300,7 +300,7 @@
             </trans-unit>
             <trans-unit id="error.500.text">
                 <source>error.500.text</source>
-                <target>Oops, something wrong here, the page is broken. Please comme late.</target>
+                <target>Oops, something wrong here, the page is broken. Please retry later.</target>
             </trans-unit>
         </body>
     </file>
