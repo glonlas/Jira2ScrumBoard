@@ -219,6 +219,48 @@
                 <target>Votre message a été envoyé</target>
             </trans-unit>
 
+
+            <!-- No stories generated -->
+            <trans-unit id="emptyStory.title">
+                <source>emptyStory.title</source>
+                <target>Aucune story trouvée</target>
+            </trans-unit>
+            <trans-unit id="emptyStory.text">
+                <source>emptyStory.text</source>
+                <target><![CDATA[
+                    Désolé aucune story trouvée dans votre fichier <br/> 
+                    Veuillez essayer avec un autre fichier ou corrigez-le 
+                    (Instruction ci-dessous)
+                    ]]></target>
+            </trans-unit>
+            <trans-unit id="emptyStory.help.title">
+                <source>emptyStory.help.title</source>
+                <target><![CDATA[
+                    Votre fichier Excel n'est pas reconnu ?
+                    ]]>
+                </target>
+            </trans-unit>
+            <trans-unit id="emptyStory.help.text">
+                <source>emptyStory.help.text</source>
+                <target><![CDATA[
+                    <p>
+                        Si vous utilisez un fichier Excel, assurez-vous que 
+                        vos colonnes aient le bon titre.
+                        <br/>Cet outil recherche dans votre fichier Excel les
+                        colonnes suivantes :
+                    </p>
+                    <ul>
+                        <li>ID de la story * : "<strong>Key</strong>"</li>
+                        <li>Type de la story * : "<strong>Issuer Type</strong>"</li>
+                        <li>Titre de la story * : "<strong>Summary</strong>"</li>
+                        <li>Effort : "<strong>Points</strong>"</li>
+                        <li>Nom du project: "<strong>Project</strong>"</li>
+                    </ul>
+                    <p><em>* Champs obligatoires</em></p>
+                    ]]>
+                </target>
+            </trans-unit>
+
             <!-- Error : Wrong file format -->
             <trans-unit id="wrongFile.title">
                 <source>wrongFile.title</source>

@@ -12,6 +12,12 @@ use AgileStoryPrint\JiraBundle\Entity\Story as Story;
 
 class StoryCard
 {
+    const KEY_NAME      = 'Key';
+    const ISSUE_NAME    = 'Issue Type';
+    const SUMMARY_NAME  = 'Summary';
+    const EFFORT_NAME   = 'Story Points';
+    const PROJECT_NAME  = 'Project';
+
     protected $stories = null;
 
     /**
@@ -203,7 +209,91 @@ class StoryCard
      */
     private function importFromXLS(UploadedFile $uploadedFile)
     {
-        // @todo: try to make excel file work
-        throw new \Exception('Not implemented');
+        $file = $uploadedFile->openFile();
+
+        $objReader = \PHPExcel_IOFactory::createReader(
+            \PHPExcel_IOFactory::identify(
+                $file->getRealPath()
+            )
+        );
+
+        $objReader->setReadDataOnly(true);
+        $objPHPExcel = $objReader->load($file->getRealPath());
+
+        $sheetData = $objPHPExcel->getActiveSheet()->toArray(
+            null,
+            true,
+            true,
+            true
+        );
+
+        // Till false, we try to find all mandatory field Title in the row to 
+        // determinate in which row the data are
+        $colsFound = false;
+
+        // Rows
+        foreach ($sheetData as $rowKey => $rowData)
+        {    
+            // Try to in which columns data are
+            if(!$colsFound)
+            {                
+                // Fields coordonnate
+                // Mandatory
+                $key         = null;
+                $summary     = null;
+                $type        = null;
+
+                // Optionnal
+                $effort      = null;
+                $project     = null;
+
+                // Cols        
+                foreach ($rowData as $colKey => $colValue)
+                {
+                    if($colValue == self::KEY_NAME)
+                        $key = $colKey;
+
+                    if($colValue == self::SUMMARY_NAME)
+                        $summary = $colKey;
+
+                    if($colValue == self::ISSUE_NAME)
+                        $type = $colKey;
+
+                    if($colValue == self::EFFORT_NAME)
+                        $effort = $colKey;
+
+                    if($colValue == self::PROJECT_NAME)
+                        $project = $colKey;
+                }
+
+                // Do we found all mandatory fields?
+                if( !is_null($key) &&
+                    !is_null($summary) &&
+                    !is_null($type)
+                )
+                {
+                    $colsFound = true;
+                }
+            }
+            // Add Story
+            elseif( '' != $rowData[$key] &&
+                    '' != $rowData[$summary] &&
+                    '' != $rowData[$type]
+            )
+            {
+                $this->stories->addStory(
+                    new Story(
+                        array(
+                            'key'       => $rowData[$key],
+                            'summary'   => $rowData[$summary],
+                            'type'      => $rowData[$type],
+                            'project'   => (!is_null($project)) ? $rowData[$project] : null,
+                            'effort'    => (!is_null($effort)) ? $rowData[$effort] : null,
+                            'link'      => null
+                        )
+                    )
+                );  
+            }
+        }
     }
 }

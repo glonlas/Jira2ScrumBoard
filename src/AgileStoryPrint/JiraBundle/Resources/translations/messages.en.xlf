@@ -228,8 +228,35 @@
                 <source>emptyStory.text</source>
                 <target><![CDATA[
                     Sorry we didn't find any stories in your file. Please try 
-                    with another file.
+                    with another file or fix it (see below)
                     ]]></target>
+            </trans-unit>
+            <trans-unit id="emptyStory.help.title">
+                <source>emptyStory.help.title</source>
+                <target><![CDATA[
+                    Your Excel file is not recognized?
+                    ]]>
+                </target>
+            </trans-unit>
+            <trans-unit id="emptyStory.help.text">
+                <source>emptyStory.help.text</source>
+                <target><![CDATA[
+                    <p>
+                        If you are using an Excel file, make sure your columns 
+                        have the right "title".
+                        <br/> This tool is looking for the following columns 
+                        title:
+                    </p>
+                    <ul>
+                        <li>Story ID *: "<strong>Key</strong>"</li>
+                        <li>Issue Type *: "<strong>Issuer Type</strong>"</li>
+                        <li>Story Summary *: "<strong>Summary</strong>"</li>
+                        <li>Story Effort: "<strong>Points</strong>"</li>
+                        <li>Project name: "<strong>Project</strong>"</li>
+                    </ul>
+                    <p><em>* Mandatory fields</em></p>
+                    ]]>
+                </target>
             </trans-unit>
 
             <!-- Error : Wrong file format -->

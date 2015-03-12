@@ -32,7 +32,8 @@ class UploadStoriesType extends AbstractType
                         'maxSizeMessage' => 'file.size',
                         'mimeTypes' => array(
                                         'text/html', 
-                                        'application/vnd.ms-excel', 
+                                        'application/vnd.ms-excel',
+                                        'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
                                         'text/xml'
                                     ),
                         'mimeTypesMessage' => 'file.extension'
