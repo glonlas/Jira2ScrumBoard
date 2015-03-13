@@ -15,10 +15,9 @@
 {% endblock %}
 
 
-{% block stylesheets %}
-    <link href="http://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet" type="text/css">
-    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:100,300,400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 
+{# CSS #}
+{% block stylesheets_top %}
     {% stylesheets
         'bundles/agilestoryprintjira/fonts/font-awesome/css/font-awesome.min.css' 
         'bundles/agilestoryprintjira/css/bootstrap.min.css' 
@@ -31,6 +30,14 @@
     {% endstylesheets %}
 {% endblock %}
 
+{% block stylesheets_bottom %}
+    <link href="http://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:100,300,400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+{% endblock %}
+
+
+
+{# Javascript #}
 {% block javascripts_top %}
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -40,27 +47,18 @@
     <![endif]-->
 {% endblock %}
 
-{% block javascripts %}
+{% block javascripts_bottom %}
     {% javascripts 
         'bundles/agilestoryprintjira/js/jquery.js' 
         'bundles/agilestoryprintjira/js/bootstrap.min.js'
-
-        filter='yui_js'
-        output='js/part1.js'
-    %}
-        <script src="{{ asset_url }}"></script>
-    {% endjavascripts %}
-
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-
-	{% javascripts 
+        'bundles/agilestoryprintjira/js/jquery.easing.min.js'
         'bundles/agilestoryprintjira/js/bootstrap-filestyle.min.js'
         'bundles/agilestoryprintjira/js/classie.js' 
         'bundles/agilestoryprintjira/js/cbpAnimatedHeader.js' 
         'bundles/agilestoryprintjira/js/main.js' 
 
         filter='yui_js'
-        output='js/part2.js'
+        output='js/compile.js'
     %}
         <script src="{{ asset_url }}"></script>
     {% endjavascripts %}
@@ -69,6 +67,8 @@
     {% include 'AgileStoryPrintJiraBundle:JS:GoogleAnalytics.html.twig' %}
 {% endblock %}
 
+
+{# Body #}
 {% block body %}
 	{% block content %}{% endblock %}
 	{% include 'AgileStoryPrintJiraBundle::footer.html.twig' %}

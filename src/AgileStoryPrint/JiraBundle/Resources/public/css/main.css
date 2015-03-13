@@ -203,7 +203,7 @@ img::-moz-selection {
 }
 
 .navbar-default .navbar-brand {
-    font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
+    font-family: "Helvetica Neue",Helvetica,Arial,cursive;
     color: #FFFFFF;
 }
 
@@ -417,7 +417,7 @@ section h3.section-subheading {
 /* Contact */
 section#contact {
     background-color: #222;
-    background-image: url(../images/map-image.png);
+    background-image: url(../images/map-image.min.jpg);
     background-position: center;
     background-repeat: no-repeat;
 }
