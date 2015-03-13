@@ -23,7 +23,7 @@
                 <source>meta.description</source>
                 <target>
                     Jira2ScrumBoard est un outil simple et gratuit pour imprimer
-                    vos Stories Jira en de belle Stories Cards.
+                    vos Stories Jira en de belles Stories Cards.
                 </target>
             </trans-unit>
 
@@ -40,7 +40,7 @@
                 <source>index.tagline</source>
                 <target><![CDATA[
                     Cet outil convertit les fichiers contenants vos stories Jira 
-                    <em>(XML or Excel)</em> en de belle Stories Cards. 
+                    <em>(XML or Excel)</em> en de belles Stories Cards. 
                     Sélectionnez votre fichier ci-dessous et cliquez sur 
                     "Convertir" pour les télécharger.
                     ]]>
@@ -74,7 +74,7 @@
                 <source>services.subtitle</source>
                 <target>Jira2ScrumBoard est très simple d'utilisation. Créé 
                     pour vous faire gagner du temps, il vous permet d'imprimer 
-                    vos Story Jira en Story card lisible et utilisable sur 
+                    vos Story Jira en Story cards lisibles et utilisables sur 
                     votre tableau Scrum.</target>
             </trans-unit>
 

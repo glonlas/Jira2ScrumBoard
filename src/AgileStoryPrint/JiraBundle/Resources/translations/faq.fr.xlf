@@ -74,24 +74,22 @@
                 <source>faq.question5.text</source>
                 <target>
                     <![CDATA[
-                    Dans cette version seule les fichiers XML et Excel (All fields)
+                    Dans cette version seuls les fichiers XML et Excel
                     provenant de Jira sont supportés. Pour des contraintes serveur
-                    seul les fichiers de moins de 1 Mo sont acceptés.
+                    seuls les fichiers de moins de 1 Mo sont acceptés.
                     ]]>
                 </target>
             </trans-unit>
 
             <trans-unit id="faq.question6.title">
                 <source>faq.question6.title</source>
-                <target>Supportez-vous d'autre logiciel que Jira ?</target>
+                <target>Supportez-vous d'autres logiciels que Jira ?</target>
             </trans-unit>
              <trans-unit id="faq.question6.text">
                 <source>faq.question6.text</source>
                 <target>
                     <![CDATA[
-                    C'est à l'étude, mais pour cela j'ai besoin de fichier 
-                    d'export des autres logiciels. Vous en avez ? N'hésitez-pas 
-                    à me les envoyer.
+                    C'est en cours de développement.
                     ]]>
                 </target>
             </trans-unit>
