@@ -30,12 +30,13 @@
         <meta name="msapplication-square310x310logo" content="{{ asset('/large.png') }}"/>
 
         {% block meta %}{% endblock %}
-        {% block stylesheets %}{% endblock %}
+        {% block stylesheets_top %}{% endblock %}
         {% block javascripts_top %}{% endblock %}
     </head>
     <body id="page-top" class="index">
         {% block body %}{% endblock %}
 
-        {% block javascripts %}{% endblock %}
+        {% block stylesheets_bottom %}{% endblock %}
+        {% block javascripts_bottom %}{% endblock %}
     </body>
 </html>

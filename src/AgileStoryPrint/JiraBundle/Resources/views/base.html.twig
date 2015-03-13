@@ -15,7 +15,9 @@
 {% endblock %}
 
 
-{% block stylesheets %}
+
+{# CSS #}
+{% block stylesheets_top %}
     {% stylesheets
         'bundles/agilestoryprintjira/fonts/font-awesome/css/font-awesome.min.css' 
         'bundles/agilestoryprintjira/css/bootstrap.min.css' 
@@ -28,6 +30,14 @@
     {% endstylesheets %}
 {% endblock %}
 
+{% block stylesheets_bottom %}
+    <link href="http://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:100,300,400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+{% endblock %}
+
+
+
+{# Javascript #}
 {% block javascripts_top %}
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -37,7 +47,7 @@
     <![endif]-->
 {% endblock %}
 
-{% block javascripts %}
+{% block javascripts_bottom %}
     {% javascripts 
         'bundles/agilestoryprintjira/js/jquery.js' 
         'bundles/agilestoryprintjira/js/bootstrap.min.js'
@@ -57,10 +67,9 @@
     {% include 'AgileStoryPrintJiraBundle:JS:GoogleAnalytics.html.twig' %}
 {% endblock %}
 
+
+{# Body #}
 {% block body %}
 	{% block content %}{% endblock %}
 	{% include 'AgileStoryPrintJiraBundle::footer.html.twig' %}
-
-    <link href="http://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet" type="text/css">
-    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:100,300,400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 {% endblock %}
