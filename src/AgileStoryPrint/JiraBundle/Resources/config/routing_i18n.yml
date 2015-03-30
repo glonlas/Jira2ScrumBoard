@@ -1,35 +1,35 @@
 _index:
-    locales:  { en: "/", fr: "/fr/" }
+    locales:  { en: "/", fr: "/fr/", nl: "/nl/" }
     defaults: { _controller: AgileStoryPrintJiraBundle:Default:index }
 
 _getStories:
-    locales:     { en: "/print-your-index-cards.html", fr: "/fr/imprimez-vos-index-cards.html" }
+    locales:     { en: "/print-your-index-cards.html", fr: "/fr/imprimez-vos-index-cards.html", nl: "/nl/print-your-index-cards.html" }
     defaults: { _controller: AgileStoryPrintJiraBundle:Stories:getStories }
 
 _emptyStory:
-    locales:     { en: "/no-stories-found.html", fr: "/fr/pas-de-story-trouve.html" }
+    locales:     { en: "/no-stories-found.html", fr: "/fr/pas-de-story-trouve.html", nl: "/nl/no-stories-found.html" }
     defaults: { _controller: AgileStoryPrintJiraBundle:Stories:emptyStory }
 
 _wrongFile:
-    locales:     { en: "/wrong-file.html", fr: "/fr/mauvais-fichier.html" }
+    locales:     { en: "/wrong-file.html", fr: "/fr/mauvais-fichier.html", nl: "/nl/wrong-file.html" }
     defaults: { _controller: AgileStoryPrintJiraBundle:Stories:wrongFile }
 
 _contact:
-    locales:     { en: "/contact.html", fr: "/fr/contact.html" }
+    locales:     { en: "/contact.html", fr: "/fr/contact.html", nl: "/nl/contact.html" }
     defaults: { _controller: AgileStoryPrintJiraBundle:Contact:index }
 
 _cookie:
-    locales:     { en: "/cookie-policy.html", fr: "/fr/usage-des-cookies.html" }
+    locales:     { en: "/cookie-policy.html", fr: "/fr/usage-des-cookies.html", nl: "/nl/cookie-policy.html" }
     defaults: { _controller: AgileStoryPrintJiraBundle:Legal:cookie }
 
 _terms:
-    locales:     { en: "/terms-of-use.html", fr: "/fr/conditions-generale.html" }
+    locales:     { en: "/terms-of-use.html", fr: "/fr/conditions-generale.html", nl: "/nl/terms-of-use.html" }
     defaults: { _controller: AgileStoryPrintJiraBundle:Legal:terms }
 
 _404:
-    locales:     { en: "/error/404.html", fr: "/fr/erreur/404.html" }
+    locales:     { en: "/error/404.html", fr: "/fr/erreur/404.html", nl: "/nl/error/404.html" }
     defaults: { _controller: AgileStoryPrintJiraBundle:Error:error404 }
 
 _500:
-    locales:     { en: "/error/500.html", fr: "/fr/erreur/500.html" }
+    locales:     { en: "/error/500.html", fr: "/fr/erreur/500.html", nl: "/nl/error/500.html" }
     defaults: { _controller: AgileStoryPrintJiraBundle:Error:error500 }

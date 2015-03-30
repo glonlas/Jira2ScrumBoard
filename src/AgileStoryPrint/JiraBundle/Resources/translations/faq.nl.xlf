@@ -1,0 +1,82 @@
+<?xml version="1.0" ?><xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file datatype="plaintext" original="file.ext" source-language="en">
+        <body>
+            <trans-unit id="faq.question1.title">
+                <source>faq.question1.title</source>
+                <target>How exporteer ik Jira-verhalen?</target>
+                
+            </trans-unit>
+             <trans-unit id="faq.question1.text">
+                <source>faq.question1.text</source>
+                
+            </trans-unit>
+
+            <trans-unit id="faq.question2.title">
+                <source>faq.question2.title</source>
+                <target>Hoe druk ik meer dan één kaart per pagina af?</target>
+                
+            </trans-unit>
+             <trans-unit id="faq.question2.text">
+                <source>faq.question2.text</source>
+                
+            </trans-unit>
+
+            <trans-unit id="faq.question3.title">
+                <source>faq.question3.title</source>
+                <target>Zijn er andere kaartformaten?</target>
+                
+            </trans-unit>
+             <trans-unit id="faq.question3.text">
+                <source>faq.question3.text</source>
+                <target>
+                    
+                    Excuses. In deze versie is er maar één versie van de Verhalenkaart 
+                    beschikbaar. &lt;br /&gt;Maar als u een ander formaat wilt doorgeven als suggestie, 
+                    neem dan &lt;a href=&quot;#contact&quot;&gt;contact&lt;/a&gt; op met me.
+                    
+                </target>
+                
+            </trans-unit>
+
+            <trans-unit id="faq.question4.title">
+                <source>faq.question4.title</source>
+                <target>Kan ik een aangepast kaartformaat gebruiken?</target>
+                
+            </trans-unit>
+             <trans-unit id="faq.question4.text">
+                <source>faq.question4.text</source>
+                
+            </trans-unit>
+
+            <trans-unit id="faq.question5.title">
+                <source>faq.question5.title</source>
+                <target>Wordt mijn bestandsformaat ondersteund?</target>
+                
+            </trans-unit>
+             <trans-unit id="faq.question5.text">
+                <source>faq.question5.text</source>
+                
+            </trans-unit>
+
+            <trans-unit id="faq.question6.title">
+                <source>faq.question6.title</source>
+                <target>Ondersteunen jullie een ander hulpmiddel dan Jira?</target>
+                
+            </trans-unit>
+             <trans-unit id="faq.question6.text">
+                <source>faq.question6.text</source>
+                
+            </trans-unit>
+
+            <trans-unit id="faq.question7.title">
+                <source>faq.question7.title</source>
+                <target>Ik vind dit een goed hulpmiddel, hoe kan ik bijdragen?</target>
+                
+            </trans-unit>
+             <trans-unit id="faq.question7.text">
+                <source>faq.question7.text</source>
+                
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

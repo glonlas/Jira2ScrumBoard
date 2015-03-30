@@ -1,0 +1,101 @@
+<?xml version="1.0" ?><xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file datatype="plaintext" original="file.ext" source-language="en">
+        <body>
+            <trans-unit id="nav.toggle">
+                <source>nav.toggle</source>
+                <target>Navigatie schakelen</target>
+                
+            </trans-unit>
+
+            <!-- Navigation -->
+            <trans-unit id="nav.index.link">
+                <source>nav.index.link</source>
+                <target>Begin</target>
+                
+            </trans-unit>
+            <trans-unit id="nav.index.alt">
+                <source>nav.index.alt</source>
+                <target>nav.index.alt</target>
+                
+            </trans-unit>
+
+            <trans-unit id="nav.services.link">
+                <source>nav.services.link</source>
+                <target>Hoe dit werkt</target>
+                
+            </trans-unit>
+            <trans-unit id="nav.services.alt">
+                <source>nav.services.alt</source>
+                <target>nav.services.alt</target>
+                
+            </trans-unit>
+
+            <trans-unit id="nav.faq.link">
+                <source>nav.faq.link</source>
+                <target>FAQ</target>
+                
+            </trans-unit>
+            <trans-unit id="nav.faq.alt">
+                <source>nav.faq.alt</source>
+                <target>nav.faq.alt</target>
+                
+            </trans-unit>
+
+            <trans-unit id="nav.author.link">
+                <source>nav.author.link</source>
+                <target>Wie erachter zit</target>
+                
+            </trans-unit>
+            <trans-unit id="nav.author.alt">
+                <source>nav.author.alt</source>
+                <target>nav.author.alt</target>
+                
+            </trans-unit>
+
+            <trans-unit id="nav.contact.link">
+                <source>nav.contact.link</source>
+                <target>Contact</target>
+                
+            </trans-unit>
+            <trans-unit id="nav.contact.alt">
+                <source>nav.contact.alt</source>
+                <target>nav.contact.alt</target>
+                
+            </trans-unit>
+
+            <!-- Footer -->
+            <trans-unit id="nav.privacy.link">
+                <source>nav.privacy.link</source>
+                <target>Cookieovereenkomst</target>
+                
+            </trans-unit>
+            <trans-unit id="nav.privacy.alt">
+                <source>nav.privacy.alt</source>
+                <target>nav.privacy.alt</target>
+                
+            </trans-unit>
+
+            <trans-unit id="nav.terms.link">
+                <source>nav.terms.link</source>
+                <target>Gebruiksvoorwaarden</target>
+                
+            </trans-unit>
+            <trans-unit id="nav.terms.alt">
+                <source>nav.terms.alt</source>
+                <target>nav.terms.alt</target>
+                
+            </trans-unit>
+
+            <trans-unit id="nav.translations.link">
+                <source>nav.translations.link</source>
+                <target>Help ons met vertalen</target>
+                
+            </trans-unit>
+            <trans-unit id="nav.translations.alt">
+                <source>nav.translations.alt</source>
+                <target>Dit project vertalen</target>
+                
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
