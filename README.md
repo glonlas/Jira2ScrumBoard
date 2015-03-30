@@ -42,3 +42,10 @@ Greetings
 ===============
 Thanks to [Vistaus](https://www.transifex.com/accounts/profile/Vistaus/) for 
 the Dutch translation.
+
+
+Blog posts
+===============
+### French
+* March 2015: [Jira2ScrumBoard l'outil pour imprimer vos Stories Scrum](http://blog.dreaminvasion.com/2015/03/jira2scrumboard-l-outil-pour-imprimer-vos-stories-scrum.html)
+
