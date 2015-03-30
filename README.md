@@ -34,4 +34,11 @@ in which fields your data are.
 Contribution
 ===============
 Feel free to contribute to this project and improve it.  
-Any new translation is welcomed.
+Any new translation is welcomed. Translate this page on our 
+[Transifex page](https://www.transifex.com/projects/p/agilestoryprint/)
+
+
+Greetings
+===============
+Thanks to [Vistaus](https://www.transifex.com/accounts/profile/Vistaus/) for 
+the Dutch translation.

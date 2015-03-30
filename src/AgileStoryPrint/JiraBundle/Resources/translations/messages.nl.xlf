@@ -1,0 +1,332 @@
+<?xml version="1.0" ?><xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file datatype="plaintext" original="file.ext" source-language="en">
+        <body>
+            <trans-unit id="head.title">
+                <source>head.title</source>
+                <target>
+                    Jira2ScrumBoard: Het afdrukken van indexkaarten voor Scrum Board 
+                    van Atlassian Jira
+                </target>
+                
+            </trans-unit>
+
+            <trans-unit id="project.name">
+                <source>project.name</source>
+                <target>Jira2ScrumBoard</target>
+                
+            </trans-unit>
+
+            <!-- Meta -->
+            <trans-unit id="meta.keywords">
+                <source>meta.keywords</source>
+                <target>
+                    Story, Jira, Atlassian, Scrum, Agile, Print
+                </target>
+                
+            </trans-unit>
+            <trans-unit id="meta.description">
+                <source>meta.description</source>
+                <target>
+                    Jira2ScrumBoard is gratis hulpmiddel om uw Jira-verhalen 
+                    te verfraaiien met prachtige indexkaarten.
+                </target>
+                
+            </trans-unit>
+
+            <!-- Page index -->
+            <trans-unit id="index.lead">
+                <source>index.lead</source>
+                <target>
+                    De eenvoudigere manier om &lt;strong&gt;print&lt;/strong&gt; uw &lt;strong&gt;Jira-verhalen 
+                    &lt;/strong&gt;
+                    
+                </target>
+                
+            </trans-unit>
+            <trans-unit id="index.tagline">
+                <source>index.tagline</source>
+                <target>
+                    Upload uw Jira-exportbestand &lt;em&gt;(XML of XLS)&lt;/em&gt; via het 
+                    formulier hieronder en klik op &quot;Converteren&quot; om uw verhalen om te zetten in 
+                    prachtige verhalenkaarten
+                    
+                </target>
+                
+            </trans-unit>
+
+
+            <!-- Form -->
+            <trans-unit id="form.file.label">
+                <source>form.file.label</source>
+                <target>Jira-exportbestand (XML of XLS)</target>
+                
+            </trans-unit>
+
+            <trans-unit id="form.file.button">
+                <source>form.file.button</source>
+                <target>Bestand kiezen</target>
+                
+            </trans-unit>
+
+            <trans-unit id="form.submit.button">
+                <source>form.submit.button</source>
+                <target>Converteren</target>
+                
+            </trans-unit>
+
+            <!-- Services -->
+            <trans-unit id="services.title">
+                <source>services.title</source>
+                <target>Hoe dit werkt</target>
+                
+            </trans-unit>
+
+            <trans-unit id="services.subtitle">
+                <source>services.subtitle</source>
+                <target>
+                    Jira2ScrumBoard is eenvoudig te gebruiken. Het doel is om
+                    u tijd te besparen wanneer u uw Jira-verhalen wilt afdrukken.
+                </target>
+                
+            </trans-unit>
+
+            <trans-unit id="services.option1.title">
+                <source>services.option1.title</source>
+                <target>1. Exporteer uw Jira-verhalen</target>
+                
+            </trans-unit>
+            <trans-unit id="services.option1.text">
+                <source>services.option1.text</source>
+                
+            </trans-unit>
+
+            <trans-unit id="services.option2.title">
+                <source>services.option2.title</source>
+                <target>2. Upload hier uw bestand</target>
+                
+            </trans-unit>
+            <trans-unit id="services.option2.text">
+                <source>services.option2.text</source>
+                
+            </trans-unit>
+
+            <trans-unit id="services.option3.title">
+                <source>services.option3.title</source>
+                <target>3. Druk uw indexkaarten af</target>
+                
+            </trans-unit>
+            <trans-unit id="services.option3.text">
+                <source>services.option3.text</source>
+                
+            </trans-unit>
+
+            <!-- FAQ -->
+            <trans-unit id="faq.title">
+                <source>faq.title</source>
+                <target>Veelgestelde vragen (FAQ)</target>
+                
+            </trans-unit>
+
+            <trans-unit id="faq.subtitle">
+                <source>faq.subtitle</source>
+                <target>
+Neem contact op met me als u geen oplossing hebt kunnen vinden voor uw probleem.
+</target>
+                
+            </trans-unit>
+
+            <!-- Author -->
+            <trans-unit id="author.title">
+                <source>author.title</source>
+                <target>Wie zit er achter dit project?</target>
+                
+            </trans-unit>
+
+            <trans-unit id="author.subtitle">
+                <source>author.subtitle</source>
+                
+            </trans-unit>
+
+            <trans-unit id="author.name">
+                <source>author.name</source>
+                <target>Gérald LONLAS</target>
+                
+            </trans-unit>
+
+            <trans-unit id="author.position">
+                <source>author.position</source>
+                <target>Producteigenaar / Agile-coach</target>
+                
+            </trans-unit>
+
+            <trans-unit id="team_member.name">
+                <source>team_member.name</source>
+                <target>U?</target>
+                
+            </trans-unit>
+
+            <trans-unit id="team_member.position">
+                <source>team_member.position</source>
+                <target>GitHub-bijdrager</target>
+                
+            </trans-unit>
+
+            <!-- Contact -->
+            <trans-unit id="contact.title">
+                <source>contact.title</source>
+                <target>Neem contact op met me</target>
+                
+            </trans-unit>
+
+            <trans-unit id="contact.subtitle">
+                <source>contact.subtitle</source>
+                
+            </trans-unit>
+
+            <trans-unit id="contact.name.placeholder">
+                <source>contact.name.placeholder</source>
+                <target>Uw naam *</target>
+                
+            </trans-unit>
+
+            <trans-unit id="contact.email.placeholder">
+                <source>contact.email.placeholder</source>
+                <target>Uw e-mailadres *</target>
+                
+            </trans-unit>
+            
+            <trans-unit id="contact.phone.placeholder">
+                <source>contact.phone.placeholder</source>
+                <target>Uw telefoonnummer</target>
+                
+            </trans-unit>
+
+            <trans-unit id="contact.message.placeholder">
+                <source>contact.message.placeholder</source>
+                <target>Uw bericht *</target>
+                
+            </trans-unit>
+
+            <trans-unit id="contact.btn.submit">
+                <source>contact.btn.submit</source>
+                <target>Bericht versturen</target>
+                
+            </trans-unit>
+
+            <trans-unit id="contact.sent">
+                <source>contact.sent</source>
+                <target>Uw bericht is verstuurd</target>
+                
+            </trans-unit>
+
+            <!-- No stories generated -->
+            <trans-unit id="emptyStory.title">
+                <source>emptyStory.title</source>
+                <target>Er is geen verhaal gevonden in uw bestand</target>
+                
+            </trans-unit>
+            <trans-unit id="emptyStory.text">
+                <source>emptyStory.text</source>
+                <target>
+Sorry, we konden geen verhalen vinden in uw bestand. Probeer
+een ander bestand of los het probleem op (zie hieronder)
+</target>
+                
+            </trans-unit>
+            <trans-unit id="emptyStory.help.title">
+                <source>emptyStory.help.title</source>
+                <target>
+Wordt uw Excel-bestand niet herkend?
+</target>
+                
+            </trans-unit>
+            <trans-unit id="emptyStory.help.text">
+                <source>emptyStory.help.text</source>
+                
+            </trans-unit>
+
+            <!-- Error : Wrong file format -->
+            <trans-unit id="wrongFile.title">
+                <source>wrongFile.title</source>
+                <target>Er is een verkeerd bestand geüpload</target>
+                
+            </trans-unit>
+            <trans-unit id="wrongFile.text">
+                <source>wrongFile.text</source>
+                <target>
+Het bestand dat u ons stuurde is geen Jira XML of XLS-exportbestand.
+Probeer een ander bestand.</target>
+                
+            </trans-unit>
+
+            <!-- Footer -->
+            <trans-unit id="footer.copyright">
+                <source>footer.copyright</source>
+                <target>
+                    Copyright &amp;copy; 2015 Jira2ScrumBoard
+                    
+                </target>
+                
+            </trans-unit>
+
+            <!-- Story Card -->
+            <trans-unit id="card.effort">
+                <source>card.effort</source>
+                <target>Moeite:</target>
+                
+            </trans-unit>
+            <trans-unit id="card.key">
+                <source>card.key</source>
+                <target>Verhaal-ID:</target>
+                
+            </trans-unit>
+            <trans-unit id="card.type">
+                <source>card.type</source>
+                <target>Type:</target>
+                
+            </trans-unit>
+            <trans-unit id="card.project">
+                <source>card.project</source>
+                <target>Project:</target>
+                
+            </trans-unit>
+
+             <!-- Contact -->
+            <trans-unit id="contact.msg.title">
+                <source>contact.msg.title</source>
+                <target>Het bericht is succesvol verstuurd</target>
+                
+            </trans-unit>
+            <trans-unit id="contact.msg.text">
+                <source>contact.msg.text</source>
+                <target>
+Bedankt dat u de tijd heeft genomen om een bericht te versturen. We zullen u zo snel mogelijk antwoorden.
+</target>
+                
+            </trans-unit>
+
+            <!-- Error files -->
+            <trans-unit id="error.404.title">
+                <source>error.404.title</source>
+                <target>404 - pagina niet gevonden :(</target>
+                
+            </trans-unit>
+            <trans-unit id="error.404.text">
+                <source>error.404.text</source>
+                <target>Excuses, de pagina die u zocht bestaat niet meer.</target>
+                
+            </trans-unit>
+
+            <trans-unit id="error.500.title">
+                <source>error.500.title</source>
+                <target>Fout 500 :'(</target>
+                
+            </trans-unit>
+            <trans-unit id="error.500.text">
+                <source>error.500.text</source>
+                <target>Oeps, er ging hier iets mis: de pagina is kapot. Probeer het later opnieuw.</target>
+                
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

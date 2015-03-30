@@ -32,3 +32,10 @@
 .flag-icon-us.flag-icon-squared {
   background-image: url(../vendors/flag-icon-css/flags/1x1/us.svg);
 }
+
+.flag-icon-nl {
+  background-image: url(../vendors/flag-icon-css/flags/4x3/nl.svg);
+}
+.flag-icon-nl.flag-icon-squared {
+  background-image: url(../vendors/flag-icon-css/flags/1x1/nl.svg);
+}
