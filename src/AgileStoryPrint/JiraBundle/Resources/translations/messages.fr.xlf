@@ -301,6 +301,14 @@
                 <source>card.project</source>
                 <target>Projet :</target>
             </trans-unit>
+            <trans-unit id="card.version">
+                <source>card.version</source>
+                <target>Version :</target>
+            </trans-unit>
+            <trans-unit id="card.epic">
+                <source>card.epic</source>
+                <target>Epic :</target>
+            </trans-unit>
 
              <!-- Contact -->
             <trans-unit id="contact.msg.title">

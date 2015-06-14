@@ -17,6 +17,8 @@ class StoryCard
     const SUMMARY_NAME  = 'Summary';
     const EFFORT_NAME   = 'Story Points';
     const PROJECT_NAME  = 'Project';
+    const VERSION_NAME  = 'Version';
+    const EPIC_NAME     = 'Epic Link';
 
     protected $stories = null;
 
@@ -136,8 +138,12 @@ class StoryCard
             $summary    = (count($item->summary) > 0) ? $item->summary->__toString() : null;
             $type       = (count($item->type) > 0) ? $item->type->__toString() : null;
             $link       = (count($item->link) > 0) ? $item->link->__toString() : null;
+            $version    = (count($item->version) > 0) ? $item->version->__toString() : null;
 
-            $xpathEffort = 'customfields/customfield[customfieldname="Story Points"]/customfieldvalues';
+            $xpathEpic = 'customfields/customfield[customfieldname="Epic Link"]/customfieldvalues';
+            $epic     = (count($item->xpath($xpathEpic)) > 0) ? $item->xpath($xpathEpic)[0]->customfieldvalue->__toString(): null;
+
+            $xpathEffort = 'customfields/customfield[customfieldname="'. self::EFFORT_NAME .'"]/customfieldvalues';
             $effort     = (count($item->xpath($xpathEffort)) > 0) ? $item->xpath($xpathEffort)[0]->customfieldvalue->__toString(): null;
 
             // The minimal requirement is a story key, a summary and an effort
@@ -151,7 +157,9 @@ class StoryCard
                             'summary'   => $summary,
                             'type'      => $type,
                             'effort'    => $effort,
-                            'link'      => $link
+                            'link'      => $link,
+                            'version'   => $version,
+                            'epic'      => $epic,
                         )
                     )
                 );  
@@ -187,7 +195,7 @@ class StoryCard
                                                 'project'   => trim($node->filter('.project')->text()),
                                                 'summary'   => trim($node->filter('.summary')->text()),
                                                 'type'      => trim($node->filter('.issuetype')->text()),
-                                                'effort'    => trim($node->filter('.customfield_10005')->text()) 
+                                                'version'   => trim($node->filter('.version')->text()),
                                             )
                                         )
                                     );
@@ -197,7 +205,6 @@ class StoryCard
         {
             throw new \Symfony\Component\HttpFoundation\File\Exception\FileException();
         }
-
     }
 
     /**
@@ -246,6 +253,8 @@ class StoryCard
                 // Optionnal
                 $effort      = null;
                 $project     = null;
+                $version     = null;
+                $epic        = null;
 
                 // Cols        
                 foreach ($rowData as $colKey => $colValue)
@@ -264,6 +273,12 @@ class StoryCard
 
                     if($colValue == self::PROJECT_NAME)
                         $project = $colKey;
+
+                    if($colValue == self::VERSION_NAME)
+                        $version = $colKey;
+
+                    if($colValue == self::EPIC_NAME)
+                        $epic = $colKey;
                 }
 
                 // Do we found all mandatory fields?
@@ -289,7 +304,9 @@ class StoryCard
                             'type'      => $rowData[$type],
                             'project'   => (!is_null($project)) ? $rowData[$project] : null,
                             'effort'    => (!is_null($effort)) ? $rowData[$effort] : null,
-                            'link'      => null
+                            'link'      => null,
+                            'version'   => (!is_null($version)) ? $rowData[$version] : null,
+                            'epic'      => (!is_null($epic)) ? $rowData[$epic] : null,
                         )
                     )
                 );  

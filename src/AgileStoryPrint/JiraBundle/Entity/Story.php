@@ -10,6 +10,8 @@ class Story
     protected $type;
     protected $effort;
     protected $link;
+    protected $version;
+    protected $epic;
 
     /**
      * Constructor
@@ -38,6 +40,12 @@ class Story
 
 			if(isset($params['link']))
 				$this->setLink($params['link']);
+
+            if(isset($params['version']))
+                $this->setVersion($params['version']);
+
+            if(isset($params['epic']))
+                $this->setEpic($params['epic']);
     	}
     }
 
@@ -145,7 +153,7 @@ class Story
      */
     public function setEffort($effort)
     {
-        if($effort >= 1)
+        if($effort >= 1 OR $effort == 0.0)
         {
             $effort = intval($effort);
         }
@@ -172,6 +180,48 @@ class Story
     public function setLink($link)
     {
     	$this->link = $link;
+    }
+
+    /**
+     * Get version name
+     *
+     * @return string
+     */
+    public function getVersion()
+    {
+        return $this->version;
+    }
+
+    /**
+     * Set version name
+     *
+     * @param string $version
+     * @return void
+     */
+    public function setVersion($version)
+    {
+        $this->version = html_entity_decode($version);
+    }
+
+    /**
+     * Get epic name
+     *
+     * @return string
+     */
+    public function getEpic()
+    {
+        return $this->epic;
+    }
+
+    /**
+     * Set epic name
+     *
+     * @param string $project
+     * @return void
+     */
+    public function setEpic($epic)
+    {
+        $this->epic = html_entity_decode($epic);
     }
 
 }
