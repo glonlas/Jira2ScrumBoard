@@ -145,19 +145,15 @@
             <div class="value">{{ story.getProject() }}</div>
         </div>
 
-        {% if story.getVersion() is not empty %}
         <div class="version inline">
             <div class="legend">{{ 'card.version'|trans }}</div>
             <div class="value">{{ story.getVersion() }}</div>
         </div>
-        {% endif %}
 
-        {% if story.getEpic() is not empty %}
         <div class="epic inline">
             <div class="legend">{{ 'card.epic'|trans }}</div>
             <div class="value">{{ story.getEpic() }}</div>
         </div>
-        {% endif %}
     </section>
     {% endfor %}
     </body>

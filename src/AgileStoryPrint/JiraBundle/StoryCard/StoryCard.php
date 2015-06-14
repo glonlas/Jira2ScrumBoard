@@ -147,7 +147,7 @@ class StoryCard
             $effort     = (count($item->xpath($xpathEffort)) > 0) ? $item->xpath($xpathEffort)[0]->customfieldvalue->__toString(): null;
 
             // The minimal requirement is a story key, a summary and an effort
-            if( !is_null($key) && !is_null($summary) && !is_null($effort) )
+            if( !is_null($key) && !is_null($summary) )
             {
                 $this->stories->addStory(
                     new Story(
