@@ -80,7 +80,7 @@ class Story
      */
     public function setProject($project)
     {
-    	$this->project = $project;
+    	$this->project = html_entity_decode($project);
     }
 
     /**
@@ -101,7 +101,7 @@ class Story
      */
     public function setSummary($summary)
     {
-    	$this->summary = $summary;
+    	$this->summary = html_entity_decode($summary);
     }
 
     /**
@@ -123,7 +123,7 @@ class Story
      */
     public function setType($type)
     {
-    	$this->type = $type;
+    	$this->type = html_entity_decode($type);
     }
 
     /**
