@@ -138,7 +138,7 @@ class StoryCard
             $summary    = (count($item->summary) > 0) ? $item->summary->__toString() : null;
             $type       = (count($item->type) > 0) ? $item->type->__toString() : null;
             $link       = (count($item->link) > 0) ? $item->link->__toString() : null;
-            $version    = (count($item->version) > 0) ? $item->version->__toString() : null;
+            $version    = (count($item->fixVersion) > 0) ? $item->fixVersion->__toString() : null;
 
             $xpathEpic = 'customfields/customfield[customfieldname="Epic Link"]/customfieldvalues';
             $epic     = (count($item->xpath($xpathEpic)) > 0) ? $item->xpath($xpathEpic)[0]->customfieldvalue->__toString(): null;
