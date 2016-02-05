@@ -34,7 +34,7 @@
             <trans-unit id="index.lead">
                 <source>index.lead</source>
                 <target><![CDATA[
-                    The easier way to <strong>print</strong> your <strong>Jira 
+                    The easiest way to <strong>print</strong> your <strong>Jira 
                     stories</strong>
                     ]]>
                 </target>
