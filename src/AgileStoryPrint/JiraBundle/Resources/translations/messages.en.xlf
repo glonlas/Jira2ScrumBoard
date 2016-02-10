@@ -288,7 +288,7 @@
             </trans-unit>
             <trans-unit id="card.key">
                 <source>card.key</source>
-                <target>Story ID:</target>
+                <target>ID:</target>
             </trans-unit>
             <trans-unit id="card.type">
                 <source>card.type</source>
@@ -305,6 +305,12 @@
             <trans-unit id="card.epic">
                 <source>card.epic</source>
                 <target>Epic:</target>
+            </trans-unit>
+
+            <!-- Epics cards-->
+            <trans-unit id="card.tshirtsize">
+                <source>card.tshirtsize</source>
+                <target>T-shirt size:</target>
             </trans-unit>
 
              <!-- Contact -->

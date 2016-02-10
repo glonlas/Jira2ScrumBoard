@@ -12,7 +12,10 @@ use AgileStoryPrint\JiraBundle\StoryCard\StoryCard as StoryCard;
 
 class StoriesController extends Controller
 {
-    public function getStoriesAction()
+    const INDEX_CARD = 'card';
+    const WALLPLANNING_CARD = 'epics';
+
+    public function getCardsAction()
     {
         $form = $this->createForm(new UploadStoriesType());
         $form->handleRequest($this->getRequest());
@@ -29,7 +32,7 @@ class StoriesController extends Controller
                 if($storyCards->importFromFile($file))
                 {
                     // return PDF file
-                    return $this->getStoriesCards($storyCards);
+                    return $this->getEpicsCards($storyCards);
                 }
                 // No stories found
                 else
@@ -83,10 +86,10 @@ class StoriesController extends Controller
         );
     }
 
-    protected function getStoriesCards(StoryCard $storyCards)
+    private function getCards(StoryCard $storyCards, $layout = self::INDEX_CARD)
     {
        $html = $this->renderView(
-            'AgileStoryPrintJiraBundle:StoryCard:card.html.twig',
+            'AgileStoryPrintJiraBundle:StoryCard:'.$layout.'.html.twig',
             array(
                 'stories' => $storyCards->getStories()
             )
@@ -102,4 +105,15 @@ class StoriesController extends Controller
             )
         ); 
     }
+
+    protected function getStoriesCards(StoryCard $storyCards)
+    {
+        return $this->getCards($storyCards, self::INDEX_CARD);
+    }
+
+    protected function getEpicsCards(StoryCard $storyCards)
+    {
+        return $this->getCards($storyCards, self::WALLPLANNING_CARD);
+    }
+
 }

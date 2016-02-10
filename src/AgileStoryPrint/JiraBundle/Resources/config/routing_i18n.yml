@@ -4,7 +4,7 @@ _index:
 
 _getStories:
     locales:     { en: "/print-your-index-cards.html", fr: "/fr/imprimez-vos-index-cards.html", nl: "/nl/print-your-index-cards.html" }
-    defaults: { _controller: AgileStoryPrintJiraBundle:Stories:getStories }
+    defaults: { _controller: AgileStoryPrintJiraBundle:Stories:getCards }
 
 _emptyStory:
     locales:     { en: "/no-stories-found.html", fr: "/fr/pas-de-story-trouve.html", nl: "/nl/no-stories-found.html" }

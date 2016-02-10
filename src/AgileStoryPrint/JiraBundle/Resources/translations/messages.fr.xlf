@@ -310,6 +310,12 @@
                 <target>Epic :</target>
             </trans-unit>
 
+             <!-- Epics cards-->
+            <trans-unit id="card.tshirtsize">
+                <source>card.tshirtsize</source>
+                <target>Taille T-shirt :</target>
+            </trans-unit>
+
              <!-- Contact -->
             <trans-unit id="contact.msg.title">
                 <source>contact.msg.title</source>

@@ -7,6 +7,7 @@ class Story
     protected $key;
     protected $project;
     protected $summary;
+    protected $description;
     protected $type;
     protected $effort;
     protected $link;
@@ -31,6 +32,9 @@ class Story
 
 			if(isset($params['summary']))
 				$this->setSummary($params['summary']);
+
+            if(isset($params['description']))
+                $this->setDescription($params['description']);
 			
 			if(isset($params['type']))
 				$this->setType($params['type']);
@@ -110,6 +114,27 @@ class Story
     public function setSummary($summary)
     {
     	$this->summary = html_entity_decode($summary);
+    }
+
+    /**
+     * Get description
+     *
+     * @return string
+     */
+    public function getDescription()
+    {
+        return $this->description;
+    }
+
+    /**
+     * Set description
+     *
+     * @param string $description
+     * @return void
+     */
+    public function setDescription($description)
+    {
+        $this->description = html_entity_decode($description);
     }
 
     /**

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8" />
+    <style>
+        /* YUI 3.5.0 reset.css (http://developer.yahoo.com/yui/3/cssreset/) - http://cssreset.com */
+        html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:text-top}sub{vertical-align:text-bottom}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit}input,textarea,select{*font-size:100%}legend{color:#000}#yui3-css-stamp.cssreset{display:none}
+
+        /* hide elements */
+        nav,
+        header,
+        footer {
+            display: none;
+        }
+
+        /* Common */
+        * {
+            -webkit-box-sizing: content-box;
+            -moz-box-sizing: content-box;
+            box-sizing: content-box;
+        }
+
+        body {
+            font-family: arial, verdana;
+            color: #000;
+            margin: 0;
+            line-height: normal;
+            font-size: 16px;
+        }
+
+        section {
+            page-break-after: always;
+
+            width: 185mm;
+            height: 276mm;
+
+            padding-left: 10mm;
+            padding-top: 10mm;
+            padding-right: 10mm;
+            padding-bottom: 10mm;
+            background: #FFF;
+        }
+
+        div {
+            margin: 0;
+        }
+
+        .legend {
+            color: #6c6c6c;
+            font-size: 18pt;
+        }
+
+        .value {
+            font-size: 20pt;
+        }
+
+        /* Summary */
+        .summary {
+            font-size: 20pt;
+            font-style: italic;
+            width: 135mm;
+            margin: 0;
+            margin-bottom: 8mm;
+        }
+
+        /* Description */
+        .description {
+            font-size: 16pt;
+            margin: 0;
+        }
+
+        .description h2 {
+            font-size: 26pt;
+            font-weight: bold;
+        }
+
+        .description h3 {
+            font-size: 22pt;
+            font-weight: bold;
+            margin-bottom: 5mm;
+        }
+
+        .description h4 {
+            font-size: 18pt;
+            font-weight: bold;
+        }
+
+        .description h2,
+        .description h3,
+        .description h4,
+        .description p {
+            margin-bottom: 4mm;
+        }
+
+        .description ol,
+        .description ul {
+            list-style: square;
+            margin-left: 10mm;
+        }
+        .description li {
+            margin-bottom: 4mm;
+        }
+
+        /* Points */
+        .points {
+            width: 45mm;
+            height: 45mm;
+            border: 2px solid #959595;
+            float: right;
+        }
+        
+        .points div {
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        .points .legend {
+            margin-top: 8pt;
+        }
+
+        .points .value {
+            font-size: 80pt;
+        }
+    </style>
+    </head>
+    <body>
+    {% for story in stories %}
+    <section id="{{ story.getKey() }}" class="printable">
+        <div class="points">
+            <div class="legend">{{ 'card.tshirtsize'|trans }}</div>
+            <div class="value"></div>
+        </div>
+
+        <div class="summary">{{ story.getSummary() }}</div>
+
+        <div class="description">{{ story.getDescription()|raw }}</div>
+    </section>
+    {% endfor %}
+    </body>
+</html>
