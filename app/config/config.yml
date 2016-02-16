@@ -60,7 +60,7 @@ knp_snappy:
     pdf:
         enabled:    true
         binary:     %wkhtmltopdf_path%
-        options:    {'page-size':'A4', 'orientation':'portrait', 'margin-bottom':'5', 'margin-left':'10', 'margin-right':'10', 'margin-top':'5'}
+        options:    {'page-size':'Letter', 'orientation':'portrait', 'margin-bottom':'5', 'margin-left':'5', 'margin-right':'5', 'margin-top':'5'}
     image:
         enabled:    false
         binary:     %wkhtmltoimage_path%
