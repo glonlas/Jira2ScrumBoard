@@ -1,13 +1,17 @@
 <?php
 
-use Symfony\Component\HttpKernel\Kernel;
 use Symfony\Component\Config\Loader\LoaderInterface;
+use Symfony\Component\HttpKernel\Kernel;
 
 class AppKernel extends Kernel
 {
     public function registerBundles()
     {
-        $bundles = array(
+        // When you install a third-party bundle or create a new bundle in your
+        // application, you must add it in the following array to register it
+        // in the application. Otherwise, the bundle won't be enabled and you
+        // won't be able to use it.
+        $bundles = [
             new Symfony\Bundle\FrameworkBundle\FrameworkBundle(),
             new Symfony\Bundle\SecurityBundle\SecurityBundle(),
             new Symfony\Bundle\TwigBundle\TwigBundle(),
@@ -19,10 +23,14 @@ class AppKernel extends Kernel
 
             new BeSimple\I18nRoutingBundle\BeSimpleI18nRoutingBundle(), // I18N Routing
             new Knp\Bundle\SnappyBundle\KnpSnappyBundle(), // HTML2PDF
-            new AgileStoryPrint\JiraBundle\AgileStoryPrintJiraBundle(),         
-        );
+            new AgileStoryPrint\JiraBundle\AgileStoryPrintJiraBundle(),
+        ];
 
-        if (in_array($this->getEnvironment(), array('dev', 'test'))) {
+        // Some bundles are only used while developing the application or during
+        // the unit and functional tests. Therefore, they are only registered
+        // when the application runs in 'dev' or 'test' environments. This allows
+        // to increase application performance in the production environment.
+        if (in_array($this->getEnvironment(), ['dev', 'test'])) {
             $bundles[] = new Symfony\Bundle\DebugBundle\DebugBundle();
             $bundles[] = new Symfony\Bundle\WebProfilerBundle\WebProfilerBundle();
             $bundles[] = new Sensio\Bundle\DistributionBundle\SensioDistributionBundle();
@@ -30,6 +38,21 @@ class AppKernel extends Kernel
         }
 
         return $bundles;
+    }
+
+    public function getRootDir()
+    {
+        return __DIR__;
+    }
+
+    public function getCacheDir()
+    {
+        return dirname(__DIR__).'/var/cache/'.$this->getEnvironment();
+    }
+
+    public function getLogDir()
+    {
+        return dirname(__DIR__).'/var/logs';
     }
 
     public function registerContainerConfiguration(LoaderInterface $loader)

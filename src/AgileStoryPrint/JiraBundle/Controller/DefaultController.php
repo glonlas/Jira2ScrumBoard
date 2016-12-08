@@ -14,8 +14,8 @@ class DefaultController extends Controller
 {
     public function indexAction()
     {
-        $uploadForm     = $this->createForm(new UploadStoriesType());
-        $contactForm    = $this->createForm(new ContactType());
+        $uploadForm     = $this->createForm(UploadStoriesType::class);
+        $contactForm    = $this->createForm(ContactType::class);
 
         return $this->render(
         	'AgileStoryPrintJiraBundle:Pages:index.html.twig',

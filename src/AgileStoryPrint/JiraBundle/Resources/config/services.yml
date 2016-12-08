@@ -1,4 +1,4 @@
-services:
+#services:
 #    agile_Story_print_jira.example:
 #        class: AgileStoryPrint\JiraBundle\Example
 #        arguments: [@service_id, "plain_value", %parameter%]
@@ -7,4 +7,4 @@ services:
 services:
     asp.mailer:
         class:        AgileStoryPrint\JiraBundle\Mailer\Mailer
-        arguments:    [@mailer, @twig, '%mailer_admin_address%', '%mailer_noreply_address%', '%mailer_noreply_name%']
+        arguments:    ['@mailer', '@twig', '%mailer_admin_address%', '%mailer_noreply_address%', '%mailer_noreply_name%']
