@@ -5,11 +5,11 @@ parameters:
     mailer_host:            127.0.0.1
     mailer_user:            ~
     mailer_password:        ~
-    # email adress where to send contact messages
+    # Email: recipient address
     mailer_admin_address:   ~
-    # email address on email sent (ex: noreply@jira2scrumboard.com)
+    # Email: sender address (ex: noreply@jira2scrumboard.com)
     mailer_noreply_address: ~
-    # email name on email sent (ex: Jira2ScrumBoard)
+    # Email: sender name (ex: Jira2ScrumBoard)
     mailer_noreply_name:    ~
 
 
