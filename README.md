@@ -1,4 +1,4 @@
-AgileStoryPrint
+Jira2ScrumBoard
 ===============
 We think visual management is essential for your daily meetings. 
 This is why we have build a free tool to print Jira Stories 
@@ -32,7 +32,7 @@ How to install
 Print Stories from an Excel file
 ===============
 If you are using an Excel file, please be wary to have well-named columns.  
-The name of each columns is important, AgileStoryPrint requires at least
+The name of each columns is important, Jira2ScrumBoard requires at least
 the following column names:
 
 * Story ID = "Key"
