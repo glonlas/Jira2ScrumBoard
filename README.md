@@ -22,11 +22,11 @@ The project is based on Symfony 2.6
 
 How to install
 ===============
-# Create your parameters.yml
+1. Create your parameters.yml
 `cp app/config/parameters.yml.dist app/config/parameters.yml`
 `vi app/config/parameters.yml`
 
-# Install the packages
+2. Install the packages
 `php composer.phar install`
 
 Print Stories from an Excel file
