@@ -4,7 +4,7 @@
         <body>
             <trans-unit id="faq.question1.title">
                 <source>faq.question1.title</source>
-                <target>How export Jira stories?</target>
+                <target>How to export your Jira stories?</target>
             </trans-unit>
              <trans-unit id="faq.question1.text">
                 <source>faq.question1.text</source>
@@ -23,14 +23,14 @@
 
             <trans-unit id="faq.question2.title">
                 <source>faq.question2.title</source>
-                <target>How print more than 1 card per page?</target>
+                <target>How to print more than 1 card per page?</target>
             </trans-unit>
              <trans-unit id="faq.question2.text">
                 <source>faq.question2.text</source>
                 <target>
                     <![CDATA[
-                    Index cards are made for a full A4 page format.  You can 
-                    setup your printer in landscape and ask for 2 (2 x A5 format) 
+                    Index cards are made for A4 page format. You can 
+                    setup your printer in landscape format and ask for 2 (2 x A5 format) 
                     or 4 (4 x A6 format) stories per page. 4 stories per page 
                     is highly recommended.
                     ]]>
@@ -45,9 +45,9 @@
                 <source>faq.question3.text</source>
                 <target>
                     <![CDATA[
-                    Sorry in this version only one version of Story card is 
-                    available. <br />But if you have another format to suggest me, 
-                    please <a href="#contact">contact me</a>.
+                    Sorry currently this is the only version available. <br />
+                    If you have another format, 
+                    please <a href="#contact">contact us</a>.
                     ]]>
                 </target>
             </trans-unit>
@@ -60,8 +60,9 @@
                 <source>faq.question4.text</source>
                 <target>
                     <![CDATA[
-                    As the previous question, it isn't available for now, but I
-                    think to let you upload your Story card layout.
+                    As for the previous question, customize card is not available 
+                    for now. However in a next version you may be able to upload 
+                    your own story card layout.
                     ]]>
                 </target>
             </trans-unit>
@@ -74,8 +75,8 @@
                 <source>faq.question5.text</source>
                 <target>
                     <![CDATA[
-                    This version only supports XML and Excel (All fields) file
-                    from Jira. <br/> For some server constraint only file under
+                    This version only supports XML and Excel (All fields) format file
+                    from Jira. <br/> Due to some server constraint, only files under
                     1MB are accepted.
                     ]]>
                 </target>
@@ -91,7 +92,7 @@
                     <![CDATA[
                     Now only Jira is supported, but if you want to see your 
                     file supported here, the easiest way is to 
-                    <a href="#contact">contact me</a> and send me a sample of 
+                    <a href="#contact">contact us</a> and send us a sample of 
                     your file.
                     ]]>
                 </target>
@@ -105,20 +106,10 @@
                 <source>faq.question7.text</source>
                 <target>
                     <![CDATA[
-                    There are many ways to contribute, you can involve it by 
-                    <strong>coding new features</strong> and send me your pull-request, 
-                    <strong><a href="https://github.com/glonlas/AgileStoryPrint/tree/master/src/AgileStoryPrint/JiraBundle/Resources/translations" target="_blank">translate this 
-                    tool</a></strong> to your language, <strong>help me to host</strong> this website or 
-                    make a small donation.
-
-                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                    <input type="hidden" name="cmd" value="_s-xclick">
-                    <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
-                    ">
-
-                    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-                    <img alt="" border="0" src="https://www.paypalobjects.com/fr_FR/i/scr/pixel.gif" width="1" height="1">
-                    </form>
+                    There are many ways you can be involved and to contribute. You can start by 
+                    <strong>coding new features</strong> and send us your pull-request. Or 
+                    <strong><a href="https://www.transifex.com/dreaminvasion/agilestoryprint/" target="_blank">translate this 
+                    tool</a></strong> to your language, <strong>help us to host</strong> this website.
                     ]]>
                 </target>
             </trans-unit>
