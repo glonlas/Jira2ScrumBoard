@@ -1,26 +1,23 @@
-<?xml version="1.0" ?><xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-    <file datatype="plaintext" original="file.ext" source-language="en">
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file datatype="plaintext" original="file.ext" source-language="en" target-language="nl">
         <body>
             <!-- Contact -->
             <trans-unit id="contact.subject">
                 <source>contact.subject</source>
                 <target>Jira2ScrumBoard: Bericht van %name%</target>
-                
             </trans-unit>
             <trans-unit id="contact.name">
                 <source>contact.name</source>
                 <target>Naam:</target>
-                
             </trans-unit>
             <trans-unit id="contact.phone">
                 <source>contact.phone</source>
                 <target>Telefoonnummer:</target>
-                
             </trans-unit>
             <trans-unit id="contact.ip">
                 <source>contact.ip</source>
                 <target>IP-adres:</target>
-                
             </trans-unit>
         </body>
     </file>
