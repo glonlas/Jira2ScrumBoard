@@ -52,9 +52,11 @@ New translations are welcomed. Join us on our
 
 Greetings
 ===============
-Thanks to [Vistaus](https://www.transifex.com/accounts/profile/Vistaus/) for 
-the Dutch translation.
-
+Thanks to:
+* [Selynchen](https://www.transifex.com/user/profile/Selynchen/) for 
+the [Mandarin Chinese](http://www.jira2scrumboard.com/zh/) translation.
+* [Vistaus](https://www.transifex.com/accounts/profile/Vistaus/) for 
+the [Dutch](http://www.jira2scrumboard.com/nl/) translation.
 
 Blog posts
 ===============

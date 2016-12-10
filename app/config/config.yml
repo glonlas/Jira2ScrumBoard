@@ -8,7 +8,7 @@ imports:
 # See http://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
 parameters:
     # This parameter defines the codes of the locales (languages) enabled in the application
-    app_locales: en|fr|de|es|cs|nl|it
+    app_locales: en|fr|de|es|cs|nl|it|zh
     app.notifications.email_sender: anonymous@example.com
 
 framework:
