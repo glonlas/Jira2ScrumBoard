@@ -1,6 +1,6 @@
-<?xml version="1.0"?>
+<?xml version="1.0" ?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-    <file source-language="en" datatype="plaintext" original="file.ext">
+    <file datatype="plaintext" original="file.ext" source-language="en" target-language="fr">
         <body>
             <trans-unit id="nav.toggle">
                 <source>nav.toggle</source>
@@ -32,7 +32,7 @@
             </trans-unit>
             <trans-unit id="nav.faq.alt">
                 <source>nav.faq.alt</source>
-                <target></target>
+                <target>Foire aux questions</target>
             </trans-unit>
 
             <trans-unit id="nav.author.link">
@@ -60,7 +60,7 @@
             </trans-unit>
             <trans-unit id="nav.privacy.alt">
                 <source>nav.privacy.alt</source>
-                <target></target>
+                <target>Lire les conditions d'usage des cookies</target>
             </trans-unit>
 
             <trans-unit id="nav.terms.link">
@@ -69,17 +69,16 @@
             </trans-unit>
             <trans-unit id="nav.terms.alt">
                 <source>nav.terms.alt</source>
-                <target></target>
+                <target>Lire les conditions générales d'utilisation</target>
             </trans-unit>
-
 
             <trans-unit id="nav.translations.link">
                 <source>nav.translations.link</source>
-                <target>Aidez-nous à traduire</target>
+                <target>Aider nous à traduire</target>
             </trans-unit>
             <trans-unit id="nav.translations.alt">
                 <source>nav.translations.alt</source>
-                <target>Traduire le projet</target>
+                <target>Traduisez ce projet</target>
             </trans-unit>
         </body>
     </file>

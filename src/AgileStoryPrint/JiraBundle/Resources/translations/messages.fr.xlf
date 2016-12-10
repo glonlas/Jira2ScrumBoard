@@ -1,6 +1,6 @@
-<?xml version="1.0"?>
+<?xml version="1.0" ?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-    <file source-language="en" datatype="plaintext" original="file.ext">
+    <file datatype="plaintext" original="file.ext" source-language="en" target-language="fr">
         <body>
             <trans-unit id="head.title">
                 <source>head.title</source>
@@ -22,23 +22,29 @@
             <trans-unit id="meta.description">
                 <source>meta.description</source>
                 <target>
+                    <![CDATA[
                     Jira2ScrumBoard est un outil simple et gratuit pour imprimer
                     vos Stories Jira en de belles Stories Cards.
+                    ]]>
                 </target>
+
             </trans-unit>
 
             <!-- Page index -->
             <trans-unit id="index.lead">
                 <source>index.lead</source>
-                <target><![CDATA[
+                <target>
+                    <![CDATA[
                     L'outil le plus simple pour <strong>imprimer</strong> vos 
                     <strong>Stories Jira</strong>
                     ]]>
                 </target>
+
             </trans-unit>
             <trans-unit id="index.tagline">
                 <source>index.tagline</source>
-                <target><![CDATA[
+                <target>
+                    <![CDATA[
                     Cet outil convertit les fichiers contenants vos stories Jira 
                     <em>(XML or Excel)</em> en de belles Stories Cards. 
                     Sélectionnez votre fichier ci-dessous et cliquez sur 
@@ -72,10 +78,14 @@
 
             <trans-unit id="services.subtitle">
                 <source>services.subtitle</source>
-                <target>Jira2ScrumBoard est très simple d'utilisation. Créé 
+                <target>
+                    <![CDATA[
+                    Jira2ScrumBoard est très simple d'utilisation. Créé 
                     pour vous faire gagner du temps, il vous permet d'imprimer 
                     vos Story Jira en Story cards lisibles et utilisables sur 
-                    votre tableau Scrum.</target>
+                    votre tableau Scrum.
+                    ]]>
+                </target>
             </trans-unit>
 
             <trans-unit id="services.option1.title">
@@ -98,6 +108,7 @@
             <trans-unit id="services.option2.title">
                 <source>services.option2.title</source>
                 <target>2. Envoyez le fichier</target>
+
             </trans-unit>
             <trans-unit id="services.option2.text">
                 <source>services.option2.text</source>
@@ -134,10 +145,13 @@
             <trans-unit id="faq.subtitle">
                 <source>faq.subtitle</source>
                 <target>
+                    <![CDATA[
                     N'hésitez pas à me contacter si vous ne trouvez pas la 
                     réponse à votre question.
+                    ]]>
                 </target>
             </trans-unit>
+
             <!-- Author -->
             <trans-unit id="author.title">
                 <source>author.title</source>
@@ -146,7 +160,8 @@
 
             <trans-unit id="author.subtitle">
                 <source>author.subtitle</source>
-                <target><![CDATA[
+                <target>
+                    <![CDATA[
                     Ce projet est totalement gratuit et n'est en aucune façon
                     attaché aux marques Atlassian et Jira. Vous pouvez retrouver
                     le code source de ce projet sur son 
@@ -185,8 +200,12 @@
 
             <trans-unit id="contact.subtitle">
                 <source>contact.subtitle</source>
-                <target>Une idée, un bug ou tout simplement un message à faire 
-                    passer ? N'hésitez pas, laissez-moi un message.</target>
+                <target>
+                    <![CDATA[
+                    Une idée, un bug ou tout simplement un message à faire 
+                    passer ? N'hésitez pas, laissez-nous un message.
+                    ]]>
+                </target>
             </trans-unit>
 
             <trans-unit id="contact.name.placeholder">
@@ -219,7 +238,6 @@
                 <target>Votre message a été envoyé</target>
             </trans-unit>
 
-
             <!-- No stories generated -->
             <trans-unit id="emptyStory.title">
                 <source>emptyStory.title</source>
@@ -227,22 +245,22 @@
             </trans-unit>
             <trans-unit id="emptyStory.text">
                 <source>emptyStory.text</source>
-                <target><![CDATA[
+                <target>
+                    <![CDATA[
                     Désolé aucune story trouvée dans votre fichier <br/> 
                     Veuillez essayer avec un autre fichier ou corrigez-le 
                     (Instruction ci-dessous)
-                    ]]></target>
-            </trans-unit>
-            <trans-unit id="emptyStory.help.title">
-                <source>emptyStory.help.title</source>
-                <target><![CDATA[
-                    Votre fichier Excel n'est pas reconnu ?
                     ]]>
                 </target>
             </trans-unit>
+            <trans-unit id="emptyStory.help.title">
+                <source>emptyStory.help.title</source>
+                <target>Votre fichier n'est pas reconnu ?</target>
+            </trans-unit>
             <trans-unit id="emptyStory.help.text">
                 <source>emptyStory.help.text</source>
-                <target><![CDATA[
+                <target>
+                    <![CDATA[
                     <p>
                         Si vous utilisez un fichier Excel, assurez-vous que 
                         vos colonnes aient le bon titre.
@@ -264,22 +282,26 @@
             <!-- Error : Wrong file format -->
             <trans-unit id="wrongFile.title">
                 <source>wrongFile.title</source>
-                <target>Wrong file uploaded</target>
+                <target>Mauvais fichier</target>
+
             </trans-unit>
             <trans-unit id="wrongFile.text">
                 <source>wrongFile.text</source>
-                <target><![CDATA[
+                <target>
+                    <![CDATA[
                     Le fichier que vous avez envoyé n'est pas un fichier Jira 
                     compatible. Veuillez recommencer avec un autre fichier. <br />
                     Cet outil supporte les exports XML et Excel.
-                    ]]></target>
+                    ]]>
+                </target>
             </trans-unit>
 
             <!-- Footer -->
             <trans-unit id="footer.copyright">
                 <source>footer.copyright</source>
-                <target><![CDATA[
-                    Copyright &copy; 2015 Jira2ScrumBoard
+                <target>
+                    <![CDATA[
+                    Copyright &copy; 2015-2016 Jira2ScrumBoard
                     ]]>
                 </target>
             </trans-unit>
@@ -291,7 +313,7 @@
             </trans-unit>
             <trans-unit id="card.key">
                 <source>card.key</source>
-                <target>ID Story:</target>
+                <target>ID Story :</target>
             </trans-unit>
             <trans-unit id="card.type">
                 <source>card.type</source>
@@ -317,10 +339,31 @@
             </trans-unit>
             <trans-unit id="contact.msg.text">
                 <source>contact.msg.text</source>
-                <target><![CDATA[
+                <target>
+                    <![CDATA[
                     Merci d'avoir pris le temps d'envoyer votre message. Nous 
                     vous répondrons dans les plus brefs délais.
-                    ]]></target>
+                    ]]>
+                </target>
+            </trans-unit>
+
+            <!-- Error files -->
+            <trans-unit id="error.404.title">
+                <source>error.404.title</source>
+                <target>404 page introuvable :(</target>
+            </trans-unit>
+            <trans-unit id="error.404.text">
+                <source>error.404.text</source>
+                <target>Désolé, la page que vous recherchez n'existe pas.</target>
+            </trans-unit>
+
+            <trans-unit id="error.500.title">
+                <source>error.500.title</source>
+                <target>Erreur 500 :'(</target>
+            </trans-unit>
+            <trans-unit id="error.500.text">
+                <source>error.500.text</source>
+                <target>Oups ! Quelque chose ne s'est pas déroulé correctement. Veuillez recommencer.</target>
             </trans-unit>
         </body>
     </file>
