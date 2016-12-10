@@ -25,15 +25,16 @@
             <trans-unit id="meta.description">
                 <source>meta.description</source>
                 <target>
-                    Jira2ScrumBoard is a  free tool that enhance your Jira 
-                    Stories to a beautiful Index cards.
+                    Jira2ScrumBoard is a  free tool that transforms your Jira 
+                    Stories into beautiful Index cards.
                 </target>
             </trans-unit>
 
             <!-- Page index -->
             <trans-unit id="index.lead">
                 <source>index.lead</source>
-                <target><![CDATA[
+                <target>
+                    <![CDATA[
                     The easiest way to <strong>print</strong> your <strong>Jira 
                     stories</strong>
                     ]]>
@@ -41,7 +42,8 @@
             </trans-unit>
             <trans-unit id="index.tagline">
                 <source>index.tagline</source>
-                <target><![CDATA[
+                <target>
+                    <![CDATA[
                     Upload your Jira export file <em>(XML or XLS)</em> on the 
                     form below and click on "Convert" to get your stories in 
                     beautiful Story cards
@@ -75,8 +77,10 @@
             <trans-unit id="services.subtitle">
                 <source>services.subtitle</source>
                 <target>
-                    Jira2ScrumBoard is really simple to use. Its goal is to
-                    save your time when you want print your Jira Stories.
+                    <![CDATA[
+                    Jira2ScrumBoard is really simple to use. The goal is to
+                    save your time when you want to print your Jira Stories.
+                    ]]>
                 </target>
             </trans-unit>
 
@@ -88,9 +92,9 @@
                 <source>services.option1.text</source>
                 <target>
                     <![CDATA[
-                    Filter in Jira, stories you want to print. For example:
+                    Filter in Jira stories you wanted to print. For example:
                     do a search as "sprint=1" to get all stories from your
-                    sprint #1. Then, export them to XML or Excel (All fields).
+                    sprint #1. Then, export them as XML or Excel (All fields) format.
                     ]]>
                 </target>
             </trans-unit>
@@ -103,8 +107,8 @@
                 <source>services.option2.text</source>
                 <target>
                     <![CDATA[
-                    Upload your exported file into the form upper and
-                    click on the button "Convert". Only XML or Excel file with 
+                    To upload your file, select your Jira file into the above form and
+                    click on the "Convert" button. Only XML or Excel file with 
                     a size below 1MB are supported.
                     ]]>
                 </target>
@@ -145,11 +149,12 @@
 
             <trans-unit id="author.subtitle">
                 <source>author.subtitle</source>
-                <target><![CDATA[
+                <target>
+                    <![CDATA[
                     This project is a totally free and not attached to Atlassian
                     and Jira brands.<br />You can find the source code in the 
                     <a href="https://github.com/glonlas/AgileStoryPrint">Github 
-                    repot</a>. Feel free to participate to this project by 
+                    repot</a>. Feel free to participate in this project by 
                     sending me your Pull request or fork it.
                     ]]>
                 </target>
@@ -184,8 +189,10 @@
             <trans-unit id="contact.subtitle">
                 <source>contact.subtitle</source>
                 <target>
-                    You want a new feature, you found a bug or something to 
-                    tell me. Please send me a message.
+                    <![CDATA[
+                    If you want a new feature, found a bug or something to 
+                    inform us, please send us a message.
+                    ]]>
                 </target>
             </trans-unit>
 
@@ -226,21 +233,25 @@
             </trans-unit>
             <trans-unit id="emptyStory.text">
                 <source>emptyStory.text</source>
-                <target><![CDATA[
+                <target>
+                    <![CDATA[
                     Sorry we didn't find any stories in your file. Please try 
                     with another file or fix it (see below)
-                    ]]></target>
+                    ]]>
+                </target>
             </trans-unit>
             <trans-unit id="emptyStory.help.title">
                 <source>emptyStory.help.title</source>
-                <target><![CDATA[
-                    Your Excel file is not recognized?
+                <target>
+                    <![CDATA[
+                    Your file is not recognized?
                     ]]>
                 </target>
             </trans-unit>
             <trans-unit id="emptyStory.help.text">
                 <source>emptyStory.help.text</source>
-                <target><![CDATA[
+                <target>
+                    <![CDATA[
                     <p>
                         If you are using an Excel file, make sure your columns 
                         have the right "title".
@@ -266,17 +277,20 @@
             </trans-unit>
             <trans-unit id="wrongFile.text">
                 <source>wrongFile.text</source>
-                <target><![CDATA[
+                <target>
+                    <![CDATA[
                     The file you send to us isn't a Jira XML or XLs export file.
                     Please try with another file.
-                    ]]></target>
+                    ]]>
+                </target>
             </trans-unit>
 
             <!-- Footer -->
             <trans-unit id="footer.copyright">
                 <source>footer.copyright</source>
-                <target><![CDATA[
-                    Copyright &copy; 2015 Jira2ScrumBoard
+                <target>
+                    <![CDATA[
+                    Copyright &copy; 2015-2016 Jira2ScrumBoard
                     ]]>
                 </target>
             </trans-unit>
@@ -314,10 +328,12 @@
             </trans-unit>
             <trans-unit id="contact.msg.text">
                 <source>contact.msg.text</source>
-                <target><![CDATA[
+                <target>
+                    <![CDATA[
                     Thank you for having took the time to send a message. We 
                     will reply as soon as possible.
-                    ]]></target>
+                    ]]>
+                </target>
             </trans-unit>
 
             <!-- Error files -->
