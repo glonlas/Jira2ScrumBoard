@@ -1,37 +1,32 @@
-<?xml version="1.0" ?><xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-    <file datatype="plaintext" original="file.ext" source-language="en">
+<?xml version="1.0" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file datatype="plaintext" original="file.ext" source-language="en" target-language="nl">
         <body>
             <trans-unit id="field.mandatory">
                 <source>field.mandatory</source>
                 <target>Een bestand is vereist</target>
-                
             </trans-unit>
             <trans-unit id="file.size">
                 <source>file.size</source>
                 <target>Het bestand is te groot ({{ size }} KB). De maximaal toegestane grootte is {{ limit}} KB</target>
-                
             </trans-unit>
             <trans-unit id="file.extension">
                 <source>file.extension</source>
                 <target>Alleen Jira-exportbestanden in XML- en XLS (Excel)-formaat worden ondersteund. Kies het juiste bestandsformaat.</target>
-                
             </trans-unit>
 
             <!-- Contact -->
             <trans-unit id="contact.name">
                 <source>contact.name</source>
                 <target>Vul uw naam in.</target>
-                
             </trans-unit>
             <trans-unit id="contact.email">
                 <source>contact.email</source>
                 <target>Vul e-mailadres in.</target>
-                
             </trans-unit>
             <trans-unit id="contact.message">
                 <source>contact.message</source>
                 <target>Vul een bericht in.</target>
-                
             </trans-unit>
         </body>
     </file>
