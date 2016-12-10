@@ -1,0 +1,100 @@
+<?xml version="1.0" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file datatype="plaintext" original="file.ext" source-language="en" target-language="zh">
+        <body>
+            <trans-unit id="faq.question1.title">
+                <source>faq.question1.title</source>
+                <target>如何输出Jira的故事？</target>
+            </trans-unit>
+             <trans-unit id="faq.question1.text">
+                <source>faq.question1.text</source>
+                <target>
+                    <![CDATA[
+                    要导出你的Jira故事，首先你必须
+                    选择你所需要的故事。您可以轻松选择故事情节
+                    从您的下一个Sprint与搜索表达式
+                    <em>“sprint = 1”</ em> (其中1是您的sprint号码)
+                    更多详细信息
+                    <a href =“https://www.youtube.com/watch?v=FP7pxon8E5c”
+                    target =“_ blank”>视频在YouTube上可得到</a>
+                    ]]>
+                </target>
+            </trans-unit>
+
+            <trans-unit id="faq.question2.title">
+                <source>faq.question2.title</source>
+                <target>如何打印每页多于 1 张卡？</target>
+            </trans-unit>
+             <trans-unit id="faq.question2.text">
+                <source>faq.question2.text</source>
+                <target>
+                    <![CDATA[
+                    索引卡是设定于完整的A4页面格式。你可以
+                    在您的打印机设置横向模式，并要求2 (2 x A5格式)
+                    或每页4 (4 x A6格式) 故事。每页4面是
+                    强烈推荐。
+                    ]]>
+                </target>
+            </trans-unit>
+
+            <trans-unit id="faq.question3.title">
+                <source>faq.question3.title</source>
+                <target>还有其他卡的格式吗？</target>
+            </trans-unit>
+             <trans-unit id="faq.question3.text">
+                <source>faq.question3.text</source>
+                <target>
+                    <![CDATA[
+                    对不起，在这个版本只有一个版本的故事卡是
+                    有效的。 <br />但如果你有另一种格式的提议，
+                    请<a href="#contact">与我联系
+                    ]]>
+                </target>
+            </trans-unit>
+
+            <trans-unit id="faq.question4.title">
+                <source>faq.question4.title</source>
+                <target>我可以使用自定义卡格式吗？</target>
+            </trans-unit>
+             <trans-unit id="faq.question4.text">
+                <source>faq.question4.text</source>
+                <target>
+                    <![CDATA[
+                    对于上一个问题，自定义卡现在不可用。但是，
+                    系统将允许您上传您自己的故事卡布局。
+                    ]]>
+                </target>
+            </trans-unit>
+
+            <trans-unit id="faq.question5.title">
+                <source>faq.question5.title</source>
+                <target>是否支持我的文件格式？</target>
+            </trans-unit>
+             <trans-unit id="faq.question5.text">
+                <source>faq.question5.text</source>
+                <target>
+                    <![CDATA[
+                    此版本只支持XML和Excel (所有方面) 格式的Jira文件。 
+                    <br/>由于某些服务器限制，只接受1MB以下的文件。
+                    ]]>
+                </target>
+            </trans-unit>
+
+            <trans-unit id="faq.question6.title">
+                <source>faq.question6.title</source>
+                <target>你支持除Jira之外的其他工具吗？</target>
+            </trans-unit>
+             <trans-unit id="faq.question6.text">
+                <source>faq.question6.text</source>
+                <target>
+                    <![CDATA[
+                    我们现在只支持Jira版本，但如果你想要用你自己
+                    的文件模式，最简单的方法是
+                    <a href="#contact">与我联系</a>，并向我发送
+                    您的文件样品。
+                    ]]>
+                </target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

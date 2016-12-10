@@ -1,0 +1,239 @@
+<?xml version="1.0" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file datatype="plaintext" original="file.ext" source-language="en" target-language="zh">
+        <body>
+            <trans-unit id="head.title">
+                <source>head.title</source>
+                <target>
+                    <![CDATA[
+                    Jira2ScrumBoard: 打印Scrum板的索引卡
+                    出于Atlassian Jira
+                    ]]>
+                </target>
+            </trans-unit>
+
+            <trans-unit id="project.name">
+                <source>project.name</source>
+                <target>Jira2ScrumBoard</target>
+            </trans-unit>
+
+            <!-- Meta -->
+            <trans-unit id="meta.keywords">
+                <source>meta.keywords</source>
+                <target>
+                    Story, Jira, Atlassian, Scrum, Agile, Print
+                </target>
+            </trans-unit>
+            <trans-unit id="meta.description">
+                <source>meta.description</source>
+                <target>
+                    <![CDATA[
+                    Jira2ScrumBoard是一个免费的工具，转变你的Jira
+                    故事到美丽的索引卡。
+                    ]]>
+                </target>
+            </trans-unit>
+
+            <!-- Page index -->
+            <trans-unit id="index.lead">
+                <source>index.lead</source>
+                <target>
+                    <![CDATA[
+                    很简单的方式<strong>打印</ strong>您的<strong> Jira
+                    故事</ strong>
+                    ]]>
+                </target>
+            </trans-unit>
+            <trans-unit id="index.tagline">
+                <source>index.tagline</source>
+                <target>
+                    <![CDATA[
+                    上传您的Jira导出文件<em> (XML或XLS) </em> 在以下的
+                    表格，然后点击“转换”，您的故事就会变成
+                    美丽的故事卡
+                    ]]>
+                </target>
+            </trans-unit>
+
+
+            <!-- Form -->
+            <trans-unit id="form.file.label">
+                <source>form.file.label</source>
+                <target>Jira导出文件 (XML或XLS)</target>
+            </trans-unit>
+
+            <trans-unit id="form.file.button">
+                <source>form.file.button</source>
+                <target>选择文件</target>
+            </trans-unit>
+
+            <trans-unit id="form.submit.button">
+                <source>form.submit.button</source>
+                <target>转换</target>
+            </trans-unit>
+
+            <!-- Services -->
+            <trans-unit id="services.title">
+                <source>services.title</source>
+                <target>如何运作</target>
+            </trans-unit>
+
+            <trans-unit id="services.option1.title">
+                <source>services.option1.title</source>
+                <target>1. 输出您的Jira故事</target>
+            </trans-unit>
+
+            <trans-unit id="services.option2.title">
+                <source>services.option2.title</source>
+                <target>2. 请在此处上传您的文件</target>
+            </trans-unit>
+
+            <trans-unit id="services.option3.title">
+                <source>services.option3.title</source>
+                <target>3. 打印您的索引卡</target>
+            </trans-unit>
+
+            <!-- FAQ -->
+            <trans-unit id="faq.title">
+                <source>faq.title</source>
+                <target>常见问题</target>
+            </trans-unit>
+
+            <trans-unit id="faq.subtitle">
+                <source>faq.subtitle</source>
+                <target>
+                    <![CDATA[
+                    如果你没有找到你要的解决方案，请随时与我联系。
+                    ]]>
+                </target>
+            </trans-unit>
+
+            <!-- Author -->
+            <trans-unit id="author.title">
+                <source>author.title</source>
+                <target>谁是这个项目的背后的经手人？</target>
+            </trans-unit>
+
+            <trans-unit id="author.name">
+                <source>author.name</source>
+                <target>杰汉特 隆拉斯</target>
+            </trans-unit>
+
+            <trans-unit id="author.position">
+                <source>author.position</source>
+                <target>产品拥有者/ 训导员</target>
+            </trans-unit>
+
+            <trans-unit id="team_member.name">
+                <source>team_member.name</source>
+                <target>您呢?</target>
+            </trans-unit>
+
+            <trans-unit id="team_member.position">
+                <source>team_member.position</source>
+                <target>GitHub 贡献员 </target>
+            </trans-unit>
+
+            <!-- Contact -->
+            <trans-unit id="contact.title">
+                <source>contact.title</source>
+                <target>联系我</target>
+            </trans-unit>
+
+            <trans-unit id="contact.name.placeholder">
+                <source>contact.name.placeholder</source>
+                <target>您的姓名 *</target>
+            </trans-unit>
+
+            <trans-unit id="contact.email.placeholder">
+                <source>contact.email.placeholder</source>
+                <target>您的电邮地址 *</target>
+            </trans-unit>
+            <trans-unit id="contact.phone.placeholder">
+                <source>contact.phone.placeholder</source>
+                <target>您的联络号码</target>
+            </trans-unit>
+
+            <trans-unit id="contact.message.placeholder">
+                <source>contact.message.placeholder</source>
+                <target>您的信息 *</target>
+            </trans-unit>
+
+            <trans-unit id="contact.btn.submit">
+                <source>contact.btn.submit</source>
+                <target>发出信息</target>
+            </trans-unit>
+
+            <trans-unit id="contact.sent">
+                <source>contact.sent</source>
+                <target>您的信息已寄出</target>
+            </trans-unit>
+
+            <!-- No stories generated -->
+            <trans-unit id="emptyStory.title">
+                <source>emptyStory.title</source>
+                <target>没有发现任何故事在您的文件中</target>
+            </trans-unit>
+
+            <!-- Error : Wrong file format -->
+            <trans-unit id="wrongFile.title">
+                <source>wrongFile.title</source>
+                <target>上传的文件有错误</target>
+            </trans-unit>
+            <trans-unit id="wrongFile.text">
+                <source>wrongFile.text</source>
+            </trans-unit>
+
+            <!-- Story Card -->
+            <trans-unit id="card.effort">
+                <source>card.effort</source>
+                <target>贡献：</target>
+            </trans-unit>
+            <trans-unit id="card.key">
+                <source>card.key</source>
+                <target>故事ID：</target>
+            </trans-unit>
+            <trans-unit id="card.type">
+                <source>card.type</source>
+                <target>类型：</target>
+            </trans-unit>
+            <trans-unit id="card.project">
+                <source>card.project</source>
+                <target>项目：</target>
+            </trans-unit>
+
+             <!-- Contact -->
+            <trans-unit id="contact.msg.title">
+                <source>contact.msg.title</source>
+                <target>信息已成功寄出</target>
+            </trans-unit>
+            <trans-unit id="contact.msg.text">
+                <source>contact.msg.text</source>
+                <target>
+                    <![CDATA[
+                    谢谢您的信息。我们会尽快回复你。
+                    ]]>
+                </target>
+            </trans-unit>
+
+            <!-- Error files -->
+            <trans-unit id="error.404.title">
+                <source>error.404.title</source>
+                <target>404 网页未寻获 :(</target>
+            </trans-unit>
+            <trans-unit id="error.404.text">
+                <source>error.404.text</source>
+                <target>很抱歉，您正在寻找的网页已不存在。</target>
+            </trans-unit>
+
+            <trans-unit id="error.500.title">
+                <source>error.500.title</source>
+                <target>错误 500 :'(</target>
+            </trans-unit>
+            <trans-unit id="error.500.text">
+                <source>error.500.text</source>
+                <target>糟糕，出现问题，页面错误。请稍后重试。</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

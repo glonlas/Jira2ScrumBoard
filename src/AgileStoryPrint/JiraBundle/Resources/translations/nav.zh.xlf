@@ -1,0 +1,85 @@
+<?xml version="1.0" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file datatype="plaintext" original="file.ext" source-language="en" target-language="zh">
+        <body>
+            <trans-unit id="nav.toggle">
+                <source>nav.toggle</source>
+                <target>切换导航</target>
+            </trans-unit>
+
+            <!-- Navigation -->
+            <trans-unit id="nav.index.link">
+                <source>nav.index.link</source>
+                <target>主页</target>
+            </trans-unit>
+            <trans-unit id="nav.index.alt">
+                <source>nav.index.alt</source>
+                <target>nav.index.alt</target>
+            </trans-unit>
+
+            <trans-unit id="nav.services.link">
+                <source>nav.services.link</source>
+                <target>如何运作</target>
+            </trans-unit>
+            <trans-unit id="nav.services.alt">
+                <source>nav.services.alt</source>
+                <target>nav.services.alt</target>
+            </trans-unit>
+
+            <trans-unit id="nav.faq.link">
+                <source>nav.faq.link</source>
+                <target>常见问题</target>
+            </trans-unit>
+            <trans-unit id="nav.faq.alt">
+                <source>nav.faq.alt</source>
+                <target>nav.faq.alt</target>
+            </trans-unit>
+
+            <trans-unit id="nav.author.link">
+                <source>nav.author.link</source>
+                <target>幕后经手员</target>
+            </trans-unit>
+            <trans-unit id="nav.author.alt">
+                <source>nav.author.alt</source>
+                <target>nav.author.alt</target>
+            </trans-unit>
+
+            <trans-unit id="nav.contact.link">
+                <source>nav.contact.link</source>
+                <target>联系方式</target>
+            </trans-unit>
+            <trans-unit id="nav.contact.alt">
+                <source>nav.contact.alt</source>
+                <target>nav.contact.alt</target>
+            </trans-unit>
+
+            <!-- Footer -->
+            <trans-unit id="nav.privacy.link">
+                <source>nav.privacy.link</source>
+                <target>Cookie 声明</target>
+            </trans-unit>
+            <trans-unit id="nav.privacy.alt">
+                <source>nav.privacy.alt</source>
+                <target>nav.privacy.alt</target>
+            </trans-unit>
+
+            <trans-unit id="nav.terms.link">
+                <source>nav.terms.link</source>
+                <target>使用条款</target>
+            </trans-unit>
+            <trans-unit id="nav.terms.alt">
+                <source>nav.terms.alt</source>
+                <target>nav.terms.alt</target>
+            </trans-unit>
+
+            <trans-unit id="nav.translations.link">
+                <source>nav.translations.link</source>
+                <target>请帮我们翻译</target>
+            </trans-unit>
+            <trans-unit id="nav.translations.alt">
+                <source>nav.translations.alt</source>
+                <target>翻译这个项目</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

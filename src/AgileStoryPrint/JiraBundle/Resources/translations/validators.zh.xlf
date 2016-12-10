@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file datatype="plaintext" original="file.ext" source-language="en" target-language="zh">
+        <body>
+            <trans-unit id="field.mandatory">
+                <source>field.mandatory</source>
+                <target>一个文件是强制性的</target>
+            </trans-unit>
+            <trans-unit id="file.size">
+                <source>file.size</source>
+                <target>文件太大 ({{ 容量 }} KB). 允许的最大容量是 {{ 限制量 }} KB</target>
+            </trans-unit>
+            <trans-unit id="file.extension">
+                <source>file.extension</source>
+                <target>仅支持XML和XLS (Excel) Jira导出。请选择正确的文件格式。</target>
+            </trans-unit>
+
+            <!-- Contact -->
+            <trans-unit id="contact.name">
+                <source>contact.name</source>
+                <target>请输入您的姓名。</target>
+            </trans-unit>
+            <trans-unit id="contact.email">
+                <source>contact.email</source>
+                <target>请输入您的网络地址。</target>
+            </trans-unit>
+            <trans-unit id="contact.message">
+                <source>contact.message</source>
+                <target>请输入讯息。</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
