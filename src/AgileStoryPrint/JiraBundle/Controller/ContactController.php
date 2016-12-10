@@ -12,22 +12,17 @@ class ContactController extends Controller
     public function indexAction(Request $request)
     {
         $emailSent = false;
-        $form = $this->createForm(new ContactType);
+        $form = $this->createForm(ContactType::class);
 
-        if ($request->isMethod('POST'))
+        $form->handleRequest($request);
+
+        if ($form->isValid())
         {
-            $form->bind($request);
+            $formData = $form->getData();
+            $formData['ip'] = $request->getClientIp();
 
-            if ($form->isValid())
-            {
-                $formData = $form->getData();
-                $formData['ip'] = $request->getClientIp();
-
-                $emailSent = $this->get('asp.mailer')->sendContactMessage($formData);
-            }
+            $emailSent = $this->get('asp.mailer')->sendContactMessage($formData);
         }
-
-        //return array('form' => $form->createView());
 
         return $this->render(
             'AgileStoryPrintJiraBundle:Pages:contact.html.twig',

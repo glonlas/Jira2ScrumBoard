@@ -4,6 +4,7 @@ namespace AgileStoryPrint\JiraBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpFoundation\Request;
 
 use AgileStoryPrint\JiraBundle\Form\Type\UploadStoriesType as UploadStoriesType;
 use AgileStoryPrint\JiraBundle\Form\Type\ContactType as ContactType;
@@ -12,10 +13,10 @@ use AgileStoryPrint\JiraBundle\StoryCard\StoryCard as StoryCard;
 
 class StoriesController extends Controller
 {
-    public function getStoriesAction()
+    public function getStoriesAction(Request $request)
     {
-        $form = $this->createForm(new UploadStoriesType());
-        $form->handleRequest($this->getRequest());
+        $form = $this->createForm(UploadStoriesType::class);
+        $form->handleRequest($request);
 
         // Form validation
         if ($form->isValid())
@@ -45,7 +46,7 @@ class StoriesController extends Controller
         }
         else
         {
-            $contactForm = $this->createForm(new ContactType());
+            $contactForm = $this->createForm(ContactType::class);
 
             return $this->render(
                 'AgileStoryPrintJiraBundle:Pages:index.html.twig',

@@ -1,0 +1,726 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+<title>Awesome team - Current Sprint</title>
+<style type="text/css">
+table {
+    mso-displayed-decimal-separator:"\.";
+    mso-displayed-thousand-separator:"\,";
+}
+body
+{
+    margin: 0px;
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    color:black;
+}
+
+</style>
+<META HTTP-EQUIV="Content-Type" Content="application/vnd.ms-excel; charset=UTF-8">
+<!-- JRA-7598 - ensure fields (e.g. description) occupy only one cell - even fields containing newlines. -->
+<!--
+Vertical align all cells to the top, in order to align all issue rows of issuetable to the top,
+since Excel does not use or save the css files it is hardcoded here.
+-->
+<style>
+@page
+{
+mso-page-orientation:landscape;
+margin:.25in .25in .5in .25in;
+mso-header-margin:.5in;
+mso-footer-margin:.25in;
+mso-footer-data:"&R&P of &N";
+mso-horizontal-page-align:center;
+mso-vertical-page-align:center;
+}
+
+td.issuekey,
+td.issuetype,
+td.status {
+    mso-style-parent: "";
+    mso-number-format: \@;
+    text-align: left;
+}
+br
+{
+    mso-data-placement:same-cell;
+}
+
+td
+{
+    vertical-align: top;
+}
+</style>
+
+<!--[if gte mso 9]><xml>
+<x:ExcelWorkbook>
+<x:ExcelWorksheets>
+<x:ExcelWorksheet>
+<x:Name>general_report</x:Name>
+<x:WorksheetOptions>
+<x:Print>
+<x:ValidPrinterInfo/>
+</x:Print>
+</x:WorksheetOptions>
+</x:ExcelWorksheet>
+</x:ExcelWorksheets>
+</x:ExcelWorkbook>
+</xml><![endif]-->
+</head>
+<body>
+
+<table border="1">
+    <tr bgcolor="#222222" height="47">
+        <td colspan="83">
+            <img src="https://jira.yourdomain.tld/jira-logo-scaled.png" width="65" height="47" border="0" alt="Awesome team - Current Sprint">
+        </td>
+    </tr>
+    <tr>
+        <td colspan="83">
+            <a href="https://jira.yourdomain.tld/secure/IssueNavigator.jspa?requestId=13110">Awesome team - Current Sprint</a>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="83">
+            Displaying <strong>2</strong> issues at <strong>09/Dec/16 9:28</strong>.
+        </td>
+    </tr>
+</table>
+
+
+
+
+                                        <table id="issuetable"  border="1" cellpadding="3" cellspacing="1" width="100%">
+                        <thead>
+        <tr class="rowHeader">
+            
+                                                            <th class="colHeaderLink headerrow-project" data-id="project">
+                            Project
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-issuekey" data-id="issuekey">
+                            Key
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-summary" data-id="summary">
+                            Summary
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-issuetype" data-id="issuetype">
+                            Issue Type
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-status" data-id="status">
+                            Status
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-priority" data-id="priority">
+                            Priority
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-resolution" data-id="resolution">
+                            Resolution
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-assignee" data-id="assignee">
+                            Assignee
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-reporter" data-id="reporter">
+                            Reporter
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-creator" data-id="creator">
+                            Creator
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-created" data-id="created">
+                            Created
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-lastViewed" data-id="lastViewed">
+                            Last Viewed
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-updated" data-id="updated">
+                            Updated
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-resolutiondate" data-id="resolutiondate">
+                            Resolved
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-versions" data-id="versions">
+                            Affects Version/s
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-fixVersions" data-id="fixVersions">
+                            Fix Version/s
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-components" data-id="components">
+                            Component/s
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-duedate" data-id="duedate">
+                            Due Date
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-votes" data-id="votes">
+                            Votes
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-watches" data-id="watches">
+                            Watchers
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-thumbnail" data-id="thumbnail">
+                            Images
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-timeoriginalestimate" data-id="timeoriginalestimate">
+                            Original Estimate
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-timeestimate" data-id="timeestimate">
+                            Remaining Estimate
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-timespent" data-id="timespent">
+                            Time Spent
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-workratio" data-id="workratio">
+                            Work Ratio
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-subtasks" data-id="subtasks">
+                            Sub-Tasks
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-issuelinks" data-id="issuelinks">
+                            Linked Issues
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-environment" data-id="environment">
+                            Environment
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-description" data-id="description">
+                            Description
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-security" data-id="security">
+                            Security Level
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-progress" data-id="progress">
+                            Progress
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-aggregateprogress" data-id="aggregateprogress">
+                            Σ Progress
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-aggregatetimespent" data-id="aggregatetimespent">
+                            Σ Time Spent
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-aggregatetimeestimate" data-id="aggregatetimeestimate">
+                            Σ Remaining Estimate
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-aggregatetimeoriginalestimate" data-id="aggregatetimeoriginalestimate">
+                            Σ Original Estimate
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-labels" data-id="labels">
+                            Labels
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10190" data-id="customfield_10190">
+                            Affected Release Version
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10010" data-id="customfield_10010">
+                            Bugzilla Id
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10170" data-id="customfield_10170">
+                            Business Value
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10614" data-id="customfield_10614">
+                            CS Function
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10613" data-id="customfield_10613">
+                            Complexity Level
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10060" data-id="customfield_10060">
+                            Condition of Success
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_11113" data-id="customfield_11113">
+                            Date Due
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10811" data-id="customfield_10811">
+                            Dev Team
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10200" data-id="customfield_10200">
+                            Due date
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10313" data-id="customfield_10313">
+                            Epic Colour
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10310" data-id="customfield_10310">
+                            Epic Link
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10311" data-id="customfield_10311">
+                            Epic Name
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10312" data-id="customfield_10312">
+                            Epic Status
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10510" data-id="customfield_10510">
+                            Flagged
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_11111" data-id="customfield_11111">
+                            Health
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10172" data-id="customfield_10172">
+                            Impact / Constraints
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10080" data-id="customfield_10080">
+                            Parent Epic
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10162" data-id="customfield_10162">
+                            Product Owner(s)
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10615" data-id="customfield_10615">
+                            Project Size
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10150" data-id="customfield_10150">
+                            Project Type
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10050" data-id="customfield_10050">
+                            QA - Test Step or Notes
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_11010" data-id="customfield_11010">
+                            R&amp;D
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_11310" data-id="customfield_11310">
+                            Rank
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10210" data-id="customfield_10210">
+                            Rank (Obsolete)
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10141" data-id="customfield_10141">
+                            Release Date
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10810" data-id="customfield_10810">
+                            Release Notes Comments
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10171" data-id="customfield_10171">
+                            Release Version
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10410" data-id="customfield_10410">
+                            Release Versions
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_11610" data-id="customfield_11610">
+                            Severity
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10182" data-id="customfield_10182">
+                            Size
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_11110" data-id="customfield_11110">
+                            Sponsor
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10211" data-id="customfield_10211">
+                            Sprint
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_11510" data-id="customfield_11510">
+                            Sprint Ready
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10181" data-id="customfield_10181">
+                            Spécialité
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10163" data-id="customfield_10163">
+                            Spécialité(s)
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10611" data-id="customfield_10611">
+                            Stakeholders
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10812" data-id="customfield_10812">
+                            Started
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10183" data-id="customfield_10183">
+                            Steps to Complete
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10042" data-id="customfield_10042">
+                            Story Points
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10102" data-id="customfield_10102">
+                            TAG
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10000" data-id="customfield_10000">
+                            Team
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10910" data-id="customfield_10910">
+                            Team
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10185" data-id="customfield_10185">
+                            Test Method
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_11112" data-id="customfield_11112">
+                            Theme
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10120" data-id="customfield_10120">
+                            This issue is
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_11210" data-id="customfield_11210">
+                            Équipe
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-customfield_10142" data-id="customfield_10142">
+                            Équipe imp.
+                                                    </th>
+                                                                    </tr>
+    </thead>
+    <tbody>
+                    
+
+                <tr id="issuerow425305" rel="425305" data-issuekey="ID-3600" class="issuerow">
+                                            <td class="project">    A great project
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="ID-3604" href="https://jira.yourdomain.tld/browse/ID-3604">ID-3604</a>
+</td>
+                                            <td class="summary"><p>
+                Add a contact form
+    </p>
+</td>
+                                            <td class="issuetype"> Story</td>
+                                            <td class="status">
+                Resolved
+    </td>
+                                            <td class="priority">   Critical
+</td>
+                                            <td class="resolution">    Done
+</td>
+                                            <td class="assignee">            John Doe
+    </td>
+                                            <td class="reporter">            Jane Doe
+    </td>
+                                            <td class="creator">            Jane Doe
+    </td>
+                                            <td class="created"> 08/Nov/16 11:34 </td>
+                                            <td class="lastViewed"> &nbsp; </td>
+                                            <td class="updated"> 08/Dec/16 11:40 </td>
+                                            <td class="resolutiondate"> 08/Dec/16 11:40 </td>
+                                            <td class="versions">    &nbsp;
+</td>
+                                            <td class="fixVersions">    Proof of concept
+</td>
+                                            <td class="components">    &nbsp;
+</td>
+                                            <td class="duedate">    &nbsp;
+</td>
+                                            <td class="votes">0</td>
+                                            <td class="watches">1</td>
+                                            <td class="thumbnail"></td>
+                                            <td class="timeoriginalestimate"></td>
+                                            <td class="timeestimate"></td>
+                                            <td class="timespent"></td>
+                                            <td class="workratio">&nbsp;
+</td>
+                                            <td class="subtasks">                                        ID-3688                        </td>
+                                            <td class="issuelinks">                </td>
+                                            <td class="environment"></td>
+                                            <td class="description">      h2. As a customer, I want to contact the company by a contact form on the website<br/>
+<br/>
+h3. CoS<br/>
+# A contact form is visible on the Website<br/>
+# The form return a confirmation message to the customer<br/>
+# In case of error, the form return an error message
+  </td>
+                                            <td class="security"></td>
+                                            <td class="progress">     
+</td>
+                                            <td class="aggregateprogress">     
+</td>
+                                            <td class="aggregatetimespent"></td>
+                                            <td class="aggregatetimeestimate"></td>
+                                            <td class="aggregatetimeoriginalestimate"></td>
+                                            <td class="labels">    </td>
+                                            <td class="customfield_10190"></td>
+                                            <td class="customfield_10010"></td>
+                                            <td class="customfield_10170"></td>
+                                            <td class="customfield_10614"></td>
+                                            <td class="customfield_10613"></td>
+                                            <td class="customfield_10060"></td>
+                                            <td class="customfield_11113"></td>
+                                            <td class="customfield_10811">
+
+
+    <div class="shorten" id="customfield_10811-field">
+                                    <span>Awesome team</span>                      </div>
+</td>
+                                            <td class="customfield_10200"></td>
+                                            <td class="customfield_10313"></td>
+                                            <td class="customfield_10310">
+            ID-3603
+    </td>
+                                            <td class="customfield_10311"></td>
+                                            <td class="customfield_10312"></td>
+                                            <td class="customfield_10510">
+
+
+</td>
+                                            <td class="customfield_11111"></td>
+                                            <td class="customfield_10172"></td>
+                                            <td class="customfield_10080">    </td>
+                                            <td class="customfield_10162"></td>
+                                            <td class="customfield_10615"></td>
+                                            <td class="customfield_10150"></td>
+                                            <td class="customfield_10050"></td>
+                                            <td class="customfield_11010"></td>
+                                            <td class="customfield_11310">      2|hzvd4x:
+  </td>
+                                            <td class="customfield_10210">      9223372036854775807
+  </td>
+                                            <td class="customfield_10141"></td>
+                                            <td class="customfield_10810"></td>
+                                            <td class="customfield_10171"></td>
+                                            <td class="customfield_10410">    </td>
+                                            <td class="customfield_11610"></td>
+                                            <td class="customfield_10182"></td>
+                                            <td class="customfield_11110"></td>
+                                            <td class="customfield_10211">Sprint #25 - Yoda</td>
+                                            <td class="customfield_11510">    Yes
+</td>
+                                            <td class="customfield_10181"></td>
+                                            <td class="customfield_10163">
+
+
+</td>
+                                            <td class="customfield_10611">
+
+
+</td>
+                                            <td class="customfield_10812">            <span title="08/Dec/16 11:40"><time class="livestamp allow-future" datetime="2016-12-08T11:40:14-0500">08/Dec/16 11:40 AM</time></span>
+    </td>
+                                            <td class="customfield_10183"></td>
+                                            <td class="customfield_10042">    5
+</td>
+                                            <td class="customfield_10102">
+
+
+</td>
+                                            <td class="customfield_10000"></td>
+                                            <td class="customfield_10910">            <p>None</p>
+    </td>
+                                            <td class="customfield_10185"></td>
+                                            <td class="customfield_11112">    </td>
+                                            <td class="customfield_10120"></td>
+                                            <td class="customfield_11210">    </td>
+                                            <td class="customfield_10142">
+
+
+</td>
+                    </tr>
+                    <tr id="issuerow425305" rel="425305" data-issuekey="ID-3600" class="issuerow">
+                                            <td class="project">    A great project
+</td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="ID-3604" href="https://jira.yourdomain.tld/browse/ID-3605">ID-3605</a>
+</td>
+                                            <td class="summary"><p>
+                Unsubscribe from the mailing list
+    </p>
+</td>
+                                            <td class="issuetype"> Story</td>
+                                            <td class="status">
+                In Progress
+    </td>
+                                            <td class="priority">   In Progress
+</td>
+                                            <td class="resolution">    Unresolved
+</td>
+                                            <td class="assignee">            John Doe
+    </td>
+                                            <td class="reporter">            Jane Doe
+    </td>
+                                            <td class="creator">            Jane Doe
+    </td>
+                                            <td class="created"> 09/Nov/16 10:58 </td>
+                                            <td class="lastViewed"> &nbsp; </td>
+                                            <td class="updated"> 05/Dec/16 10:22 </td>
+                                            <td class="resolutiondate"> &nbsp; </td>
+                                            <td class="versions">    &nbsp;
+</td>
+                                            <td class="fixVersions">    Proof of concept
+</td>
+                                            <td class="components">    &nbsp;
+</td>
+                                            <td class="duedate">    &nbsp;
+</td>
+                                            <td class="votes">0</td>
+                                            <td class="watches">2</td>
+                                            <td class="thumbnail"></td>
+                                            <td class="timeoriginalestimate"></td>
+                                            <td class="timeestimate"></td>
+                                            <td class="timespent"></td>
+                                            <td class="workratio">&nbsp;
+</td>
+                                            <td class="subtasks">                                        ID-3614, ID-3615, ID-3616, ID-3617, ID-3618, ID-3619, ID-3620, ID-3621, ID-3622                        </td>
+                                            <td class="issuelinks">                </td>
+                                            <td class="environment"></td>
+                                            <td class="description">      h2. As a customer, I want to unsubscribe from the mailing list<br/>
+<br/>
+h3. CoS<br/>
+# An unsubscribe link is displayed on the email footer<br/>
+# The customer can unsubscribe from our emails only by clicking to the link<br/>
+# The customer does not need to be logged to unsubcribe
+  </td>
+                                            <td class="security"></td>
+                                            <td class="progress">     
+</td>
+                                            <td class="aggregateprogress">     
+</td>
+                                            <td class="aggregatetimespent"></td>
+                                            <td class="aggregatetimeestimate"></td>
+                                            <td class="aggregatetimeoriginalestimate"></td>
+                                            <td class="labels">    </td>
+                                            <td class="customfield_10190"></td>
+                                            <td class="customfield_10010"></td>
+                                            <td class="customfield_10170"></td>
+                                            <td class="customfield_10614"></td>
+                                            <td class="customfield_10613"></td>
+                                            <td class="customfield_10060"></td>
+                                            <td class="customfield_11113"></td>
+                                            <td class="customfield_10811">
+
+
+    <div class="shorten" id="customfield_10811-field">
+                                    <span>Awesome team</span>                      </div>
+</td>
+                                            <td class="customfield_10200"></td>
+                                            <td class="customfield_10313"></td>
+                                            <td class="customfield_10310">
+            ID-3603
+    </td>
+                                            <td class="customfield_10311"></td>
+                                            <td class="customfield_10312"></td>
+                                            <td class="customfield_10510">
+
+
+</td>
+                                            <td class="customfield_11111"></td>
+                                            <td class="customfield_10172"></td>
+                                            <td class="customfield_10080">    </td>
+                                            <td class="customfield_10162"></td>
+                                            <td class="customfield_10615"></td>
+                                            <td class="customfield_10150"></td>
+                                            <td class="customfield_10050"></td>
+                                            <td class="customfield_11010"></td>
+                                            <td class="customfield_11310">      2|hzvd4x:
+  </td>
+                                            <td class="customfield_10210">      9223372036854775807
+  </td>
+                                            <td class="customfield_10141"></td>
+                                            <td class="customfield_10810"></td>
+                                            <td class="customfield_10171"></td>
+                                            <td class="customfield_10410">    </td>
+                                            <td class="customfield_11610"></td>
+                                            <td class="customfield_10182"></td>
+                                            <td class="customfield_11110"></td>
+                                            <td class="customfield_10211">Sprint #25 - Yoda</td>
+                                            <td class="customfield_11510">    Yes
+</td>
+                                            <td class="customfield_10181"></td>
+                                            <td class="customfield_10163">
+
+
+</td>
+                                            <td class="customfield_10611">
+
+
+</td>
+                                            <td class="customfield_10812">            <span title="10/Nov/16 15:49"><time class="livestamp allow-future" datetime="2016-11-10T15:49:14-0500">10/Nov/16 3:49 PM</time></span>
+    </td>
+                                            <td class="customfield_10183"></td>
+                                            <td class="customfield_10042">    2
+</td>
+                                            <td class="customfield_10102">
+
+
+</td>
+                                            <td class="customfield_10000"></td>
+                                            <td class="customfield_10910">            <p>None</p>
+    </td>
+                                            <td class="customfield_10185"></td>
+                                            <td class="customfield_11112">    </td>
+                                            <td class="customfield_10120"></td>
+                                            <td class="customfield_11210">    </td>
+                                            <td class="customfield_10142">
+
+
+</td>
+                    </tr>
+                </tbody>
+    </table>
+    <div class="end-of-stable-message"></div>
+            <table border="1" >
+<tr>
+    <td bgcolor="#dddddd" colspan="83"><font size="1">
+        Generated at Fri Dec 09 09:28:59 EST 2016 by Gérald Lonlas using JIRA 6.3.6#6336-sha1:cf16ebf0f241491bda94c6691a07212d62a38e09.
+    </font></td>
+</tr>
+</table>
+
+</body>
+</html>

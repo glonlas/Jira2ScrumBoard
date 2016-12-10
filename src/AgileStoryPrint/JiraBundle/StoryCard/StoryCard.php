@@ -12,13 +12,14 @@ use AgileStoryPrint\JiraBundle\Entity\Story as Story;
 
 class StoryCard
 {
-    const KEY_NAME      = 'Key';
-    const ISSUE_NAME    = 'Issue Type';
-    const SUMMARY_NAME  = 'Summary';
-    const EFFORT_NAME   = 'Story Points';
-    const PROJECT_NAME  = 'Project';
-    const VERSION_NAME  = 'Version';
-    const EPIC_NAME     = 'Epic Link';
+    const KEY_NAME          = 'Key';
+    const ISSUE_NAME        = 'Issue Type';
+    const SUMMARY_NAME      = 'Summary';
+    const EFFORT_NAME       = 'Story Points';
+    const PROJECT_NAME      = 'Project';
+    const VERSION_NAME      = 'Version';
+    const VERSION_NAME_XLS  = 'Fix Version/s';
+    const EPIC_NAME         = 'Epic Link';
 
     protected $stories = null;
 
@@ -53,63 +54,70 @@ class StoryCard
      */
     public function importFromFile(UploadedFile $file)
     {
-        if(
-            'text/xml' === $file->getClientMimeType() or
-            'text/html' === $file->getClientMimeType()
-        )
+        try
         {
-            $this->importFromXML($file);
+            if(
+                'text/xml' === $file->getClientMimeType() or
+                'text/html' === $file->getClientMimeType()
+            )
+            {
+                $this->importFromXML($file);
+            }
+            elseif(
+                'application/octet-stream' === $file->getClientMimeType() or
+                'application/vnd.ms-excel' === $file->getClientMimeType() or
+                'application/msexcel' === $file->getClientMimeType() or
+                'application/x-msexcel' === $file->getClientMimeType() or
+                'application/x-ms-excel' === $file->getClientMimeType() or
+                'application/x-excel' === $file->getClientMimeType() or
+                'application/x-dos_ms_excel' === $file->getClientMimeType() or
+                'application/xls' === $file->getClientMimeType() or
+                'application/x-xls' === $file->getClientMimeType() or
+                'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' === $file->getClientMimeType()
+            )
+            {
+                /* 
+                Because mine type detection doesn't work perfectly, at this time we don't know
+                if the file is a classic XLS or a HTML XLS (XLSx)
+
+                First we try to analyse it as a classical XLS file, if the file isn't an XLS file
+                an exception will be thrown and we will try to check it as an HTML file (Jira HTML).
+
+                Finally if the file isn't an Excel or a Jira HTML File an exception will be thrown
+                and has to be catch by the parent method.
+                */
+                try
+                {
+                   $this->importFromXLS($file); 
+                }
+                catch(\Exception $e)
+                {
+                    $this->importFromHTML($file);
+                }
+                
+            }
+            else
+            { 
+                throw new \Symfony\Component\HttpFoundation\File\Exception\FileException();   
+            }
+
+            if(count($this->stories->getStories()) > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
-        elseif(
-            'application/octet-stream' === $file->getClientMimeType() or
-            'application/vnd.ms-excel' === $file->getClientMimeType() or
-            'application/msexcel' === $file->getClientMimeType() or
-            'application/x-msexcel' === $file->getClientMimeType() or
-            'application/x-ms-excel' === $file->getClientMimeType() or
-            'application/x-excel' === $file->getClientMimeType() or
-            'application/x-dos_ms_excel' === $file->getClientMimeType() or
-            'application/xls' === $file->getClientMimeType() or
-            'application/x-xls' === $file->getClientMimeType() or
-            'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' === $file->getClientMimeType()
-        )
+        catch(\Exception $e)
         {
-            /* 
-            Because mine type detection doesn't work perfectly, at this time we don't know
-            if the file is a classic XLS or a HTML XLS (XLSx)
-
-            First we try to analyse it as a classical XLS file, if the file isn't an XLS file
-            an exception will be thrown and we will try to check it as an HTML file (Jira HTML).
-
-            Finally if the file isn't an Excel or a Jira HTML File an exception will be thrown
-            and has to be catch by the parent method.
-            */
-            try
-            {
-               $this->importFromXLS($file); 
-            }
-            catch(\Exception $e)
-            {
-                $this->importFromHTML($file);
-            }
-            
+            throw new \Symfony\Component\HttpFoundation\File\Exception\FileException();
         }
-        else
+        finally
         {
             // Delete the temporary file
             unlink($file->getRealPath());
-            throw new \Symfony\Component\HttpFoundation\File\Exception\FileException();
-        }
-
-        // Delete the temporary file
-        unlink($file->getRealPath());
-
-        if(count($this->stories->getStories()) > 0)
-        {
-            return true;
-        }
-        else
-        {
-            return false;
         }
     }
 
@@ -195,7 +203,7 @@ class StoryCard
                                                 'project'   => trim($node->filter('.project')->text()),
                                                 'summary'   => trim($node->filter('.summary')->text()),
                                                 'type'      => trim($node->filter('.issuetype')->text()),
-                                                'version'   => trim($node->filter('.version')->text()),
+                                                'version'   => trim($node->filter('.fixversions')->text()),
                                             )
                                         )
                                     );
@@ -274,7 +282,8 @@ class StoryCard
                     if($colValue == self::PROJECT_NAME)
                         $project = $colKey;
 
-                    if($colValue == self::VERSION_NAME)
+                    if($colValue == self::VERSION_NAME ||
+                       $colValue == self::VERSION_NAME_XLS)
                         $version = $colKey;
 
                     if($colValue == self::EPIC_NAME)

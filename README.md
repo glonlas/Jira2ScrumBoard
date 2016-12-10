@@ -1,5 +1,7 @@
 Jira2ScrumBoard
 ===============
+[![Build Status](https://travis-ci.org/glonlas/Jira2ScrumBoard.svg?branch=master)](https://travis-ci.org/glonlas/Jira2ScrumBoard) [![Latest Stable Version](https://poser.pugx.org/symfony/symfony/v/stable)](https://packagist.org/packages/symfony/symfony)
+
 We think visual management is essential for your daily meetings. 
 This is why we have build a free tool to print Jira Stories 
 onto beautiful Story cards.
@@ -18,15 +20,15 @@ To run this project you will need:
 * [Composer](https://getcomposer.org/)
 * [WKHTMLToPDF](http://wkhtmltopdf.org/downloads.html)
 
-The project is based on Symfony 2.6
+The project is based on Symfony 3.2
 
 How to install
 ===============
-1. Create your parameters.yml
-`cp app/config/parameters.yml.dist app/config/parameters.yml`
+1. Create your parameters.yml  
+`cp app/config/parameters.yml.dist app/config/parameters.yml`  
 `vi app/config/parameters.yml`
 
-2. Install the packages
+2. Install the packages  
 `php composer.phar install`
 
 Print Stories from an Excel file
