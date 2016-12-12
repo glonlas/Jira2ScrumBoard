@@ -1,0 +1,94 @@
+<?xml version="1.0" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file datatype="plaintext" original="file.ext" source-language="en" target-language="de">
+        <body>
+            <trans-unit id="faq.question1.title">
+                <source>faq.question1.title</source>
+                <target>Wie werden Stories aus Jira exportiert?</target>
+            </trans-unit>
+             <trans-unit id="faq.question1.text">
+                <source>faq.question1.text</source>
+                <target>
+                    <![CDATA[
+                    Um Stories aus Jira zu exportieren, müssen Sie zuerst die benötigten Stories selektieren. Sie können Stories aus Ihrem nächsten Sprint sehr einfach mit dem Ausdruck <em>"sprint=1"</em> (wobei 1 der Nummer des Sprints entspricht auswählen).
+                    Für nähere Informationen gibt es 
+                    <a href="https://www.youtube.com/watch?v=FP7pxon8E5c" 
+                    target="_blank">ein Video auf YouTube</a> zu sehen.
+                    ]]>
+                </target>
+            </trans-unit>
+
+            <trans-unit id="faq.question2.title">
+                <source>faq.question2.title</source>
+                <target>Wie können mehr als 1 Karte auf eine Seite gedruckt werden?</target>
+            </trans-unit>
+             <trans-unit id="faq.question2.text">
+                <source>faq.question2.text</source>
+                <target>
+                    <![CDATA[
+                    Das Layout der Index Karten ist auf voll seitiges A4 Format optimiert. Sie können die Einstellung ihres Druckers in Querformat ändern und 2 (2 x A5 Format) oder 4 (4 x A6 Format) Stories pro Seite drucken. 4 Stories pro Seite sind empfehlenswert.
+                    ]]>
+                </target>
+            </trans-unit>
+
+            <trans-unit id="faq.question3.title">
+                <source>faq.question3.title</source>
+                <target>Es gibt andere Karten-Formate?</target>
+            </trans-unit>
+             <trans-unit id="faq.question3.text">
+                <source>faq.question3.text</source>
+                <target>
+                    <![CDATA[
+                    In der derzeitigen Version ist nur eine Version von Story Karten 
+                    verfügbar. <br />Aber wenn sie einen Vorschlag für ein anderes Format haben, 
+                    bitte <a href="#contact">kontaktieren</a> sie mich.
+                    ]]>
+                </target>
+            </trans-unit>
+
+            <trans-unit id="faq.question4.title">
+                <source>faq.question4.title</source>
+                <target>Kann ich ein individuelles Karten-Format verwenden?</target>
+            </trans-unit>
+             <trans-unit id="faq.question4.text">
+                <source>faq.question4.text</source>
+                <target>
+                    <![CDATA[
+                    Wie schon in der vorherigen Frage erwähnt, ist diese Funktion derzeit nicht verfügbar, aber ich überlege derzeit den Upload von individuellen Story Karten Layouts zu erlauben.
+                    ]]>
+                </target>
+            </trans-unit>
+
+            <trans-unit id="faq.question5.title">
+                <source>faq.question5.title</source>
+                <target>Wird mein Dateiformat unterstützt?</target>
+            </trans-unit>
+             <trans-unit id="faq.question5.text">
+                <source>faq.question5.text</source>
+                <target>
+                    <![CDATA[
+                    In der derzeitigen Version werden nur XML und Excel (Alle Felder) Dateien aus Jira unterstützt. Aufgrund von serverseitigen Reglementierungen werden nur Dateien mit einer Größe von unter 1MB akzeptiert.
+                    ]]>
+                </target>
+            </trans-unit>
+
+            <trans-unit id="faq.question6.title">
+                <source>faq.question6.title</source>
+                <target>Wir noch ein anderen Tool abgesehen von Jira unterstützt?</target>
+            </trans-unit>
+             <trans-unit id="faq.question6.text">
+                <source>faq.question6.text</source>
+                <target>
+                    <![CDATA[
+                    Derzeit wird ausschließlich Jira unterstützt, aber sollten Sie Vorschläge für die Unterstützung von anderen Dateitypen haben, ist der einfachste Weg mit direkt zu <a href="#contact">kontaktieren</a> und mir eine Beispiel-Datei zu senden.
+                    ]]>
+                </target>
+            </trans-unit>
+
+            <trans-unit id="faq.question7.title">
+                <source>faq.question7.title</source>
+                <target>Ich mag dieses Tool, wie kann ich unterstützen?</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
