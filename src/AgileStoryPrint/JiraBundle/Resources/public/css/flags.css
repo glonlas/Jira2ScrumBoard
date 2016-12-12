@@ -53,3 +53,10 @@
 .flag-icon-de.flag-icon-squared {
   background-image: url(../vendors/flag-icon-css/flags/1x1/de.svg);
 }
+
+.flag-icon-es {
+  background-image: url(../vendors/flag-icon-css/flags/4x3/es.svg);
+}
+.flag-icon-es.flag-icon-squared {
+  background-image: url(../vendors/flag-icon-css/flags/1x1/es.svg);
+}

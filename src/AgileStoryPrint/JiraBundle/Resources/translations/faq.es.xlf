@@ -1,0 +1,106 @@
+<?xml version="1.0" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file datatype="plaintext" original="file.ext" source-language="en" target-language="es">
+        <body>
+            <trans-unit id="faq.question1.title">
+                <source>faq.question1.title</source>
+                <target>¿Cómo exportar historias Jira?</target>
+            </trans-unit>
+             <trans-unit id="faq.question1.text">
+                <source>faq.question1.text</source>
+                <target>
+                    <![CDATA[
+                    Para exportar sus historias Jira, primero tiene que hacer una 
+                    selección de las historias que necesita. Puede seleccionar fácilmente las historias
+                    para su próximo Sprint con la expresión de búsqueda 
+                    <em>"sprint=1"</em> (donde 1 es el número de su sprint).
+                    Para más información 
+                    <a href="https://www.youtube.com/watch?v=FP7pxon8E5c" 
+                    target="_blank">el video está disponible en YouTube</a>.
+                    ]]>
+                </target>
+            </trans-unit>
+
+            <trans-unit id="faq.question2.title">
+                <source>faq.question2.title</source>
+                <target>¿Cómo imprimir más de 1 tarjeta por página?</target>
+            </trans-unit>
+             <trans-unit id="faq.question2.text">
+                <source>faq.question2.text</source>
+                <target>
+                    <![CDATA[
+                    Las fichas están hechas para un formato de página completo A4. Puede 
+                    configurar su impresora en panorama y pedir por 2 historias(2 x formato A5) 
+                    o 4 historias (4 x formato A6) por página. 4 historias por página 
+                    son altamente recomendables.
+                    ]]>
+                </target>
+            </trans-unit>
+
+            <trans-unit id="faq.question3.title">
+                <source>faq.question3.title</source>
+                <target>¿Hay otros formatos de tarjeta?</target>
+            </trans-unit>
+             <trans-unit id="faq.question3.text">
+                <source>faq.question3.text</source>
+                <target>
+                    <![CDATA[
+                    Lo sentimos, en esta versión sólo una versión de tarjeta de historia está 
+                    disponible. <br />Pero si tiene algún otro formato para sugerirme, 
+                    por favor <a href="#contact">contácteme</a>.
+                    ]]>
+                </target>
+            </trans-unit>
+
+            <trans-unit id="faq.question4.title">
+                <source>faq.question4.title</source>
+                <target>¿Puedo usar un formato de tarjeta personalizada?</target>
+            </trans-unit>
+             <trans-unit id="faq.question4.text">
+                <source>faq.question4.text</source>
+                <target>
+                    <![CDATA[
+                    Como la pregunta anterior, no está disponible por ahora, pero
+                    pienso dejarle subir el diseño de su tarjeta de historia. 
+                    ]]> 
+                </target>
+            </trans-unit>
+
+            <trans-unit id="faq.question5.title">
+                <source>faq.question5.title</source>
+                <target>¿El formato de mi archivo está respaldado?</target>
+            </trans-unit>
+             <trans-unit id="faq.question5.text">
+                <source>faq.question5.text</source>
+                <target>
+                    <![CDATA[
+                    Esta versión sólo respalda archivos XML y Excel (Todos los campos)
+                    de Jira. <br/> Por algunas restricciones del servidor sólo archivos de menos de
+                    1MB son aceptados.
+                    ]]>
+                </target>
+            </trans-unit>
+
+            <trans-unit id="faq.question6.title">
+                <source>faq.question6.title</source>
+                <target>¿Respaldan algún otra herramienta además de Jira?</target>
+            </trans-unit>
+             <trans-unit id="faq.question6.text">
+                <source>faq.question6.text</source>
+                <target>
+                    <![CDATA[
+                    Por ahora sólo Jira está respaldado, pero si quiere ver su 
+                    archivo respaldado aquí, la manera más fácil es 
+                    <a href="#contact">contactarme</a> y enviarme una muestra de 
+                    su archivo.
+                    ]]>
+                </target>
+            </trans-unit>
+
+            <trans-unit id="faq.question7.title">
+                <source>faq.question7.title</source>
+                <target>¿Esta herramienta me gusta, cómo puedo contribuir?</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

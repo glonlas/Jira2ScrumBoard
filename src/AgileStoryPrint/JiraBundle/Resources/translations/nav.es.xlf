@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file datatype="plaintext" original="file.ext" source-language="en" target-language="es">
+        <body>
+        	<!-- Footer -->
+            <trans-unit id="nav.privacy.link">
+                <source>nav.privacy.link</source>
+                <target>Política de cookies</target>
+            </trans-unit>
+            <trans-unit id="nav.privacy.alt">
+                <source>nav.privacy.alt</source>
+                <target></target>
+            </trans-unit>
+
+            <trans-unit id="nav.terms.link">
+                <source>nav.terms.link</source>
+                <target>Condiciones de uso</target>
+            </trans-unit>
+            <trans-unit id="nav.terms.alt">
+                <source>nav.terms.alt</source>
+                <target></target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
