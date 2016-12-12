@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file datatype="plaintext" original="file.ext" source-language="en" target-language="it">
+        <body>
+            <trans-unit id="faq.question1.title">
+                <source>faq.question1.title</source>
+                <target>Come esportare le storie in Jira?</target>
+            </trans-unit>
+             <trans-unit id="faq.question1.text">
+                <source>faq.question1.text</source>
+                <target>
+                    <![CDATA[
+                    Per esportare le tue storie in Jira, devi prima selezionare
+                    le storie che ti servono. Puoi facilmente selezionare le storie
+                    dalla tua prossima Sprint con l'espressione di ricerca
+                    <em>"sprint=1"</em> (dove 1 è il numero della tua sprint).
+                    Per ulteriori dettaglio è disponibile
+                    <a href="https://www.youtube.com/watch?v=FP7pxon8E5c"
+                    target="_blank">un video su Youtube</a>.
+                    ]]>
+                </target>
+            </trans-unit>
+
+            <trans-unit id="faq.question2.title">
+                <source>faq.question2.title</source>
+                <target>Come stampare più di una storia per pagina?</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

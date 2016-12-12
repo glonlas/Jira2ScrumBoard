@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file datatype="plaintext" original="file.ext" source-language="en" target-language="it">
+        <body>
+            <trans-unit id="field.mandatory">
+                <source>field.mandatory</source>
+                <target>Un file è necessario</target>
+            </trans-unit>
+            <trans-unit id="file.size">
+                <source>file.size</source>
+                <target>Il file è troppo grande ({{ size }} KB). La dimensione massima consentita è {{ limit }} KB</target>
+            </trans-unit>
+            <trans-unit id="file.extension">
+                <source>file.extension</source>
+                <target>Solo XML e XLS (Excel) esportati da Jira sono permessi. Per favore seleziona un formato di file corretto.</target>
+            </trans-unit>
+
+            <!-- Contact -->
+            <trans-unit id="contact.name">
+                <source>contact.name</source>
+                <target>Per favore inserisci il tuo nome.</target>
+            </trans-unit>
+            <trans-unit id="contact.email">
+                <source>contact.email</source>
+                <target>Per favore inserisci il tuo indirizzo email.</target>
+            </trans-unit>
+            <trans-unit id="contact.message">
+                <source>contact.message</source>
+                <target>Per favore inserisci un messaggio.</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

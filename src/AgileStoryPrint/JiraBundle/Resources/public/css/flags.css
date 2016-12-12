@@ -60,3 +60,10 @@
 .flag-icon-es.flag-icon-squared {
   background-image: url(../vendors/flag-icon-css/flags/1x1/es.svg);
 }
+
+.flag-icon-it {
+  background-image: url(../vendors/flag-icon-css/flags/4x3/it.svg);
+}
+.flag-icon-it.flag-icon-squared {
+  background-image: url(../vendors/flag-icon-css/flags/1x1/it.svg);
+}

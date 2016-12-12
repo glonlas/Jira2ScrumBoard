@@ -1,35 +1,35 @@
 _index:
-    locales:  { en: "/", fr: "/fr/", nl: "/nl/", zh: "/zh/", de: "/de/", es: "/es/" }
+    locales:  { en: "/", fr: "/fr/", nl: "/nl/", zh: "/zh/", de: "/de/", es: "/es/", it: "/it/" }
     defaults: { _controller: AgileStoryPrintJiraBundle:Default:index }
 
 _getStories:
-    locales:  { en: "/print-your-index-cards.html", fr: "/fr/imprimez-vos-index-cards.html", nl: "/nl/print-your-index-cards.html", zh: "/zh/print-your-index-cards.html", de: "/de/print-your-index-cards.html", es: "/es/print-your-index-cards.html" }
+    locales:  { en: "/print-your-index-cards.html", fr: "/fr/imprimez-vos-index-cards.html", nl: "/nl/print-your-index-cards.html", zh: "/zh/print-your-index-cards.html", de: "/de/print-your-index-cards.html", es: "/es/print-your-index-cards.html", it: "/it/print-your-index-cards.html" }
     defaults: { _controller: AgileStoryPrintJiraBundle:Stories:getStories }
 
 _emptyStory:
-    locales:  { en: "/no-stories-found.html", fr: "/fr/pas-de-story-trouve.html", nl: "/nl/no-stories-found.html", zh: "/zh/没有发现任何故事在您的文件中.html", de: "/de/no-stories-found.html", es: "/es/no-stories-found.html" }
+    locales:  { en: "/no-stories-found.html", fr: "/fr/pas-de-story-trouve.html", nl: "/nl/no-stories-found.html", zh: "/zh/没有发现任何故事在您的文件中.html", de: "/de/no-stories-found.html", es: "/es/no-stories-found.html", it: "/it/no-stories-found.html" }
     defaults: { _controller: AgileStoryPrintJiraBundle:Stories:emptyStory }
 
 _wrongFile:
-    locales:  { en: "/wrong-file.html", fr: "/fr/mauvais-fichier.html", nl: "/nl/wrong-file.html", zh: "/zh/上传的文件有错误.html", de: "/de/wrong-file.html", es: "/es/wrong-file.html" }
+    locales:  { en: "/wrong-file.html", fr: "/fr/mauvais-fichier.html", nl: "/nl/wrong-file.html", zh: "/zh/上传的文件有错误.html", de: "/de/wrong-file.html", es: "/es/wrong-file.html", it: "/it/wrong-file.html" }
     defaults: { _controller: AgileStoryPrintJiraBundle:Stories:wrongFile }
 
 _contact:
-    locales:  { en: "/contact.html", fr: "/fr/contact.html", nl: "/nl/contact.html", zh: "/zh/联系方式.html", de: "/de/contact.html", es: "/es/contact.html" }
+    locales:  { en: "/contact.html", fr: "/fr/contact.html", nl: "/nl/contact.html", zh: "/zh/联系方式.html", de: "/de/contact.html", es: "/es/contact.html", it: "/it/contact.html" }
     defaults: { _controller: AgileStoryPrintJiraBundle:Contact:index }
 
 _cookie:
-    locales:  { en: "/cookie-policy.html", fr: "/fr/usage-des-cookies.html", nl: "/nl/cookie-policy.html", zh: "/zh/cookie-声明.html", de: "/de/cookie-policy.html", es: "/es/politica-de-cookies.html" }
+    locales:  { en: "/cookie-policy.html", fr: "/fr/usage-des-cookies.html", nl: "/nl/cookie-policy.html", zh: "/zh/cookie-声明.html", de: "/de/cookie-policy.html", es: "/es/politica-de-cookies.html", it: "/it/cookie-policy.html" }
     defaults: { _controller: AgileStoryPrintJiraBundle:Legal:cookie }
 
 _terms:
-    locales:  { en: "/terms-of-use.html", fr: "/fr/conditions-generale.html", nl: "/nl/terms-of-use.html", zh: "/zh/使用条款.html", de: "/de/terms-of-use.html", es: "/es/condiciones-de-uso.html" }
+    locales:  { en: "/terms-of-use.html", fr: "/fr/conditions-generale.html", nl: "/nl/terms-of-use.html", zh: "/zh/使用条款.html", de: "/de/terms-of-use.html", es: "/es/condiciones-de-uso.html", it: "/it/terms-of-use.html" }
     defaults: { _controller: AgileStoryPrintJiraBundle:Legal:terms }
 
 _404:
-    locales:  { en: "/error/404.html", fr: "/fr/erreur/404.html", nl: "/nl/error/404.html", zh: "/zh/错误/400.html", de: "/de/error/404.html", es: "/es/error/404.html" }
+    locales:  { en: "/error/404.html", fr: "/fr/erreur/404.html", nl: "/nl/error/404.html", zh: "/zh/错误/400.html", de: "/de/error/404.html", es: "/es/error/404.html", it: "/it/error/404.html" }
     defaults: { _controller: AgileStoryPrintJiraBundle:Error:error404 }
 
 _500:
-    locales:  { en: "/error/500.html", fr: "/fr/erreur/500.html", nl: "/nl/error/500.html", zh: "/zh/错误/500.html", de: "/de/error/500.html", es: "/es/error/500.html" }
+    locales:  { en: "/error/500.html", fr: "/fr/erreur/500.html", nl: "/nl/error/500.html", zh: "/zh/错误/500.html", de: "/de/error/500.html", es: "/es/error/500.html", it: "/it/error/500.html" }
     defaults: { _controller: AgileStoryPrintJiraBundle:Error:error500 }

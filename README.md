@@ -108,6 +108,12 @@ Many Thanks to our contributors:
 the [Mandarin Chinese](http://www.jira2scrumboard.com/zh/) translation.
 * [Vistaus](https://www.transifex.com/accounts/profile/Vistaus/) for 
 the [Dutch](http://www.jira2scrumboard.com/nl/) translation.
+* [Mukami](https://www.transifex.com/user/profile/mukami/) for 
+the [Spanish](http://www.jira2scrumboard.com/es/) translation.
+* [Rocketworm](https://www.transifex.com/user/profile/rocketworm/) for 
+the [German](http://www.jira2scrumboard.com/de/) translation.
+* [Supermilus](https://www.transifex.com/user/profile/supermilus/) for 
+the [Italian](http://www.jira2scrumboard.com/it/) translation.
 
 ## Blog posts
 ### French
