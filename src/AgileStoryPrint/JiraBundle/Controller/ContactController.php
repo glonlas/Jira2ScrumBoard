@@ -16,7 +16,7 @@ class ContactController extends Controller
 
         $form->handleRequest($request);
 
-        if ($form->isValid())
+        if ($form->isSubmitted() && $form->isValid())
         {
             $formData = $form->getData();
             $formData['ip'] = $request->getClientIp();

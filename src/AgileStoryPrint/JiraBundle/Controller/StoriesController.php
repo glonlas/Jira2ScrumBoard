@@ -19,7 +19,7 @@ class StoriesController extends Controller
         $form->handleRequest($request);
 
         // Form validation
-        if ($form->isValid())
+        if ($form->isSubmitted() && $form->isValid())
         {
             try
             {
