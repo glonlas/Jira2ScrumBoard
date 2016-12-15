@@ -67,9 +67,9 @@ swiftmailer:
 knp_snappy:
     pdf:
         enabled:    true
-        binary:     %wkhtmltopdf_path%
-        options:    {'page-size':'A4', 'orientation':'landscape', 'margin-bottom':'5', 'margin-left':'10', 'margin-right':'10', 'margin-top':'5'}
+        binary:     "%wkhtmltopdf_path%"
+        options:    { 'page-size': 'A4', 'orientation': 'landscape', 'margin-bottom': '5', 'margin-left': '10', 'margin-right': '10', 'margin-top': '5' }
     image:
         enabled:    false
-        binary:     %wkhtmltoimage_path%
+        binary:     "%wkhtmltoimage_path%"
         options:    []
