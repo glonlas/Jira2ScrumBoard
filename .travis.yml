@@ -8,3 +8,7 @@ before_script:
   - composer install
 
 script: phpunit --coverage-text
+
+addons:
+    code_climate:
+        repo_token: 9ca5782cd6226991ced587a362bd6ef2bb93d5d37d201cd82578242fb51baf68
